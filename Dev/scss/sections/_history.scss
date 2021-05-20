@@ -1,141 +1,103 @@
 #history{
-
-    @include hd{
-        display: grid;
-        grid-template-columns: auto 1240px auto;
-        grid-template-columns: ". history-main .";
-    }
-
     #history-main{
-
-        grid-area: history-main;
-
-        h1{
-            grid-area: history-title;
-        }
-
-        img{
-            background-position: center;
-			background-size: cover;
-        }
-
         #history-title{
-            display: grid;
-            grid-template-columns: 90px 140px auto;
-            grid-template-areas: ". history-title .";
+            h1{
 
-            @include tab{
-                grid-template-columns: 215px 170px auto;  
-            }
-
-            @include desk{
-                grid-template-columns: 370px 200px auto;  
-            }
-
-            @include hd{
-                grid-template-columns: 410px 200px auto;  
             }
         }
-
-        #article-h1{
+        #history-hero{
+            div{
+                background-image: url(.../img/Hisotry/history-hero.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+        }
+        #history-content{
             display: grid;
             grid-template-columns: 10px auto 10px;
-            grid-template-areas: ". img-h1 ."
-                                 ". para-h1 ."
-                                 ". img-h2 .";
+            grid-template-columns: ". article-h1 .";
 
-            @include tab{
-                grid-template-columns: 50% auto;
-                grid-area: "img-h1 img-h1"
-                           "para-h1 img-h2";
-            }
-            @include desk{
-                grid-template-columns: repeat(3, 1fr);
-                grid-area: "img-h1 img-h1 img-h1"
-                           "para-h1 img-h2 aside-h1";
-            }
             @include hd{
-                grid-template-columns: repeat(3, 1fr);
-                grid-area: "img-h1 img-h1 img-h1"
-                           "para-h1 img-h2 aside-h1";
+                grid-template-columns: 101px auto 101px;
+                grid-template-areas: ". article-h1 ."
+                                     ". article-h2 .";
+                grid-template-rows: 585px 265px;
             }
 
-            #img-h1{
-                background-image: url(.../img/History/history-hero.jpg);
-                grid-area: img-h1;
-            }
-            p{
-                grid-area: para-h1;
+            #article-h1{
+                display: grid;
+                grid-area: article-h1;
+                grid-template-columns: 100%;
+                grid-template-areas: "para-h1"
+                                     "img-h1";
 
-                #para-cut1{
-                    display: hidden;
-
-                    @include tab{
-                        display: block;
+                @include tab{
+                    grid-template-columns: 50% auto;
+                    grid-template-areas: "para-h1 img-h1";
+                }
+                @include desk{
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-areas: "para-h1 img-h1 aside-h1";
+                }
+                #para-h1{
+                    grid-area: para-h1;
+                    div{
+                        display: none;
                     }
+                }
+                >div{
+                    //background-image: url(.../img/Hisotry/history-1.jpg);
+                    //background-position: center;
+                    //background-size: cover;
+                    grid-area: img-h1;
+                }
+                aside{
+                    grid-area: aside-h1;
+                    display: none;
+
                     @include desk{
-                        display: hidden;
-                    }
-                    @include hd{
                         display: block;
+                    }
+                    h2{
+
+                    }
+                    #para-aside{
+                        div{
+
+                        }
                     }
                 }
             }
-            #img-h2{
-                background-image: url(.../img/History/history-1.jpg);
-                grid-area: img-h2;
-            }
-            aside{
+            #article-h2{
                 display: none;
+                grid-area: article-h2;
+
+                @include desk{
+                    display: grid;
+                    grid-template-columns: 60% auto;
+                    grid-template-areas: "para-h2 img-h2";
+                }
 
                 @include desk{
                     display: block;
-                    grid-area: aside-h1;
                 }
-            }
-        }
-
-        #article-h2{
-            display: none;
-
-            @include desk{
-                display: grid;
-                grid-template-columns: 60% auto;
-                grid-template-areas: "para-h2 img-h3";
-            }
-            @include hd{
-                display: grid;
-                grid-template-columns: 66% auto;
-                grid-template-areas: "para-h2 img-h3";
-            }
-
-            p{
-                grid-area: para-h2;
-
-                #para-cut2{
-                    @include hd{
-                        display: hidden;
+                #para-h2{
+                    grid-area: para-h2;
+                    div{
+                        @include hd{
+                            display: none;
+                        }
                     }
                 }
-            }
-            #img-h3{
-                grid-area: img-h3;
+                >div{
+                    grid-area: img-h2;
+                }
             }
         }
     }
-
     #break-img1{
-        background-image: url();
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-        height: 140px;
+        >div{
 
-        @include desk{
-            height: 200px;
-        }
-        @include hd{
-            height: 245px;
         }
     }
 }
