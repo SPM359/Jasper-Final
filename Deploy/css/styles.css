@@ -129,3 +129,56 @@ header > div a {
 #hero #hero-right2 {
   background-image: url(.../img/Hero/hero-right2.jpg);
 }
+
+#history > div h1 {
+  grid-area: history-title;
+}
+#history > div img {
+  background-position: center;
+  background-size: cover;
+}
+#history > div #history-title {
+  display: grid;
+  grid-template-columns: 90px 140px auto;
+  grid-template-areas: ". history-title .";
+}
+@media (min-width: 768px) {
+  #history > div #history-title {
+    grid-template-columns: 215px 170px auto;
+  }
+}
+@media (min-width: 1024px) {
+  #history > div #history-title {
+    grid-template-columns: 370px 200px auto;
+  }
+}
+@media (min-width: 1440px) {
+  #history > div #history-title {
+    grid-template-columns: 410px 200px auto;
+  }
+}
+#history > div #article-h1 {
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-areas: ". img-h1 ." ". para-h1 ." ". img-h2 .";
+}
+#history > div #article-h1 #img-h1 {
+  background-image: url(.../img/History/history-hero);
+  grid-area: img-h1;
+}
+#history > div #article-h1 p {
+  grid-area: para-h1;
+}
+#history > div #article-h1 p #para-cut1 {
+  display: hidden;
+}
+#history > div #article-h1 #img-h2 {
+  background-image: url(.../img/History/history-1);
+  grid-area: img-h2;
+}
+#history > div #article-h1 aside {
+  display: none;
+}
+#history > div #article-h2 {
+  display: none;
+}

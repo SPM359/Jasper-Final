@@ -86,6 +86,45 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/Deploy\/img\/History\/history-1.jpg" : {
+      "ft" : 16384,
+      "iS" : 108370,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Deploy\/img\/History\/history-1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Deploy\/img\/History\/history-2.jpg" : {
+      "ft" : 16384,
+      "iS" : 157960,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Deploy\/img\/History\/history-2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Deploy\/img\/History\/history-hero.jpg" : {
+      "ft" : 16384,
+      "iS" : 260034,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Deploy\/img\/History\/history-hero.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/Deploy\/img\/Reduced\/Activities1.jpg" : {
       "ft" : 16384,
       "iS" : 235325,
@@ -352,45 +391,6 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/Deploy\/img\/Reduced\/Hiking.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/Deploy\/img\/Reduced\/History1.jpg" : {
-      "ft" : 16384,
-      "iS" : 108370,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/Deploy\/img\/Reduced\/History1.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/Deploy\/img\/Reduced\/History2.jpg" : {
-      "ft" : 16384,
-      "iS" : 157960,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/Deploy\/img\/Reduced\/History2.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/Deploy\/img\/Reduced\/HistoryHero.jpg" : {
-      "ft" : 16384,
-      "iS" : 260034,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/Deploy\/img\/Reduced\/HistoryHero.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -814,21 +814,13 @@
       "oAP" : "\/Dev\/Global\/warning.html",
       "oF" : 0
     },
-    "\/Dev\/index.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/Dev\/index.html",
-      "oF" : 0
-    },
     "\/Dev\/index.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/Dev\/index.html",
-      "oF" : 0
+      "oAP" : "\/Deploy\/index.html",
+      "oF" : 2
     },
     "\/Dev\/scss\/base\/_base.scss" : {
       "aP" : 0,
@@ -909,6 +901,20 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev\/scss\/sections\/_hero.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/Dev\/scss\/sections\/_history.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/Dev\/scss\/sections\/_history.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
