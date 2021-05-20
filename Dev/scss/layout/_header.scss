@@ -1,0 +1,29 @@
+header{
+    display: grid;
+    grid-template-columns: auto 10px;
+    grid-template-areas: "header-content .";
+
+    >div{
+        grid-area: header-content;
+       
+        >div{
+
+        }
+        >h1{
+
+        }
+        a{
+            
+        }
+        form{
+            button{
+                i{
+
+                }
+            }
+            input{
+                
+            }
+        }
+    }
+}

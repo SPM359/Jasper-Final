@@ -1,0 +1,24 @@
+@mixin mob{
+    @media (min-width: #{$screen-mob-min}){
+        @content;
+    }
+}
+
+@mixin tab{
+    @media (min-width: #{$screen-tab-min}) {
+        @content;
+    }
+}
+
+@mixin desk{
+    @media (min-width: #{$screen-desk-min}) {
+        @content;
+    }
+}
+
+@mixin hd{
+    @media (min-width: #{$screen-hd-min}) {
+        @content;
+    }
+}
+
