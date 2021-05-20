@@ -130,55 +130,146 @@ header > div a {
   background-image: url(.../img/Hero/hero-right2.jpg);
 }
 
-#history > div h1 {
+@media (min-width: 1440px) {
+  #history {
+    display: grid;
+    grid-template-columns: auto 1240px auto;
+    grid-template-columns: ". history-main .";
+  }
+}
+#history #history-main {
+  grid-area: history-main;
+}
+#history #history-main h1 {
   grid-area: history-title;
 }
-#history > div img {
+#history #history-main img {
   background-position: center;
   background-size: cover;
 }
-#history > div #history-title {
+#history #history-main #history-title {
   display: grid;
   grid-template-columns: 90px 140px auto;
   grid-template-areas: ". history-title .";
 }
 @media (min-width: 768px) {
-  #history > div #history-title {
+  #history #history-main #history-title {
     grid-template-columns: 215px 170px auto;
   }
 }
 @media (min-width: 1024px) {
-  #history > div #history-title {
+  #history #history-main #history-title {
     grid-template-columns: 370px 200px auto;
   }
 }
 @media (min-width: 1440px) {
-  #history > div #history-title {
+  #history #history-main #history-title {
     grid-template-columns: 410px 200px auto;
   }
 }
-#history > div #article-h1 {
+#history #history-main #article-h1 {
   display: grid;
   grid-template-columns: 10px auto 10px;
   grid-template-areas: ". img-h1 ." ". para-h1 ." ". img-h2 .";
 }
-#history > div #article-h1 #img-h1 {
-  background-image: url(.../img/History/history-hero);
+@media (min-width: 768px) {
+  #history #history-main #article-h1 {
+    grid-template-columns: 50% auto;
+    grid-area: "img-h1 img-h1" "para-h1 img-h2";
+  }
+}
+@media (min-width: 1024px) {
+  #history #history-main #article-h1 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-area: "img-h1 img-h1 img-h1" "para-h1 img-h2 aside-h1";
+  }
+}
+@media (min-width: 1440px) {
+  #history #history-main #article-h1 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-area: "img-h1 img-h1 img-h1" "para-h1 img-h2 aside-h1";
+  }
+}
+#history #history-main #article-h1 #img-h1 {
+  background-image: url(.../img/History/history-hero.jpg);
   grid-area: img-h1;
 }
-#history > div #article-h1 p {
+#history #history-main #article-h1 p {
   grid-area: para-h1;
 }
-#history > div #article-h1 p #para-cut1 {
+#history #history-main #article-h1 p #para-cut1 {
   display: hidden;
 }
-#history > div #article-h1 #img-h2 {
-  background-image: url(.../img/History/history-1);
+@media (min-width: 768px) {
+  #history #history-main #article-h1 p #para-cut1 {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  #history #history-main #article-h1 p #para-cut1 {
+    display: hidden;
+  }
+}
+@media (min-width: 1440px) {
+  #history #history-main #article-h1 p #para-cut1 {
+    display: block;
+  }
+}
+#history #history-main #article-h1 #img-h2 {
+  background-image: url(.../img/History/history-1.jpg);
   grid-area: img-h2;
 }
-#history > div #article-h1 aside {
+#history #history-main #article-h1 aside {
   display: none;
 }
-#history > div #article-h2 {
+@media (min-width: 1024px) {
+  #history #history-main #article-h1 aside {
+    display: block;
+    grid-area: aside-h1;
+  }
+}
+#history #history-main #article-h2 {
   display: none;
+}
+@media (min-width: 1024px) {
+  #history #history-main #article-h2 {
+    display: grid;
+    grid-template-columns: 60% auto;
+    grid-template-areas: "para-h2 img-h3";
+  }
+}
+@media (min-width: 1440px) {
+  #history #history-main #article-h2 {
+    display: grid;
+    grid-template-columns: 66% auto;
+    grid-template-areas: "para-h2 img-h3";
+  }
+}
+#history #history-main #article-h2 p {
+  grid-area: para-h2;
+}
+@media (min-width: 1440px) {
+  #history #history-main #article-h2 p #para-cut2 {
+    display: hidden;
+  }
+}
+#history #history-main #article-h2 #img-h3 {
+  grid-area: img-h3;
+}
+#history #break-img1 {
+  background-image: url();
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 140px;
+}
+@media (min-width: 1024px) {
+  #history #break-img1 {
+    height: 200px;
+  }
+}
+@media (min-width: 1440px) {
+  #history #break-img1 {
+    height: 245px;
+  }
 }

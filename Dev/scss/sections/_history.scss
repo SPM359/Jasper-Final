@@ -1,6 +1,14 @@
 #history{
 
-    >div{
+    @include hd{
+        display: grid;
+        grid-template-columns: auto 1240px auto;
+        grid-template-columns: ". history-main .";
+    }
+
+    #history-main{
+
+        grid-area: history-main;
 
         h1{
             grid-area: history-title;
@@ -36,8 +44,24 @@
                                  ". para-h1 ."
                                  ". img-h2 .";
 
+            @include tab{
+                grid-template-columns: 50% auto;
+                grid-area: "img-h1 img-h1"
+                           "para-h1 img-h2";
+            }
+            @include desk{
+                grid-template-columns: repeat(3, 1fr);
+                grid-area: "img-h1 img-h1 img-h1"
+                           "para-h1 img-h2 aside-h1";
+            }
+            @include hd{
+                grid-template-columns: repeat(3, 1fr);
+                grid-area: "img-h1 img-h1 img-h1"
+                           "para-h1 img-h2 aside-h1";
+            }
+
             #img-h1{
-                background-image: url(.../img/History/history-hero);
+                background-image: url(.../img/History/history-hero.jpg);
                 grid-area: img-h1;
             }
             p{
@@ -45,28 +69,73 @@
 
                 #para-cut1{
                     display: hidden;
+
+                    @include tab{
+                        display: block;
+                    }
+                    @include desk{
+                        display: hidden;
+                    }
+                    @include hd{
+                        display: block;
+                    }
                 }
             }
             #img-h2{
-                background-image: url(.../img/History/history-1);
+                background-image: url(.../img/History/history-1.jpg);
                 grid-area: img-h2;
             }
             aside{
                 display: none;
+
+                @include desk{
+                    display: block;
+                    grid-area: aside-h1;
+                }
             }
         }
 
         #article-h2{
             display: none;
 
-            p{
-                #para-cut2{
+            @include desk{
+                display: grid;
+                grid-template-columns: 60% auto;
+                grid-template-areas: "para-h2 img-h3";
+            }
+            @include hd{
+                display: grid;
+                grid-template-columns: 66% auto;
+                grid-template-areas: "para-h2 img-h3";
+            }
 
+            p{
+                grid-area: para-h2;
+
+                #para-cut2{
+                    @include hd{
+                        display: hidden;
+                    }
                 }
             }
             #img-h3{
-                
+                grid-area: img-h3;
             }
+        }
+    }
+
+    #break-img1{
+        background-image: url();
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 140px;
+
+        @include desk{
+            height: 200px;
+        }
+        @include hd{
+            height: 245px;
         }
     }
 }
