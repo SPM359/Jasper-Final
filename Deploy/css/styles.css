@@ -13,9 +13,119 @@ ul li {
 
 header {
   display: grid;
-  grid-template-columns: auto 10px;
-  grid-template-areas: "header-content .";
+  grid-template-columns: 10px auto 10px;
+  grid-template-areas: ". header-content .";
 }
 header > div {
   grid-area: header-content;
+}
+header > div a {
+  display: none;
+}
+@media (min-width: 768px) {
+  header > div a {
+    display: block;
+  }
+}
+#warning {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". warning-content .";
+}
+@media (min-width: 768px) {
+  #warning {
+    grid-template-columns: 30px auto 30px;
+  }
+}
+@media (min-width: 1024px) {
+  #warning {
+    grid-template-columns: 66px auto 66px;
+  }
+}
+@media (min-width: 1440px) {
+  #warning {
+    grid-template-columns: 344px auto 344px;
+  }
+}
+#warning div {
+  grid-area: warning-content;
+}
+#hero ul {
+  display: grid;
+}
+#hero ul li {
+  background-position: center;
+  background-size: cover;
+}
+#hero .side-2 {
+  display: none;
+}
+@media (min-width: 1024px) {
+  #hero .side-2 {
+    display: block;
+    width: 150px;
+    height: 442px;
+  }
+}
+@media (min-width: 1440px) {
+  #hero .side-2 {
+    width: 160px;
+    height: 422px;
+  }
+}
+#hero .side-1 {
+  width: 60px;
+  height: 177px;
+}
+@media (min-width: 768px) {
+  #hero .side-1 {
+    width: 172px;
+    height: 442px;
+  }
+}
+@media (min-width: 1024px) {
+  #hero .side-1 {
+    width: 150px;
+    height: 442px;
+  }
+}
+@media (min-width: 1440px) {
+  #hero .side-1 {
+    width: 160px;
+    height: 422px;
+  }
+}
+#hero #hero-left2 {
+  background-image: url(.../img/Hero/hero-left2.jpg);
+}
+#hero #hero-left1 {
+  background-image: url(.../img/Hero/hero-left1.jpg);
+}
+#hero #hero-mid {
+  background-image: url(.../img/Hero/hero-mid.jpg);
+  width: 140px;
+  height: 257px;
+}
+@media (min-width: 768px) {
+  #hero #hero-mid {
+    width: 365px;
+    height: 641px;
+  }
+}
+@media (min-width: 1024px) {
+  #hero #hero-mid {
+    width: 321px;
+  }
+}
+@media (min-width: 1440px) {
+  #hero #hero-mid {
+    width: 700px;
+    height: 918px;
+  }
+}
+#hero #hero-right1 {
+  background-image: url(.../img/Hero/hero-right1.jpg);
+}
+#hero #hero-right2 {
+  background-image: url(.../img/Hero/hero-right2.jpg);
 }

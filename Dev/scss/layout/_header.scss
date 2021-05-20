@@ -1,7 +1,7 @@
 header{
     display: grid;
-    grid-template-columns: auto 10px;
-    grid-template-areas: "header-content .";
+    grid-template-columns: 10px auto 10px;
+    grid-template-areas: ". header-content .";
 
     >div{
         grid-area: header-content;
@@ -13,6 +13,11 @@ header{
 
         }
         a{
+            display: none;
+
+            @include tab{
+                display: block;
+            }
             
         }
         form{

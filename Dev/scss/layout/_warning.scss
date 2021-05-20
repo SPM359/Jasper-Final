@@ -1,0 +1,31 @@
+#warning{
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". warning-content .";
+
+    @include tab{
+        grid-template-columns: 30px auto 30px;
+    }
+
+    @include desk{
+        grid-template-columns: 66px auto 66px;
+    }
+
+    @include hd{
+        grid-template-columns: 344px auto 344px;
+    }
+
+    div{
+        grid-area: warning-content;
+
+        #left-exclam{
+
+        }
+        h4{
+
+        }
+        #right-exclam{
+
+        }
+    }
+}

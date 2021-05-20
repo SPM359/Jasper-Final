@@ -1,0 +1,88 @@
+#hero{
+    ul{
+        display: grid;
+        //grid-template-columns: repeat(5, 1fr);
+        //grid-template-areas: "h1 h2 h3 h4 h5";
+        li{
+            background-position: center;
+			background-size: cover;
+        }
+    }
+
+    button{
+        i{
+
+        }
+    }
+
+    .side-2{
+        display: none;
+
+        @include desk{
+            display: block;
+            width: 150px;
+            height: 442px;
+        }
+
+        @include hd{
+            width: 160px;
+            height: 422px;
+        }
+    }
+    .side-1{
+        width: 60px;
+        height: 177px;
+
+        @include tab{
+            width: 172px;
+            height: 442px;
+        }
+
+        @include desk{
+            width: 150px;
+            height: 442px;
+        }
+
+        @include hd{
+            width: 160px;
+            height: 422px;
+        }
+    }
+
+    #hero-left2{
+        background-image: url(.../img/Hero/hero-left2.jpg);
+        //grid-area: h1;
+    }
+    #hero-left1{
+        background-image: url(.../img/Hero/hero-left1.jpg);
+        //grid-area: h2;
+    }
+    #hero-mid{
+        background-image: url(.../img/Hero/hero-mid.jpg);
+        //grid-area: h3;
+        width: 140px;
+        height: 257px;
+
+        @include tab{
+            width: 365px;
+            height: 641px;
+        }
+
+        @include desk{
+            width: 321px;
+        }
+
+        @include hd{
+            width: 700px;
+            height: 918px;
+        }
+    }
+    #hero-right1{
+        background-image: url(.../img/Hero/hero-right1.jpg);
+        //grid-area: h4;
+    }
+    #hero-right2{
+        background-image: url(.../img/Hero/hero-right2.jpg);
+        //grid-area: h5;
+    }
+}
