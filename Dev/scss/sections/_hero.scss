@@ -1,8 +1,8 @@
 #hero{
     ul{
         display: grid;
-        //grid-template-columns: repeat(5, 1fr);
-        //grid-template-areas: "h1 h2 h3 h4 h5";
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: "h1 h2 h3 h4 h5";
         li{
             background-position: center;
 			background-size: cover;
@@ -50,16 +50,16 @@
     }
 
     #hero-left2{
-        background-image: url(.../img/Hero/hero-left2.jpg);
-        //grid-area: h1;
+        background-image: url(".../img/Hero/hero-left2.jpg");
+        grid-area: h1;
     }
     #hero-left1{
-        background-image: url(.../img/Hero/hero-left1.jpg);
-        //grid-area: h2;
+        background-image: url(".../img/Hero/hero-left1.jpg");
+        grid-area: h2;
     }
     #hero-mid{
-        background-image: url(.../img/Hero/hero-mid.jpg);
-        //grid-area: h3;
+        background-image: url(".../img/Hero/hero-mid.jpg");
+        grid-area: h3;
         width: 140px;
         height: 257px;
 
@@ -78,11 +78,11 @@
         }
     }
     #hero-right1{
-        background-image: url(.../img/Hero/hero-right1.jpg);
-        //grid-area: h4;
+        background-image: url(".../img/Hero/hero-right1.jpg");
+        grid-area: h4;
     }
     #hero-right2{
-        background-image: url(.../img/Hero/hero-right2.jpg);
-        //grid-area: h5;
+        background-image: url(".../img/Hero/hero-right2.jpg");
+        grid-area: h5;
     }
 }
