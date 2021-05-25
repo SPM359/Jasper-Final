@@ -2,6 +2,7 @@
 
 // Base
 @import "base/_base";
+@import "base/normalize";
 
 // Helpers
 @import "helpers/_mixins";
@@ -12,6 +13,6 @@
 @import "layout/_warning";
 
 // Sections Styles
-@import "sections/_hero";
+@import "sections/hero";
 //@import "sections/_history";
 //@import "sections/_features";
