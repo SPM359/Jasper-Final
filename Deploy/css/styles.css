@@ -391,8 +391,14 @@ header > div a {
 }
 #hero ul {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-areas: "h1 h2 h3 h4 h5";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "h2 h3 h4";
+}
+@media (min-width: 1024px) {
+  #hero ul {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "h1 h2 h3 h4 h5";
+  }
 }
 #hero ul li {
   background-position: center;
@@ -403,75 +409,183 @@ header > div a {
 }
 @media (min-width: 1024px) {
   #hero .side-2 {
-    display: block;
-    width: 150px;
+    display: list-item;
     height: 442px;
   }
 }
 @media (min-width: 1440px) {
   #hero .side-2 {
-    width: 160px;
     height: 422px;
   }
 }
 #hero .side-1 {
-  width: 60px;
   height: 177px;
 }
 @media (min-width: 768px) {
   #hero .side-1 {
-    width: 172px;
     height: 442px;
   }
 }
 @media (min-width: 1024px) {
   #hero .side-1 {
-    width: 150px;
     height: 442px;
   }
 }
 @media (min-width: 1440px) {
   #hero .side-1 {
-    width: 160px;
     height: 422px;
   }
 }
 #hero #hero-left2 {
-  background-image: url(".../img/Hero/hero-left2.jpg");
+  background-image: url("../img/Hero/hero-left2.jpg");
   grid-area: h1;
 }
 #hero #hero-left1 {
-  background-image: url(".../img/Hero/hero-left1.jpg");
+  background-image: url("../img/Hero/hero-left1.jpg");
   grid-area: h2;
 }
 #hero #hero-mid {
-  background-image: url(".../img/Hero/hero-mid.jpg");
+  background-image: url("../img/Hero/hero-mid.jpg");
   grid-area: h3;
-  width: 140px;
   height: 257px;
 }
 @media (min-width: 768px) {
   #hero #hero-mid {
-    width: 365px;
     height: 641px;
-  }
-}
-@media (min-width: 1024px) {
-  #hero #hero-mid {
-    width: 321px;
   }
 }
 @media (min-width: 1440px) {
   #hero #hero-mid {
-    width: 700px;
     height: 918px;
   }
 }
 #hero #hero-right1 {
-  background-image: url(".../img/Hero/hero-right1.jpg");
+  background-image: url("../img/Hero/hero-right1.jpg");
   grid-area: h4;
 }
 #hero #hero-right2 {
-  background-image: url(".../img/Hero/hero-right2.jpg");
+  background-image: url("../img/Hero/hero-right2.jpg");
   grid-area: h5;
+}
+
+#history > div #history-title {
+  display: grid;
+  grid-template-columns: 90px 142px auto;
+  grid-template-areas: ". history-title .";
+}
+@media (min-width: 768px) {
+  #history > div #history-title {
+    grid-template-columns: 214px 172px auto;
+  }
+}
+@media (min-width: 1024px) {
+  #history > div #history-title {
+    grid-template-columns: 372px 198px auto;
+  }
+}
+@media (min-width: 1440px) {
+  #history > div #history-title {
+    grid-template-columns: 406px 200px auto;
+  }
+}
+#history > div #history-title > h1 {
+  grid-area: history-title;
+}
+#history > div #history-hero {
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-areas: ". history-hero .";
+}
+#history > div #history-hero > div {
+  background-image: url("../img/History/history-hero.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 190px;
+  grid-area: history-hero;
+}
+#history > div #history-content {
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-areas: ". article-h1 ." ". article-h2 .";
+}
+#history > div #history-content #article-h1 {
+  grid-area: article-h1;
+}
+@media (min-width: 768px) {
+  #history > div #history-content #article-h1 {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "para-h1 img-h1";
+  }
+}
+@media (min-width: 1024px) {
+  #history > div #history-content #article-h1 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "para-h1 img-h1 aside-h1";
+  }
+}
+#history > div #history-content #article-h1 #para-h1 {
+  grid-area: para-h1;
+}
+#history > div #history-content #article-h1 #para-h1 #para-aside1 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #history > div #history-content #article-h1 #para-h1 #para-aside1 {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  #history > div #history-content #article-h1 #para-h1 #para-aside1 {
+    display: none;
+  }
+}
+#history > div #history-content #article-h1 #img-h1 {
+  background-image: url("../img/History/history-1.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 413px;
+  grid-area: img-h1;
+}
+@media (min-width: 768px) {
+  #history > div #history-content #article-h1 #img-h1 {
+    height: 381;
+  }
+}
+#history > div #history-content aside {
+  display: none;
+}
+@media (min-width: 1024px) {
+  #history > div #history-content aside {
+    display: block;
+    display: grid;
+    grid-template-columns: 22px auto 22px;
+    grid-template-areas: "asideh1-content";
+    grid-area: aside-h1;
+  }
+}
+#history > div #history-content aside > div {
+  grid-area: asideh1-content;
+}
+#history > div #article-h2 {
+  display: none;
+}
+@media (min-width: 1024px) {
+  #history > div #article-h2 {
+    display: block;
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-columns: "para-h2 img-h2";
+    grid-area: article-h2;
+  }
+}
+#history > div #article-h2 #para-h2 {
+  grid-area: para-h2;
+}
+#history > div #article-h2 #img-h2 {
+  background-image: url("../img/History/history-2.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100px;
+  grid-area: img-h2;
 }
