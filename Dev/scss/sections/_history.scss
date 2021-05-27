@@ -122,6 +122,9 @@
                         grid-template-areas: ". asideh1-content .";
                         grid-area: aside-h1;
                     }
+                    @include hd{
+                        grid-template-columns: 71px auto 71px;
+                    }
 
                     >div{
                         grid-area: asideh1-content;

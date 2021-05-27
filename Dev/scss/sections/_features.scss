@@ -50,8 +50,7 @@
                 grid-template-columns: auto 1240px auto;
                 grid-template-areas: ". article-f1 ."
                                      " aside-f1 aside-f1 aside-f1"
-                                     ". article-f2 ."
-                                     "article-f3 article-f3 article-f3";
+                                     ". article-f2 .";
             }
 
             #article-f1{
@@ -149,6 +148,12 @@
                     @include tab{
                         height: 539px;
                     }
+                    @include desk{
+                        height: 707px;
+                    }
+                    @include hd{
+                        height: 399px;
+                    }
                 }
                 >p{
                     display: none;
@@ -159,51 +164,115 @@
                     }
                 }
             }
-            #article-f3{
-                grid-area: article-f3;
-                >ul{
-                    >li{
-                        >div{
+            
+        }
+        #features-list{
+            display: grid;
+            grid-template-columns: 10px auto 10px;
+            grid-template-areas: ". features-list .";
 
-                        }
-                        >h3{
+            @include tab{
+                grid-template-columns: 106px auto 106px;
+            }
 
-                        }
-                        >p{
+            >ul{
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-areas: "n1 n1 n1 n2 n2 n2"
+                                     "n5 n5 n5 n6 n6 n6"
+                                     ". nex nex nex nex .";
+                grid-area: features-list;
 
-                        }
+                @include tab{
+                    grid-template-columns: 50% auto;
+                    grid-template-areas: "n1 n2"
+                                         "n5 n6"
+                                         "nex nex";
+                }
+
+                >li{
+                    >div{
+                        background-size: cover;
+                        background-position: center;
+                        width: 100%;
+                        height: 134px;
                     }
 
-                    #n1{
+                    // @include tab{
+                    //     height: 250px;
+                    // }
+                    >h3{
 
                     }
-                    #n2{
-                        
+                    >p{
+
                     }
-                    #n3{
-                        
+                }
+
+                #n1{
+                    grid-area: n1;
+
+                    >div{
+                        background-image: url("../img/Features/athbasca.jpg");
                     }
-                    #n4{
-                        
+                }
+                #n2{
+                    grid-area: n2;
+
+                    >div{
+                        background-image: url("../img/Features/icefields.jpg");
                     }
-                    #n5{
-                        
+                }
+                #n3{
+                    display: none;
+                    grid-area: n3;
+
+                    >div{
+                        background-image: url("../img/Features/parkway.jpg");
                     }
-                    #n6{
-                        
+                }
+                #n4{
+                    display: none;
+                    grid-area: n4;
+
+                    >div{
+                        background-image: url("../img/Features/canyon.jpg");
                     }
-                    #n7{
-                        
+                }
+                #n5{
+                    grid-area: n5;
+                    
+                    >div{
+                        background-image: url("../img/Features/lake.jpg");
                     }
-                    #nex{
-                        
+                }
+                #n6{
+                    grid-area: n6;
+                    
+                    >div{
+                        background-image: url("../img/Features/edith.jpg");
+                    }
+                }
+                #n7{
+                    display: none;
+                    grid-area: n7;
+
+                    >div{
+                        background-image: url("../img/Features/sunwapta.jpg");
+                    }
+                }
+                #nex{
+                    grid-area: nex;
+
+                    >div{
+                        background-image: url("../img/Features/features-video.jpg");
                     }
                 }
             }
-            #break-img2{
-                >div{
+        }
+        #break-img2{
+            >div{
 
-                }
             }
         }
     }
