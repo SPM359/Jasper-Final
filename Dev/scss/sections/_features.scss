@@ -270,9 +270,20 @@
                 }
             }
         }
-        #break-img2{
+        #break-img2{ 
             >div{
+                background-image: url("../img/Features/break-img2.jpg");
+                background-position: center;
+                background-size: cover;
+                width: 100%;
+                height: 138px;
 
+                @include desk{
+                    height: 198px;
+                }
+                @include hd{
+                    height: 243px;
+                }
             }
         }
     }

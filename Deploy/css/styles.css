@@ -617,12 +617,14 @@ header > div a {
     display: block;
     display: grid;
     grid-template-columns: 50% auto;
-    grid-template-columns: "para-h2 img-h2";
+    grid-template-areas: "para-h2 img-h2";
     grid-area: article-h2;
   }
 }
-#history > div #article-h2 #para-h2 {
-  grid-area: para-h2;
+@media (min-width: 1024px) {
+  #history > div #article-h2 #para-h2 {
+    grid-area: para-h2;
+  }
 }
 @media (min-width: 1024px) {
   #history > div #article-h2 #img-h2 {
@@ -919,4 +921,21 @@ header > div a {
 }
 #features > div #features-list > ul #nex > div {
   background-image: url("../img/Features/features-video.jpg");
+}
+#features > div #break-img2 > div {
+  background-image: url("../img/Features/break-img2.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 138px;
+}
+@media (min-width: 1024px) {
+  #features > div #break-img2 > div {
+    height: 198px;
+  }
+}
+@media (min-width: 1440px) {
+  #features > div #break-img2 > div {
+    height: 243px;
+  }
 }

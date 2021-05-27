@@ -144,12 +144,15 @@
                     display: block;
                     display: grid;
                     grid-template-columns: 50% auto;
-                    grid-template-columns: "para-h2 img-h2";
+                    grid-template-areas: "para-h2 img-h2";
                     grid-area: article-h2;
                 }
 
                 #para-h2{
-                    grid-area: para-h2;
+
+                    @include desk{
+                        grid-area: para-h2;
+                    }
 
                     #para-aside2{
                         
