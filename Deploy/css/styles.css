@@ -705,7 +705,7 @@ header > div a {
   #features > div #features-content {
     display: grid;
     grid-template-columns: auto 1240px auto;
-    grid-template-areas: ". article-f1 .";
+    grid-template-areas: ". article-f1 ." " aside-f1 aside-f1 aside-f1" ". article-f2 ." "article-f3 article-f3 article-f3";
   }
 }
 #features > div #features-content #article-f1 {
@@ -761,13 +761,71 @@ header > div a {
 }
 #features > div #features-content aside {
   display: none;
-  margin-top: 429px;
 }
 @media (min-width: 1024px) {
   #features > div #features-content aside {
     display: block;
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-areas: "img-fa para-fa";
+    grid-area: aside-f1;
   }
 }
+#features > div #features-content aside > div {
+  background-image: url("../img/Features/features-aside.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 230px;
+  grid-area: img-fa;
+}
+@media (min-width: 1440px) {
+  #features > div #features-content aside > div {
+    height: 327px;
+  }
+}
+#features > div #features-content aside > p {
+  grid-area: para-fa;
+}
 #features > div #features-content #article-f2 {
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-areas: ". img-f2 .";
   grid-area: article-f2;
+}
+@media (min-width: 1024px) {
+  #features > div #features-content #article-f2 {
+    grid-template-columns: 40% auto;
+    grid-template-areas: "para-f2 img-f2";
+    margin: 0px 95px;
+  }
+}
+@media (min-width: 1440px) {
+  #features > div #features-content #article-f2 {
+    grid-template-columns: 30% auto;
+    margin: 0px;
+  }
+}
+#features > div #features-content #article-f2 > div {
+  background-image: url("../img/Features/features-2.jpg");
+  background-position: top;
+  background-size: cover;
+  height: 182px;
+  grid-area: img-f2;
+}
+@media (min-width: 768px) {
+  #features > div #features-content #article-f2 > div {
+    height: 539px;
+  }
+}
+#features > div #features-content #article-f2 > p {
+  display: none;
+}
+@media (min-width: 1024px) {
+  #features > div #features-content #article-f2 > p {
+    display: block;
+    grid-area: para-f2;
+  }
+}
+#features > div #features-content #article-f3 {
+  grid-area: article-f3;
 }

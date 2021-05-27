@@ -48,7 +48,10 @@
             @include hd{
                 display: grid;
                 grid-template-columns: auto 1240px auto;
-                grid-template-areas: ". article-f1 .";
+                grid-template-areas: ". article-f1 ."
+                                     " aside-f1 aside-f1 aside-f1"
+                                     ". article-f2 ."
+                                     "article-f3 article-f3 article-f3";
             }
 
             #article-f1{
@@ -99,25 +102,65 @@
 
                 @include desk{
                     display: block;
+                    display: grid;
+                    grid-template-columns: 20% auto;
+                    grid-template-areas: "img-fa para-fa";
+                    grid-area: aside-f1;
                 }
-                margin-top: 429px;
-                >div{
 
+                >div{
+                    background-image: url("../img/Features/features-aside.jpg");
+                    background-position: center;
+                    background-size: cover;
+                    height: 230px;
+                    grid-area: img-fa;
+
+                    @include hd{
+                        height: 327px;
+                    }
                 }
                 >p{
-
+                    grid-area: para-fa;
                 }
             }
             #article-f2{
+                display: grid;
+                grid-template-columns: 10px auto 10px;
+                grid-template-areas: ". img-f2 .";
                 grid-area: article-f2;
-                >div{
 
+                @include desk{
+                    grid-template-columns: 40% auto;
+                    grid-template-areas: "para-f2 img-f2";
+                    margin: 0px 95px;
+                }
+                @include hd{
+                    grid-template-columns: 30% auto;
+                    margin: 0px;
+                }
+
+                >div{
+                    background-image: url("../img/Features/features-2.jpg");
+                    background-position: top;
+                    background-size: cover;
+                    height: 182px;
+                    grid-area: img-f2;
+
+                    @include tab{
+                        height: 539px;
+                    }
                 }
                 >p{
+                    display: none;
 
+                    @include desk{
+                        display: block;
+                        grid-area: para-f2;
+                    }
                 }
             }
             #article-f3{
+                grid-area: article-f3;
                 >ul{
                     >li{
                         >div{
