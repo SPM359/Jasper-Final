@@ -112,6 +112,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/Deploy\/img\/History\/break-img1.jpg" : {
+      "ft" : 16384,
+      "iS" : 174874,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Deploy\/img\/History\/break-img1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/Deploy\/img\/History\/history-1.jpg" : {
       "ft" : 16384,
       "iS" : 108370,
@@ -521,19 +534,6 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/Deploy\/img\/Reduced\/PageBreak3.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/Deploy\/img\/Reduced\/PageBreak4.jpg" : {
-      "ft" : 16384,
-      "iS" : 174874,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/Deploy\/img\/Reduced\/PageBreak4.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,

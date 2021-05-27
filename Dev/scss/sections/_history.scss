@@ -1,5 +1,6 @@
 #history{
     >div{
+
         #history-title{
             display: grid;
             grid-template-columns: 90px 142px auto;
@@ -31,14 +32,34 @@
                 background-size: cover;
                 height: 190px;
                 grid-area: history-hero;
+
+                @include tab{
+                    height: 447px;
+                }
+                @include desk{
+                    height: 558px;
+                }
+                @include hd{
+                    height: 635px;
+                }
             }
         }
 
         #history-content{
             display: grid;
             grid-template-columns: 10px auto 10px;
-            grid-template-areas: ". article-h1 ."
-                                 ". article-h2 .";
+            grid-template-areas: ". article-h1 .";
+
+            @include desk{
+                grid-template-columns: 95px auto;
+                grid-template-areas: ". article-h1"
+                                     ". article-h2";
+            }
+            @include hd{
+                grid-template-columns: auto 1242px auto;
+                grid-template-areas: ". article-h1 ."
+                                     ". article-h2 .";
+            }
 
             #article-h1{
                 grid-area: article-h1;
@@ -74,13 +95,19 @@
 
                 #img-h1{
                     background-image: url("../img/History/history-1.jpg");
-                    background-position: center;
+                    background-position: top;
                     background-size: cover;
                     height: 413px;
                     grid-area: img-h1;
 
                     @include tab{
-                        height: 381;
+                        height: 381px;
+                    }
+                    @include tab{
+                        height: 534px;
+                    }
+                    @include tab{
+                        height: 582px;
                     }
 
                     }
@@ -92,7 +119,7 @@
                         display: block;
                         display: grid;
                         grid-template-columns: 22px auto 22px;
-                        grid-template-areas: "asideh1-content";
+                        grid-template-areas: ". asideh1-content .";
                         grid-area: aside-h1;
                     }
 
@@ -120,25 +147,44 @@
 
                 #para-h2{
                     grid-area: para-h2;
-                    p{
 
-                    }
                     #para-aside2{
                         
                     }
+                    p{
+
+                    }
                 }
                 #img-h2{
-                    background-image: url("../img/History/history-2.jpg");
-                    background-position: center;
-                    background-size: cover;
-                    height: 100px;
-                    grid-area: img-h2;
+
+                    @include desk{
+                        background-image: url("../img/History/history-2.jpg");
+                        background-position: center;
+                        background-size: cover;
+                        height: 283px;
+                        grid-area: img-h2;
+                    }
+
+                    @include hd{
+                        height: 287px;
+                    }
                 }
             }
         }
         #break-img1{
             >div{
+                background-image: url("../img/History/break-img1.jpg");
+                background-position: center;
+                background-size: cover;
+                width: 100%;
+                height: 138px;
 
+                @include desk{
+                    height: 198px;
+                }
+                @include hd{
+                    height: 243px;
+                }
             }
         }
     }

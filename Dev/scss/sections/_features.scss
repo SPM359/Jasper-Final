@@ -1,8 +1,86 @@
 #features{
-    div{
-        #top-image{
-            display: block;
-            background-image: url(".../img/Features/FeaturesHero.jpg");
+    >div{
+
+        #features-title{
+            >h1{
+
+            }
+        }
+        #features-hero{
+            >div{
+
+            }
+        }
+        #features-content{
+            #article-f1{
+                >p{
+
+                }
+                >div{
+
+                }
+            }
+            aside{
+                >div{
+
+                }
+                >p{
+
+                }
+            }
+            #article-f2{
+                >div{
+
+                }
+                >p{
+
+                }
+            }
+            #article-f3{
+                >ul{
+                    >li{
+                        >div{
+
+                        }
+                        >h3{
+
+                        }
+                        >p{
+
+                        }
+                    }
+
+                    #n1{
+
+                    }
+                    #n2{
+                        
+                    }
+                    #n3{
+                        
+                    }
+                    #n4{
+                        
+                    }
+                    #n5{
+                        
+                    }
+                    #n6{
+                        
+                    }
+                    #n7{
+                        
+                    }
+                    #nex{
+                        
+                    }
+                }
+            }
+            #break-img2{
+                >div{
+
+                }
+            }
         }
     }
 }
