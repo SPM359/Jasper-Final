@@ -2,25 +2,105 @@
     >div{
 
         #features-title{
-            >h1{
+            display: grid;
+            grid-template-columns: 64px 192px auto;
+            grid-template-areas: ". features-title .";
 
+            @include tab{
+                grid-template-columns: 185px 230px auto;
+            }
+            @include desk{
+                grid-template-columns: 332px 268px auto;
+            }
+            @include desk{
+                grid-template-columns: 372px 268px auto;
+            }
+
+            >h1{
+                grid-area: features-title;
             }
         }
         #features-hero{
-            >div{
+            display: grid;
+            grid-template-columns: 10px auto 10px;
+            grid-template-areas: ". features-hero .";
 
+            >div{
+                background-image: url("../img/Features/features-hero.jpg");
+                background-position: top;
+                background-size: cover;
+                height: 190px;
+                grid-area: features-hero;
+
+                @include tab{
+                    height: 447px;
+                }
+                @include desk{
+                    height: 558px;
+                }
+                @include hd{
+                    height: 635px;
+                }
             }
         }
         #features-content{
-            #article-f1{
-                >p{
 
+            @include hd{
+                display: grid;
+                grid-template-columns: auto 1240px auto;
+                grid-template-areas: ". article-f1 .";
+            }
+
+            #article-f1{
+                display: grid;
+                grid-template-columns: 10px auto 10px;
+                grid-template-areas: ". para-f1 ."
+                                     ". img-f1 .";
+                grid-area: article-f1;
+
+                @include tab{
+                    grid-template-columns: 60% auto;
+                    grid-template-areas: "img-f1 para-f1";
+                    margin: 0px 10px;
+                }
+                @include desk{
+                    grid-template-columns: 40% auto;
+                    grid-template-areas: "para-f1 img-f1";
+                    margin: 0px 95px;
+                }
+                @include hd{
+                    grid-template-columns: 30% auto;
+                    margin: 0px;
+                }
+
+                >p{
+                    grid-area: para-f1;
                 }
                 >div{
+                    background-image: url("../img/Features/features-1.jpg");
+                    background-position: center;
+                    background-size: cover;
+                    height: 386px;
+                    grid-area: img-f1;
 
+                    @include tab{
+                        height: 399px;
+                    }
+                    @include desk{
+                        height: 391px;
+                    }
+                    @include hd{
+                        height: 429px;
+                    }
                 }
             }
             aside{
+                display: none;
+
+                @include desk{
+                    display: block;
+                }
+                margin-top: 429px;
                 >div{
 
                 }
@@ -29,6 +109,7 @@
                 }
             }
             #article-f2{
+                grid-area: article-f2;
                 >div{
 
                 }
