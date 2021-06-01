@@ -56,9 +56,9 @@
 
             >div{
                 display: grid;
-                grid-template-columns: 50% auto;
-                grid-template-areas: "para-w1 img-w1"
-                                     "para-w1 img-w2";
+                grid-template-columns: auto;
+                grid-template-areas: "article-w1"
+                                     "article-w2";
                 grid-area: wildlife-content;
     
                 @include tab{
@@ -71,8 +71,16 @@
                 }
     
                 #article-w1{
+                    display: grid;
+                    grid-template-columns: 50% auto;
+                    grid-template-areas: "para-w1 img-w1";
                     grid-area: article-w1;
-    
+
+                    @include tab{
+                        grid-template-columns: none;
+                        grid-template-areas: "img-w1"
+                                             "para-w1";
+                    }
                     @include desk{
                         display: grid;
                         grid-template-columns: 50% auto;
@@ -107,8 +115,16 @@
                     }
                 }
                 #article-w2{
+                    display: grid;
+                    grid-template-columns: 50% auto;
+                    grid-template-areas: ". img-w2";
                     grid-area: article-w2;
-    
+
+                    @include tab{
+                        grid-template-columns: none;
+                        grid-template-areas: "img-w2"
+                                             "para-w3";
+                    }
                     @include desk{
                         display: grid;
                         grid-template-columns: 50% auto;
