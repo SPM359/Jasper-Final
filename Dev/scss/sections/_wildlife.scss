@@ -19,21 +19,79 @@
                 grid-area: wildlife-title;
             }
         }
-        #wildlife-content{
-            #article-w1{
-                >p{
+        #wildlife-hero{
+            display: grid;
+            grid-template-columns: 10px auto 10px;
+            grid-template-areas: ". wildlife-hero .";
 
+            >div{
+                background-image: url("../img/Wildlife/wildlife-hero.jpg");
+                background-position: center;
+                background-size: cover;
+                height: 190px;
+                grid-area: wildlife-hero;
+
+                @include tab{
+                    height: 447px;
                 }
-                >div{
+                @include desk{
+                    height: 558px;
+                }
+                @include hd{
+                    height: 635px;
+                }
+            }
+        }
+        #wildlife-content{
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: "para-w1 img-w1"
+                                 "para-w1 img-w2";
+            margin: 0px 10px;
 
+            @include tab{
+                grid-template-areas: "article-w1 article-w2";
+            }
+
+            #article-w1{
+                grid-area: article-w1;
+
+                >div{
+                    background-image: url("../img/Wildlife/wildlife-1.jpg");
+                    background-size: cover;
+                    background-position: center;
+                    height: 286px;
+                    grid-area: img-w1;
+                }
+                #para-w1{
+                    grid-area: para-w1;
+                }
+                #para-w2{
+                    display: none;
+                    grid-area: para-w2;
                 }
             }
             #article-w2{
-                >p{
+                grid-area: article-w2;
 
-                }
                 >div{
+                    background-image: url("../img/Wildlife/wildlife-2.jpg");
+                    background-size: cover;
+                    background-position: center;
+                    height: 288px;
+                    grid-area: img-w2;
+                }  
+                #para-w3{
+                    display: none;
+                    grid-area: para-w4;
 
+                    @include tab{
+                        display: block;
+                    }
+                }
+                #para-w4{
+                    display: none;
+                    grid-area: para-w4;
                 }
             }
         }
