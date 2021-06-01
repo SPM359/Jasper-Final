@@ -175,6 +175,10 @@
                 grid-template-columns: 106px auto 106px;
             }
 
+            @include desk{
+                grid-template-columns: auto;
+            }
+
             >ul{
                 display: grid;
                 grid-template-columns: repeat(6, 1fr);
@@ -188,6 +192,20 @@
                     grid-template-areas: "n1 n2"
                                          "n5 n6"
                                          "nex nex";
+                }
+
+                @include desk{
+                    grid-template-areas: "n1 n2"
+                                         "n3 n4"
+                                         "n5 n6"
+                                         "nex n7";
+                }
+
+                @include hd{
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-areas: "n1 n2 n3"
+                                         "n4 n5 n6"
+                                         "nex nex n7";
                 }
 
                 >li{
@@ -205,7 +223,11 @@
 
                     }
                     >p{
+                        display: none;
 
+                        @include tab{
+                            display: block;
+                        }
                     }
                 }
 
@@ -227,6 +249,10 @@
                     display: none;
                     grid-area: n3;
 
+                    @include desk{
+                        display: block;
+                    }
+
                     >div{
                         background-image: url("../img/Features/parkway.jpg");
                     }
@@ -234,6 +260,10 @@
                 #n4{
                     display: none;
                     grid-area: n4;
+
+                    @include desk{
+                        display: block;
+                    }
 
                     >div{
                         background-image: url("../img/Features/canyon.jpg");
@@ -256,6 +286,10 @@
                 #n7{
                     display: none;
                     grid-area: n7;
+
+                    @include desk{
+                        display: block;
+                    }
 
                     >div{
                         background-image: url("../img/Features/sunwapta.jpg");

@@ -853,6 +853,11 @@ header > div a {
     grid-template-columns: 106px auto 106px;
   }
 }
+@media (min-width: 1024px) {
+  #features > div #features-list {
+    grid-template-columns: auto;
+  }
+}
 #features > div #features-list > ul {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -865,11 +870,30 @@ header > div a {
     grid-template-areas: "n1 n2" "n5 n6" "nex nex";
   }
 }
+@media (min-width: 1024px) {
+  #features > div #features-list > ul {
+    grid-template-areas: "n1 n2" "n3 n4" "n5 n6" "nex n7";
+  }
+}
+@media (min-width: 1440px) {
+  #features > div #features-list > ul {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "n1 n2 n3" "n4 n5 n6" "nex nex n7";
+  }
+}
 #features > div #features-list > ul > li > div {
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 134px;
+}
+#features > div #features-list > ul > li > p {
+  display: none;
+}
+@media (min-width: 768px) {
+  #features > div #features-list > ul > li > p {
+    display: block;
+  }
 }
 #features > div #features-list > ul #n1 {
   grid-area: n1;
@@ -887,12 +911,22 @@ header > div a {
   display: none;
   grid-area: n3;
 }
+@media (min-width: 1024px) {
+  #features > div #features-list > ul #n3 {
+    display: block;
+  }
+}
 #features > div #features-list > ul #n3 > div {
   background-image: url("../img/Features/parkway.jpg");
 }
 #features > div #features-list > ul #n4 {
   display: none;
   grid-area: n4;
+}
+@media (min-width: 1024px) {
+  #features > div #features-list > ul #n4 {
+    display: block;
+  }
 }
 #features > div #features-list > ul #n4 > div {
   background-image: url("../img/Features/canyon.jpg");
@@ -912,6 +946,11 @@ header > div a {
 #features > div #features-list > ul #n7 {
   display: none;
   grid-area: n7;
+}
+@media (min-width: 1024px) {
+  #features > div #features-list > ul #n7 {
+    display: block;
+  }
 }
 #features > div #features-list > ul #n7 > div {
   background-image: url("../img/Features/sunwapta.jpg");
