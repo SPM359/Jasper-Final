@@ -978,3 +978,27 @@ header > div a {
     height: 243px;
   }
 }
+
+#wildlife > div #wildlife-title {
+  display: grid;
+  grid-template-columns: 114px 92px auto;
+  grid-template-areas: ". wildlife-title .";
+}
+@media (min-width: 768px) {
+  #wildlife > div #wildlife-title {
+    grid-template-columns: 242px 110px auto;
+  }
+}
+@media (min-width: 1024px) {
+  #wildlife > div #wildlife-title {
+    grid-template-columns: 393px 129px auto;
+  }
+}
+@media (min-width: 1024px) {
+  #wildlife > div #wildlife-title {
+    grid-template-columns: 429px 129px auto;
+  }
+}
+#wildlife > div #wildlife-title > h1 {
+  grid-area: wildlife-title;
+}
