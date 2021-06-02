@@ -1173,3 +1173,29 @@ header > div a {
     grid-area: para-w4;
   }
 }
+#wildlife > div #life-zones {
+  display: none;
+}
+@media (min-width: 1024px) {
+  #wildlife > div #life-zones {
+    display: block;
+  }
+}
+#wildlife > div #life-zones #zones-title {
+  margin-left: 109px;
+}
+@media (min-width: 768px) {
+  #wildlife > div #life-zones #zones-title {
+    margin-left: 153px;
+  }
+}
+@media (min-width: 1024px) {
+  #wildlife > div #life-zones #zones-title {
+    margin-left: 211px;
+  }
+}
+@media (min-width: 1440px) {
+  #wildlife > div #life-zones #zones-title {
+    margin-left: 220px;
+  }
+}

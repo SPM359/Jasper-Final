@@ -173,10 +173,31 @@
             }      
         }
         #life-zones{
-            #zones-title{
+            display: none;
 
+            @include desk{
+                display: block;
+            }
+            
+            #zones-title{
+                margin-left: 109px;
+
+                @include tab{
+                    margin-left: 153px;
+                }
+                @include desk{
+                    margin-left: 211px;
+                }
+                @include hd{
+                    margin-left: 220px;
+                }
+
+                >h3{
+
+                }
             }
             >ul{
+
                 >li{
                     >div{
 
