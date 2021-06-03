@@ -196,48 +196,95 @@
 
                 }
             }
-            >ul{
 
-                >li{
-                    >div{
+            #zone-content{
+                display: grid;
+                grid-template-columns: 10px auto 10px;
+                grid-template-areas: ". zone-content .";
 
-                    }
-                    >h3{
-
-                    }
-                    >p{
-
-                    }
+                @include hd{
+                    grid-template-columns: auto 1420px auto;
                 }
+                
+                >ul{
+                    grid-area: zone-content;
+                    
+                    >li{
+                        display: grid;
+                        grid-template-columns: 35% auto;
+                        grid-template-areas: "zone-img zone-para";
 
-                #z1{
-                    >div{
-
-                    }
-                }
-                #z2{
-                    >div{
+                        @include hd{
+                            grid-template-columns: 40% auto;
+                        }
                         
+                        >div{
+                            background-position: center;
+                            background-size: cover;
+                            grid-area: zone-img;
+                        }
+                        >h3{
+    
+                        }
+                        >p{
+                            grid-area: zone-para;
+                        }
                     }
-                }
-                #z3{
-                    >div{
-                        
+    
+                    #z1{
+                        >div{
+                            background-image: url("../img/Wildlife/Zones/montane.jpg");
+                        }
+                    }
+                    #z2{
+                        display: grid;
+                        grid-template-columns: 65% auto;
+                        grid-template-areas: "zone-para zone-img ";
+
+                        @include hd{
+                            grid-template-columns: 60% auto;
+                        }
+
+                        >div{
+                            background-image: url("../img/Wildlife/Zones/subalpine.jpg");
+                        }
+                    }
+                    #z3{
+                        >div{
+                            background-image: url("../img/Wildlife/Zones/alpine.jpg");
+                        }
                     }
                 }
             }
         }
         #fauna{
             #fauna-title{
+                margin-left: 109px;
+
+                @include tab{
+                    margin-left: 153px;
+                }
+                @include desk{
+                    margin-left: 218px;
+                }
+                @include hd{
+                    margin-left: 248px;
+                }
                 >h3{
 
                 }
             }
             #fauna-content{
-                >p{
+                #para-f1{
     
                 }
-                >div{
+                #img-f1{
+    
+                }
+                #para-f2{
+    
+                }
+                #para-f3{
     
                 }
                 >aside{
@@ -247,6 +294,9 @@
                     >p{
                         
                     }
+                }
+                #img-f2{
+    
                 }
             }
         }
