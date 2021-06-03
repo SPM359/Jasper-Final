@@ -290,14 +290,21 @@
                                                "para-f3 aside-f1"
                                                "img-f2 aside-f1";
                     }
-
                     @include desk{
-                        grid-template-columns: 60% auto;
+                        grid-template-columns: 50% auto;
                         grid-template-areas: "para-f1 img-f1"
                                              "call-f1 aside-f1"
                                              "para-f2 aside-f1"
                                              "para-f3 aside-f1"
                                              "img-f2 img-f2";
+                    }
+                    @include hd{
+                        grid-template-columns: 60% auto;
+                        grid-template-areas: "para-f1 img-f1"
+                        "call-f1 aside-f1"
+                        "para-f2 aside-f1"
+                        "para-f3 aside-f1"
+                        "img-f2 .";
                     }
 
                     #para-f1{

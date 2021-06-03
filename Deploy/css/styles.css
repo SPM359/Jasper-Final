@@ -1289,8 +1289,14 @@ header > div a {
 }
 @media (min-width: 1024px) {
   #wildlife > div #fauna #fauna-content > div {
-    grid-template-columns: 60% auto;
+    grid-template-columns: 50% auto;
     grid-template-areas: "para-f1 img-f1" "call-f1 aside-f1" "para-f2 aside-f1" "para-f3 aside-f1" "img-f2 img-f2";
+  }
+}
+@media (min-width: 1440px) {
+  #wildlife > div #fauna #fauna-content > div {
+    grid-template-columns: 60% auto;
+    grid-template-areas: "para-f1 img-f1" "call-f1 aside-f1" "para-f2 aside-f1" "para-f3 aside-f1" "img-f2 .";
   }
 }
 #wildlife > div #fauna #fauna-content > div #para-f1 {
