@@ -275,28 +275,69 @@
                 }
             }
             #fauna-content{
-                #para-f1{
-    
-                }
-                #img-f1{
-    
-                }
-                #para-f2{
-    
-                }
-                #para-f3{
-    
-                }
-                >aside{
-                    >h2{
-    
+                display: grid;
+                grid-template-columns: 10px auto 10px;
+                grid-template-areas: ". fauna-content .";
+
+                >div{
+                    grid-area: fauna-content;
+
+                    @include tab{
+                        display: grid;
+                        grid-template-columns: 60% auto;
+                        grid-template-areas: "img-f1 img-f1"
+                                               "para-f2 aside-f1"
+                                               "para-f3 aside-f1"
+                                               "img-f2 aside-f1";
                     }
-                    >p{
-                        
+
+                    #para-f1{
+                        display: none;
                     }
-                }
-                #img-f2{
-    
+                    #img-f1{
+                        background-image: url("../img/Wildlife/Fauna/fauna-1.jpg");
+                        background-size: cover;
+                        background-position: center;
+                        height: 364px;
+                        grid-area: img-f1;
+                    }
+                    #fauna-callout{
+                        display: none;
+                    }
+                    #para-f2{
+                        display: none;
+
+                        @include tab{
+                            display: block;
+                            grid-area: para-f2;
+                        }
+                    }
+                    #para-f3{
+
+                        @include tab{
+                            grid-area: para-f3;
+                        }
+                    }
+                    >aside{
+                        display: grid;
+                        grid-template-columns: 24px auto 24px;
+                        grid-template-areas: ". aside-f1-title ."
+                                             ". aside-f1-para .";
+                        grid-area: aside-f1;
+
+                        >h2{
+                            grid-area: aside-f1-title;
+                        }
+                        >p{
+                            grid-area: aside-f1-para;
+                        }
+                    }
+                    #img-f2{
+                        background-image: url("../img/Wildlife/Fauna/fauna-2.jpg");
+                        background-size: cover;
+                        background-position: center;
+                        height: 312px;
+                    }
                 }
             }
         }
