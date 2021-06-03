@@ -362,7 +362,7 @@
                             margin: 0px 85px;
                         }
                         @include hd{
-                            margin: opx 90px;
+                            margin: 0px 90px;
                         }
 
                         >h2{
@@ -392,75 +392,6 @@
                 }
             }
         }
-        #fauna-list{
-
-            @include tab{
-
-            }
-            >ul{
-                >li{
-                    display: grid;
-
-                    @include tab{
-                        grid-template-columns: 45% auto;
-                        grid-template-areas: "fauna-img fauna-para"
-                                             "fauna-img fauna-title";
-                    .fauna-img{
-                        background-position: center;
-                        background-size: cover;
-                        height: 230px;
-                        grid-area: fauna-img;
-                    }
-                    >h3{
-                        grid-area: fauna-title;
-                    }
-                    >p{
-                        grid-area: fauna-para;
-                    }
-
-                    #f1{
-                        background-image: url("../img/Wildlife/Fauna/grizzly.jpg");
-
-                        @include tab{
-                            height: 240px;
-                        }
-                    }
-                    #f2{
-                        background-image: url("../img/Wildlife/Fauna/cougar.jpg");
-
-                        @include tab{
-                            height: 221px;
-                        }
-                    }
-                    #f3{
-                        background-image: url("../img/Wildlife/Fauna/moose.jpg");
-
-                        @include tab{
-                            height: 206px;
-                        }
-                    }
-                    #f4{ 
-                        background-image: url("../img/Wildlife/Fauna/fox.jpg");
-
-                        @include tab{
-                            height: 202px;
-                        }
-                    }
-                    #f5{
-                        background-image: url("../img/Wildlife/Fauna/goat.jpg");
-                        display: none;
-                    }
-                    #f6{
-                        background-image: url("../img/Wildlife/Fauna/small.jpg");
-                        display: none;
-                    }
-                    #f7{
-                        background-image: url("../img/Wildlife/Fauna/wolverine.jpg");
-                        display: none;
-                    }
-                }
-            }
-        }
     }
     #break-img3{
         >div{
@@ -478,5 +409,4 @@
             }
         }
     }
-}
 }

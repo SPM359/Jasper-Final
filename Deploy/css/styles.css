@@ -1380,7 +1380,7 @@ header > div a {
 }
 @media (min-width: 1440px) {
   #wildlife > div #fauna #fauna-content > div > aside {
-    margin: opx 90px;
+    margin: 0px 90px;
   }
 }
 #wildlife > div #fauna #fauna-content > div #img-f2 {
@@ -1405,84 +1405,7 @@ header > div a {
     height: 512px;
   }
 }
-#wildlife > div #fauna-list > ul > li {
-  display: grid;
-}
-@media (min-width: 768px) {
-  #wildlife > div #fauna-list > ul > li {
-    grid-template-columns: 45% auto;
-    grid-template-areas: "fauna-img fauna-para" "fauna-img fauna-title";
-  }
-  #wildlife > div #fauna-list > ul > li .fauna-img {
-    background-position: center;
-    background-size: cover;
-    height: 230px;
-    grid-area: fauna-img;
-  }
-  #wildlife > div #fauna-list > ul > li > h3 {
-    grid-area: fauna-title;
-  }
-  #wildlife > div #fauna-list > ul > li > p {
-    grid-area: fauna-para;
-  }
-  #wildlife > div #fauna-list > ul > li #f1 {
-    background-image: url("../img/Wildlife/Fauna/grizzly.jpg");
-  }
-}
-@media (min-width: 768px) and (min-width: 768px) {
-  #wildlife > div #fauna-list > ul > li #f1 {
-    height: 240px;
-  }
-}
-@media (min-width: 768px) {
-  #wildlife > div #fauna-list > ul > li #f2 {
-    background-image: url("../img/Wildlife/Fauna/cougar.jpg");
-  }
-}
-@media (min-width: 768px) and (min-width: 768px) {
-  #wildlife > div #fauna-list > ul > li #f2 {
-    height: 221px;
-  }
-}
-@media (min-width: 768px) {
-  #wildlife > div #fauna-list > ul > li #f3 {
-    background-image: url("../img/Wildlife/Fauna/moose.jpg");
-  }
-}
-@media (min-width: 768px) and (min-width: 768px) {
-  #wildlife > div #fauna-list > ul > li #f3 {
-    height: 206px;
-  }
-}
-@media (min-width: 768px) {
-  #wildlife > div #fauna-list > ul > li #f4 {
-    background-image: url("../img/Wildlife/Fauna/fox.jpg");
-  }
-}
-@media (min-width: 768px) and (min-width: 768px) {
-  #wildlife > div #fauna-list > ul > li #f4 {
-    height: 202px;
-  }
-}
-@media (min-width: 768px) {
-  #wildlife > div #fauna-list > ul > li #f5 {
-    background-image: url("../img/Wildlife/Fauna/goat.jpg");
-    display: none;
-  }
-}
-@media (min-width: 768px) {
-  #wildlife > div #fauna-list > ul > li #f6 {
-    background-image: url("../img/Wildlife/Fauna/small.jpg");
-    display: none;
-  }
-}
-@media (min-width: 768px) {
-  #wildlife > div #fauna-list > ul > li #f7 {
-    background-image: url("../img/Wildlife/Fauna/wolverine.jpg");
-    display: none;
-  }
-}
-#wildlife > div #break-img3 > div {
+#wildlife #break-img3 > div {
   background-image: url("../img/Wildlife/break-img3.jpg");
   background-position: center;
   background-size: cover;
@@ -1490,12 +1413,12 @@ header > div a {
   height: 138px;
 }
 @media (min-width: 1024px) {
-  #wildlife > div #break-img3 > div {
+  #wildlife #break-img3 > div {
     height: 198px;
   }
 }
 @media (min-width: 1440px) {
-  #wildlife > div #break-img3 > div {
+  #wildlife #break-img3 > div {
     height: 243px;
   }
 }
