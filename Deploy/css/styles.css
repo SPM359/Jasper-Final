@@ -350,6 +350,22 @@ template {
   display: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Cinzel", serif;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
 header {
   display: grid;
   grid-template-columns: 10px auto 10px;
@@ -1315,6 +1331,21 @@ header > div a {
   height: 364px;
   grid-area: img-f1;
 }
+@media (min-width: 768px) {
+  #wildlife > div #fauna #fauna-content > div #img-f1 {
+    height: 364px;
+  }
+}
+@media (min-width: 1024px) {
+  #wildlife > div #fauna #fauna-content > div #img-f1 {
+    height: 192px;
+  }
+}
+@media (min-width: 1440px) {
+  #wildlife > div #fauna #fauna-content > div #img-f1 {
+    height: 264px;
+  }
+}
 #wildlife > div #fauna #fauna-content > div #fauna-callout {
   display: none;
 }
@@ -1339,16 +1370,18 @@ header > div a {
   }
 }
 #wildlife > div #fauna #fauna-content > div > aside {
-  display: grid;
-  grid-template-columns: 24px auto 24px;
-  grid-template-areas: ". aside-f1-title ." ". aside-f1-para .";
+  margin: 0px 24px;
   grid-area: aside-f1;
 }
-#wildlife > div #fauna #fauna-content > div > aside > h2 {
-  grid-area: aside-f1-title;
+@media (min-width: 1024px) {
+  #wildlife > div #fauna #fauna-content > div > aside {
+    margin: 0px 85px;
+  }
 }
-#wildlife > div #fauna #fauna-content > div > aside > p {
-  grid-area: aside-f1-para;
+@media (min-width: 1440px) {
+  #wildlife > div #fauna #fauna-content > div > aside {
+    margin: opx 90px;
+  }
 }
 #wildlife > div #fauna #fauna-content > div #img-f2 {
   background-image: url("../img/Wildlife/Fauna/fauna-2.jpg");
@@ -1356,4 +1389,95 @@ header > div a {
   background-position: center;
   height: 312px;
   grid-area: img-f2;
+}
+@media (min-width: 768px) {
+  #wildlife > div #fauna #fauna-content > div #img-f2 {
+    height: 215px;
+  }
+}
+@media (min-width: 1024px) {
+  #wildlife > div #fauna #fauna-content > div #img-f2 {
+    height: 486px;
+  }
+}
+@media (min-width: 1440px) {
+  #wildlife > div #fauna #fauna-content > div #img-f2 {
+    height: 512px;
+  }
+}
+#wildlife > div #fauna-list > ul > li {
+  display: grid;
+}
+@media (min-width: 768px) {
+  #wildlife > div #fauna-list > ul > li {
+    grid-template-columns: 45% auto;
+    grid-template-areas: "fauna-img fauna-para" "fauna-img fauna-title";
+  }
+  #wildlife > div #fauna-list > ul > li > div {
+    background-position: center;
+    background-size: cover;
+    grid-area: fauna-img;
+  }
+  #wildlife > div #fauna-list > ul > li > h3 {
+    grid-area: fauna-title;
+  }
+  #wildlife > div #fauna-list > ul > li > p {
+    grid-area: fauna-para;
+  }
+  #wildlife > div #fauna-list > ul > li #f1 {
+    background-image: url("../img/Wildlife/Fauna/grizzly.jpg");
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  #wildlife > div #fauna-list > ul > li #f1 {
+    height: 240px;
+  }
+}
+@media (min-width: 768px) {
+  #wildlife > div #fauna-list > ul > li #f2 {
+    background-image: url("../img/Wildlife/Fauna/cougar.jpg");
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  #wildlife > div #fauna-list > ul > li #f2 {
+    height: 221px;
+  }
+}
+@media (min-width: 768px) {
+  #wildlife > div #fauna-list > ul > li #f3 {
+    background-image: url("../img/Wildlife/Fauna/moose.jpg");
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  #wildlife > div #fauna-list > ul > li #f3 {
+    height: 206px;
+  }
+}
+@media (min-width: 768px) {
+  #wildlife > div #fauna-list > ul > li #f4 {
+    background-image: url("../img/Wildlife/Fauna/fox.jpg");
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  #wildlife > div #fauna-list > ul > li #f4 {
+    height: 202px;
+  }
+}
+@media (min-width: 768px) {
+  #wildlife > div #fauna-list > ul > li #f5 {
+    background-image: url("../img/Wildlife/Fauna/goat.jpg");
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  #wildlife > div #fauna-list > ul > li #f6 {
+    background-image: url("../img/Wildlife/Fauna/small.jpg");
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  #wildlife > div #fauna-list > ul > li #f7 {
+    background-image: url("../img/Wildlife/Fauna/wolverine.jpg");
+    display: none;
+  }
 }
