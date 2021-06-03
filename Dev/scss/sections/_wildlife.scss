@@ -405,9 +405,10 @@
                         grid-template-columns: 45% auto;
                         grid-template-areas: "fauna-img fauna-para"
                                              "fauna-img fauna-title";
-                    >div{
+                    .fauna-img{
                         background-position: center;
                         background-size: cover;
+                        height: 230px;
                         grid-area: fauna-img;
                     }
                     >h3{
@@ -462,7 +463,18 @@
         }
         #break-img3{
             >div{
+                background-image: url("../img/Wildlife/break-img3.jpg");
+                background-position: center;
+                background-size: cover;
+                width: 100%;
+                height: 138px;
 
+                @include desk{
+                    height: 198px;
+                }
+                @include hd{
+                    height: 243px;
+                }
             }
         }
     }
