@@ -1482,7 +1482,7 @@ header > div a {
     display: none;
   }
 }
-#wildlife > div #fauna-list #break-img3 > div {
+#wildlife > div #break-img3 > div {
   background-image: url("../img/Wildlife/break-img3.jpg");
   background-position: center;
   background-size: cover;
@@ -1490,12 +1490,16 @@ header > div a {
   height: 138px;
 }
 @media (min-width: 1024px) {
-  #wildlife > div #fauna-list #break-img3 > div {
+  #wildlife > div #break-img3 > div {
     height: 198px;
   }
 }
 @media (min-width: 1440px) {
-  #wildlife > div #fauna-list #break-img3 > div {
+  #wildlife > div #break-img3 > div {
     height: 243px;
   }
+}
+
+#camping > div > h1 {
+  margin-left: 100px;
 }
