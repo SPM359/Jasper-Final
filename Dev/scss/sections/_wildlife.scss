@@ -291,8 +291,22 @@
                                                "img-f2 aside-f1";
                     }
 
+                    @include desk{
+                        grid-template-columns: 60% auto;
+                        grid-template-areas: "para-f1 img-f1"
+                                             "call-f1 aside-f1"
+                                             "para-f2 aside-f1"
+                                             "para-f3 aside-f1"
+                                             "img-f2 img-f2";
+                    }
+
                     #para-f1{
                         display: none;
+
+                        @include desk{
+                            display: block;
+                            grid-area: para-f1;
+                        }
                     }
                     #img-f1{
                         background-image: url("../img/Wildlife/Fauna/fauna-1.jpg");
@@ -303,6 +317,11 @@
                     }
                     #fauna-callout{
                         display: none;
+
+                        @include desk{
+                            display: block;
+                            grid-area: call-f1;
+                        }
                     }
                     #para-f2{
                         display: none;
@@ -337,6 +356,7 @@
                         background-size: cover;
                         background-position: center;
                         height: 312px;
+                        grid-area: img-f2;
                     }
                 }
             }

@@ -1287,8 +1287,20 @@ header > div a {
     grid-template-areas: "img-f1 img-f1" "para-f2 aside-f1" "para-f3 aside-f1" "img-f2 aside-f1";
   }
 }
+@media (min-width: 1024px) {
+  #wildlife > div #fauna #fauna-content > div {
+    grid-template-columns: 60% auto;
+    grid-template-areas: "para-f1 img-f1" "call-f1 aside-f1" "para-f2 aside-f1" "para-f3 aside-f1" "img-f2 img-f2";
+  }
+}
 #wildlife > div #fauna #fauna-content > div #para-f1 {
   display: none;
+}
+@media (min-width: 1024px) {
+  #wildlife > div #fauna #fauna-content > div #para-f1 {
+    display: block;
+    grid-area: para-f1;
+  }
 }
 #wildlife > div #fauna #fauna-content > div #img-f1 {
   background-image: url("../img/Wildlife/Fauna/fauna-1.jpg");
@@ -1299,6 +1311,12 @@ header > div a {
 }
 #wildlife > div #fauna #fauna-content > div #fauna-callout {
   display: none;
+}
+@media (min-width: 1024px) {
+  #wildlife > div #fauna #fauna-content > div #fauna-callout {
+    display: block;
+    grid-area: call-f1;
+  }
 }
 #wildlife > div #fauna #fauna-content > div #para-f2 {
   display: none;
@@ -1331,4 +1349,5 @@ header > div a {
   background-size: cover;
   background-position: center;
   height: 312px;
+  grid-area: img-f2;
 }
