@@ -392,6 +392,134 @@
                 }
             }
         }
+        #fauna-list{
+            >ul{
+
+                @include tab{
+                    margin-right: 10px;
+                }
+
+                >li{
+                    display: grid;
+
+                    @include tab{
+                        grid-template-columns: 45% auto;
+                        grid-template-areas: "img-fl para-fl"
+                                             "img-fl title-fl";
+                    }
+                    @include desk{
+                        grid-template-areas: "img-fl para-fl"
+                                             "title-fl .";
+                    }
+
+                    div{
+                        background-position: center;
+                        background-size: cover;
+                        grid-area: img-fl;
+                    }
+                    h3{
+                        grid-area: title-fl;
+                    }
+                    p{
+                        grid-area: para-fl;
+                    }
+                }
+
+                #f1{
+                    div{
+                        background-image: url("../img/Wildlife/Fauna/grizzly.jpg");
+
+                        @include tab{
+                            height: 240px;
+                        }
+                        @include desk{
+                            height: 190px;
+                        }
+                    }
+                }
+                #f2{
+                    div{
+                        background-image: url("../img/Wildlife/Fauna/cougar.jpg");
+                        
+                        @include tab{
+                            height: 221px;
+                        }
+                        @include desk{
+                            height: 190px;
+                        }
+                    }
+                }
+                #f3{
+                    div{
+                        background-image: url("../img/Wildlife/Fauna/moose.jpg");
+
+                        @include tab{
+                            height: 206px;
+                        }
+                        @include desk{
+                            height: 190px;
+                        }
+                    }
+                }
+                #f4{
+                    div{
+                        background-image: url("../img/Wildlife/Fauna/fox.jpg");
+
+                        @include tab{
+                            height: 202px;
+                        }
+                        @include desk{
+                            height: 190px;
+                        }
+                    }
+                }
+                #f5{
+                    display: none;
+
+                    @include desk{
+                        display: list-item;
+                    }
+
+                    div{
+                        background-image: url("../img/Wildlife/Fauna/goat.jpg");
+
+                        @include desk{
+                            height: 190px;
+                        }
+                    }
+                }
+                #f6{
+                    display: none;
+
+                    @include desk{
+                        display: list-item;
+                    }
+
+                    div{
+                        background-image: url("../img/Wildlife/Fauna/small.jpg");
+
+                        @include desk{
+                            height: 190px;
+                        }
+                    }
+                }
+                #f7{
+                    display: none;
+
+                    @include desk{
+                        display: list-item;
+                    }
+                    
+                    div{
+                        background-image: url("../img/Wildlife/Fauna/wolverine.jpg");
+
+                        @include desk{
+                            height: 190px;
+                        }
+                    }
+                }
+            }
+        }
     }
     #break-img3{
         >div{
