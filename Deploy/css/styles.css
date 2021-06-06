@@ -1552,3 +1552,203 @@ header > div a {
     height: 243px;
   }
 }
+
+#camping > div #camping-title {
+  margin-left: 115px;
+}
+@media (min-width: 768px) {
+  #camping > div #camping-title {
+    margin-left: 242px;
+  }
+}
+@media (min-width: 1024px) {
+  #camping > div #camping-title {
+    margin-left: 390px;
+  }
+}
+@media (min-width: 1440px) {
+  #camping > div #camping-title {
+    margin-left: 441px;
+  }
+}
+#camping > div #camping-hero {
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-areas: ". camping-hero .";
+}
+#camping > div #camping-hero > div {
+  background-image: url("../img/Camping/camping-hero.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 190px;
+  grid-area: camping-hero;
+}
+@media (min-width: 768px) {
+  #camping > div #camping-hero > div {
+    height: 447px;
+  }
+}
+@media (min-width: 1024px) {
+  #camping > div #camping-hero > div {
+    height: 558px;
+  }
+}
+@media (min-width: 1440px) {
+  #camping > div #camping-hero > div {
+    height: 635px;
+  }
+}
+#camping > div #camping-intro {
+  margin: 0px 10px;
+}
+@media (min-width: 768px) {
+  #camping > div #camping-intro {
+    display: grid;
+    grid-template-columns: 35% auto;
+    grid-template-areas: "backcountry img-c1";
+    margin-left: 118px;
+  }
+}
+@media (min-width: 1024px) {
+  #camping > div #camping-intro {
+    grid-template-areas: "backcountry img-c1" "vid-c1 img-c1";
+    margin-left: 98px;
+  }
+}
+#camping > div #camping-intro #backcountry {
+  grid-area: backcountry;
+}
+#camping > div #camping-intro #img-c1 {
+  background-image: url("../img/Camping/camping-1.jpg");
+  background-position: bottom;
+  background-size: cover;
+  height: 396px;
+  grid-area: img-c1;
+}
+@media (min-width: 1024px) {
+  #camping > div #camping-intro #img-c1 {
+    height: 624px;
+  }
+}
+@media (min-width: 1440px) {
+  #camping > div #camping-intro #img-c1 {
+    height: 667px;
+  }
+}
+#camping > div #camping-intro #camping-video {
+  display: none;
+  background-image: url("../img/Camping/camping-video.jpg");
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 1024px) {
+  #camping > div #camping-intro #camping-video {
+    display: block;
+    height: 277px;
+    grid-area: vid-c1;
+  }
+}
+@media (min-width: 1440px) {
+  #camping > div #camping-intro #camping-video {
+    height: 345px;
+  }
+}
+#camping > div #camping-content {
+  margin: 0px 10px;
+}
+@media (min-width: 768px) {
+  #camping > div #camping-content {
+    display: grid;
+    grid-template-columns: 65% auto;
+    grid-template-areas: "camping-list aside-c2";
+    margin-left: 118px;
+  }
+}
+@media (min-width: 1024px) {
+  #camping > div #camping-content {
+    grid-template-areas: "camping-list aside-c1" "aside-c2 aside-c2";
+    margin-left: 98px;
+  }
+}
+@media (min-width: 1440px) {
+  #camping > div #camping-content {
+    grid-template-columns: 35% auto;
+    grid-template-areas: "aside-c1 camping-list" ". aside-c2";
+    margin-left: 0px;
+  }
+}
+#camping > div #camping-content #aside-c1 {
+  display: none;
+}
+@media (min-width: 1024px) {
+  #camping > div #camping-content #aside-c1 {
+    display: block;
+  }
+}
+#camping > div #camping-content #aside-c1 > div {
+  background-image: url("../img/Camping/camping-weather.jpg");
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 1024px) {
+  #camping > div #camping-content #aside-c1 > div {
+    height: 595px;
+  }
+}
+@media (min-width: 768px) {
+  #camping > div #camping-content > ul {
+    grid-area: camping-list;
+  }
+}
+@media (min-width: 768px) {
+  #camping > div #camping-content #aside-c2 {
+    grid-area: aside-c2;
+  }
+}
+@media (min-width: 1024px) {
+  #camping > div #camping-content #aside-c2 {
+    display: grid;
+    grid-template-columns: 40% auto;
+    grid-template-areas: "camping-info img-c2";
+  }
+}
+@media (min-width: 1024px) {
+  #camping > div #camping-content #aside-c2 #camping-info {
+    grid-area: camping-info;
+  }
+}
+#camping > div #camping-content #aside-c2 #img-c2 {
+  background-image: url("../img/Camping/camping-2.jpg");
+  background-position: center;
+  background-size: cover;
+  display: none;
+}
+@media (min-width: 768px) {
+  #camping > div #camping-content #aside-c2 #img-c2 {
+    display: block;
+    height: 246px;
+  }
+}
+@media (min-width: 1024px) {
+  #camping > div #camping-content #aside-c2 #img-c2 {
+    height: 363px;
+    grid-area: img-c2;
+  }
+}
+#camping > div #break-img4 > div {
+  background-image: url("../img/Camping/break-img4.jpg");
+  background-position: top;
+  background-size: cover;
+  width: 100%;
+  height: 138px;
+}
+@media (min-width: 1024px) {
+  #camping > div #break-img4 > div {
+    height: 198px;
+  }
+}
+@media (min-width: 1440px) {
+  #camping > div #break-img4 > div {
+    height: 243px;
+  }
+}
