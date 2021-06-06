@@ -192,6 +192,34 @@
                 }
             }
         }
+        #map{
+            display: none;
+            
+            @include desk{
+                display: block;
+            }
+            >h3{
+
+                @include desk{
+                    margin-left: 222px;
+                }
+                @include hd{
+                    margin-left: 216px; 
+                }
+            }
+            >div{
+                background-image: url("../img/Camping/camping-map.jpg");
+                background-position: center;
+                background-size: cover;
+
+                @include desk{
+                    height: 706px;
+                }
+                @include hd{
+                    height: 879px;
+                }
+            }
+        }
         #break-img4{
             >div{
                 background-image: url("../img/Camping/break-img4.jpg");

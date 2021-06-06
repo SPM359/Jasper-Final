@@ -1735,6 +1735,39 @@ header > div a {
     grid-area: img-c2;
   }
 }
+#camping > div #map {
+  display: none;
+}
+@media (min-width: 1024px) {
+  #camping > div #map {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  #camping > div #map > h3 {
+    margin-left: 222px;
+  }
+}
+@media (min-width: 1440px) {
+  #camping > div #map > h3 {
+    margin-left: 216px;
+  }
+}
+#camping > div #map > div {
+  background-image: url("../img/Camping/camping-map.jpg");
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 1024px) {
+  #camping > div #map > div {
+    height: 706px;
+  }
+}
+@media (min-width: 1440px) {
+  #camping > div #map > div {
+    height: 879px;
+  }
+}
 #camping > div #break-img4 > div {
   background-image: url("../img/Camping/break-img4.jpg");
   background-position: top;
