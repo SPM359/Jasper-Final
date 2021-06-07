@@ -415,13 +415,23 @@
                     div{
                         background-position: center;
                         background-size: cover;
+                        height: 200px;
                         grid-area: img-fl;
+
+                        @include desk{
+                            height: 190px;
+                        }
                     }
                     h3{
                         grid-area: title-fl;
                     }
                     p{
+                        display: none;
                         grid-area: para-fl;
+
+                        @include tab{
+                            display: block;
+                        }
                     }
                 }
 
@@ -476,31 +486,15 @@
                 #f5{
                     display: none;
 
-                    @include desk{
-                        display: list-item;
-                    }
-
                     div{
                         background-image: url("../img/Wildlife/Fauna/goat.jpg");
-
-                        @include desk{
-                            height: 190px;
-                        }
                     }
                 }
                 #f6{
                     display: none;
 
-                    @include desk{
-                        display: list-item;
-                    }
-
                     div{
                         background-image: url("../img/Wildlife/Fauna/small.jpg");
-
-                        @include desk{
-                            height: 190px;
-                        }
                     }
                 }
                 #f7{
@@ -512,10 +506,6 @@
                     
                     div{
                         background-image: url("../img/Wildlife/Fauna/wolverine.jpg");
-
-                        @include desk{
-                            height: 190px;
-                        }
                     }
                 }
             }

@@ -935,7 +935,6 @@ footer > div #footer-right #contact .hidden-footer {
 #features > div #features-list > ul > li > div {
   background-size: cover;
   background-position: center;
-  width: 100%;
   height: 134px;
 }
 @media (min-width: 768px) {
@@ -1462,13 +1461,25 @@ footer > div #footer-right #contact .hidden-footer {
 #wildlife > div #fauna-list > ul > li div {
   background-position: center;
   background-size: cover;
+  height: 200px;
   grid-area: img-fl;
+}
+@media (min-width: 1024px) {
+  #wildlife > div #fauna-list > ul > li div {
+    height: 190px;
+  }
 }
 #wildlife > div #fauna-list > ul > li h3 {
   grid-area: title-fl;
 }
 #wildlife > div #fauna-list > ul > li p {
+  display: none;
   grid-area: para-fl;
+}
+@media (min-width: 768px) {
+  #wildlife > div #fauna-list > ul > li p {
+    display: block;
+  }
 }
 #wildlife > div #fauna-list > ul #f1 div {
   background-image: url("../img/Wildlife/Fauna/grizzly.jpg");
@@ -1525,34 +1536,14 @@ footer > div #footer-right #contact .hidden-footer {
 #wildlife > div #fauna-list > ul #f5 {
   display: none;
 }
-@media (min-width: 1024px) {
-  #wildlife > div #fauna-list > ul #f5 {
-    display: list-item;
-  }
-}
 #wildlife > div #fauna-list > ul #f5 div {
   background-image: url("../img/Wildlife/Fauna/goat.jpg");
-}
-@media (min-width: 1024px) {
-  #wildlife > div #fauna-list > ul #f5 div {
-    height: 190px;
-  }
 }
 #wildlife > div #fauna-list > ul #f6 {
   display: none;
 }
-@media (min-width: 1024px) {
-  #wildlife > div #fauna-list > ul #f6 {
-    display: list-item;
-  }
-}
 #wildlife > div #fauna-list > ul #f6 div {
   background-image: url("../img/Wildlife/Fauna/small.jpg");
-}
-@media (min-width: 1024px) {
-  #wildlife > div #fauna-list > ul #f6 div {
-    height: 190px;
-  }
 }
 #wildlife > div #fauna-list > ul #f7 {
   display: none;
@@ -1564,11 +1555,6 @@ footer > div #footer-right #contact .hidden-footer {
 }
 #wildlife > div #fauna-list > ul #f7 div {
   background-image: url("../img/Wildlife/Fauna/wolverine.jpg");
-}
-@media (min-width: 1024px) {
-  #wildlife > div #fauna-list > ul #f7 div {
-    height: 190px;
-  }
 }
 #wildlife #break-img3 > div {
   background-image: url("../img/Wildlife/break-img3.jpg");
