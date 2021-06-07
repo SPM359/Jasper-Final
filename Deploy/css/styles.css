@@ -408,6 +408,7 @@ p {
   margin: 0;
   padding: 0;
   font-size: 1rem;
+  font-weight: 400;
   color: #686261;
 }
 @media (min-width: 1024px) {
@@ -425,14 +426,58 @@ header {
 header > div {
   grid-area: header-content;
 }
+header > div > div {
+  background-image: url("../img/Reduced/logo.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 85px;
+  width: 85px;
+}
+@media (min-width: 768px) {
+  header > div > div {
+    height: 105px;
+    width: 105px;
+  }
+}
+@media (min-width: 768px) {
+  header > div > div {
+    height: 118px;
+    width: 118px;
+  }
+}
+header > div > h1 {
+  color: #FFEEEA;
+}
 header > div a {
   display: none;
 }
 @media (min-width: 768px) {
   header > div a {
     display: block;
+    text-decoration: none;
   }
 }
+header > div a > h4 {
+  color: #F2B876;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+header > div form {
+  color: #CE9D65;
+}
+header > div form button i {
+  color: #F2B876;
+}
+header > div form input {
+  border-color: #CE9D65;
+  color: #CE9D65;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: #FFEEEA;
+}
+
 #warning {
   display: grid;
   grid-template-columns: 15px auto 15px;

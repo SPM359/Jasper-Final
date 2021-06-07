@@ -8,27 +8,54 @@ header{
         grid-area: header-content;
        
         >div{
+            background-image: url("../img/Reduced/logo.jpg");
+            background-position: center;
+            background-size: cover;
+            height: 85px;
+            width: 85px;
 
+            @include tab{
+                height: 105px;
+                width: 105px;
+            }
+            @include tab{
+                height: 118px;
+                width: 118px;
+            }
         }
         >h1{
-
+            color: $brownLight;
         }
         a{
             display: none;
 
             @include tab{
                 display: block;
+                text-decoration: none;
+            }
+
+            >h4{
+                color: $yellowLight;
+                font-family: 'Raleway', sans-serif;
+                font-size: rem-calc(16);
+                font-weight: 400;
             }
             
         }
         form{
+            color: $yellow;
             button{
                 i{
-
+                    color: $yellowLight;
                 }
             }
             input{
-                
+                border-color: $yellow;
+                color: $yellow;
+                font-family: 'Raleway', sans-serif;
+                font-size: rem-calc(16);
+                font-weight: 400;
+                background-color: $brownLight;
             }
         }
     }
