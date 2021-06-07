@@ -1,0 +1,55 @@
+footer{
+    >div{
+        display: grid;
+        grid-template-columns: 60% auto;
+        grid-template-areas: "footer-left footer-right";
+
+        @include tab{
+            grid-template-columns: 50% auto; 
+        }
+        @include desk{
+            grid-template-columns: 40% auto; 
+        }
+        @include hd{
+            grid-template-columns: 60% auto; 
+        }
+        
+        #footer-left{
+            grid-area: footer-left;
+            >ul{
+                >li{
+                    >a{
+                        >h2{
+
+                        }
+                    }
+                }
+            }
+        }
+        #footer-right{
+            grid-area: footer-right;
+            #media{
+                >li{
+                    >a{
+                        >i{
+
+                        }
+                    }
+                }
+            }
+            #contact{
+                >li{
+
+                }
+
+                .hidden-footer{
+                    display: none;
+
+                    @include tab{
+                        display: list-item;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -405,6 +405,41 @@ header > div a {
 #warning div {
   grid-area: warning-content;
 }
+footer > div {
+  display: grid;
+  grid-template-columns: 60% auto;
+  grid-template-areas: "footer-left footer-right";
+}
+@media (min-width: 768px) {
+  footer > div {
+    grid-template-columns: 50% auto;
+  }
+}
+@media (min-width: 1024px) {
+  footer > div {
+    grid-template-columns: 40% auto;
+  }
+}
+@media (min-width: 1440px) {
+  footer > div {
+    grid-template-columns: 60% auto;
+  }
+}
+footer > div #footer-left {
+  grid-area: footer-left;
+}
+footer > div #footer-right {
+  grid-area: footer-right;
+}
+footer > div #footer-right #contact .hidden-footer {
+  display: none;
+}
+@media (min-width: 768px) {
+  footer > div #footer-right #contact .hidden-footer {
+    display: list-item;
+  }
+}
+
 #hero ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
