@@ -3,6 +3,7 @@ footer{
         display: grid;
         grid-template-columns: 60% auto;
         grid-template-areas: "footer-left footer-right";
+        background-color: $orangeDark;
 
         @include tab{
             grid-template-columns: 50% auto; 

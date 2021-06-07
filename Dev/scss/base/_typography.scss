@@ -2,9 +2,47 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Cinzel', serif;
 	margin: 0;
 	padding: 0;
+	font-weight: 700;
+	color: $brownDark;
 }
-p {
+h1{
+	font-size: rem-calc(20);
+
+	@include tab{
+		font-size: rem-calc(24);
+	}
+	@include desk{
+		font-size: rem-calc(28);
+	}
+}
+h2{
+	font-size: rem-calc(16);
+
+	@include tab{
+		font-size: rem-calc(20);
+	}
+	@include desk{
+		font-size: rem-calc(24);
+	}
+}
+h3{
+	font-size: rem-calc(20);
+}
+h4{
+	font-size: rem-calc(12);
+
+	@include tab{
+		font-size: rem-calc(16);
+	}
+}
+p{
 	font-family: 'Raleway', sans-serif;
 	margin: 0;
 	padding: 0;
+	font-size: rem-calc(16);
+	color: $brownDark;
+
+	@include desk{
+		font-size: rem-calc(18);
+	}
 }

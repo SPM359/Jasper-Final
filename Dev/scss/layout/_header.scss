@@ -1,7 +1,8 @@
-header{
+header{ 
     display: grid;
     grid-template-columns: 10px auto 10px;
     grid-template-areas: ". header-content .";
+    background-color: $orange;
 
     >div{
         grid-area: header-content;

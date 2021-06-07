@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 15px auto 15px;
     grid-template-areas: ". warning-content .";
+    background-color: $orangeLight;
 
     @include tab{
         grid-template-columns: 30px auto 30px;

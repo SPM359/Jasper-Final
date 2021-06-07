@@ -71,7 +71,7 @@
                 }
     
                 #article-w1{
-                    display: grid;
+                    display: grid; 
                     grid-template-columns: 50% auto;
                     grid-template-areas: "para-w1 img-w1";
                     grid-area: article-w1;
@@ -232,6 +232,10 @@
                     }
     
                     #z1{
+                        @include desk{
+                            background-color: $greenLight;
+                        }
+
                         >div{
                             background-image: url("../img/Wildlife/Zones/montane.jpg");
                         }
@@ -241,6 +245,9 @@
                         grid-template-columns: 65% auto;
                         grid-template-areas: "zone-para zone-img ";
 
+                        @include desk{
+                            background-color: $green;
+                        }
                         @include hd{
                             grid-template-columns: 60% auto;
                         }
@@ -250,6 +257,10 @@
                         }
                     }
                     #z3{
+
+                        @include desk{
+                            background-color: $greenDark;
+                        }
                         >div{
                             background-image: url("../img/Wildlife/Zones/alpine.jpg");
                         }
@@ -338,6 +349,7 @@
                         @include desk{
                             display: block;
                             grid-area: call-f1;
+                            background-color: $orangeDark;
                         }
                     }
                     #para-f2{
@@ -357,6 +369,7 @@
                     >aside{
                         margin: 0px 24px;
                         grid-area: aside-f1;
+                        background-color: $orange;
 
                         @include desk{
                             margin: 0px 85px;
@@ -446,6 +459,10 @@
                 }
 
                 #f1{
+
+                    @include tab{
+                        background-color: $greenLight;
+                    }
                     @include hd{
                         grid-area: f1;
                     }
@@ -462,6 +479,9 @@
                     }
                 }
                 #f2{
+                    @include tab{
+                        background-color: $green;
+                    }
                     @include hd{
                         grid-area: f2;
                     }
@@ -478,6 +498,9 @@
                     }
                 }
                 #f3{
+                    @include tab{
+                        background-color: $greenLight;
+                    }
                     @include hd{
                         grid-area: f3;
                     }
@@ -494,6 +517,9 @@
                     }
                 }
                 #f4{
+                    @include tab{
+                        background-color: $green;
+                    }
                     @include hd{
                         grid-area: f4;
                     }
@@ -514,6 +540,7 @@
 
                     @include desk{
                         display: list-item;
+                        background-color: $greenDark;
                     }
                     @include hd{
                         grid-area: f5;
@@ -528,6 +555,7 @@
 
                     @include desk{
                         display: list-item;
+                        background-color: $greenLight;
                     }
                     @include hd{
                         grid-area: f6;
@@ -542,6 +570,7 @@
 
                     @include desk{
                         display: list-item;
+                        background-color: $greenDark;
                     }
                     @include hd{
                         grid-area: f7;

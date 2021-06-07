@@ -121,6 +121,7 @@
 
                 @include desk{
                     display: block;
+                    background-color: $orange;
                 }
 
                 >h2{
@@ -152,6 +153,8 @@
                 }
             }
             #aside-c2{
+
+                background-color: $orangeDark;
 
                 @include tab{
                     grid-area: aside-c2;

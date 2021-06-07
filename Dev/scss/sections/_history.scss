@@ -121,6 +121,7 @@
                         grid-template-columns: 22px auto 22px;
                         grid-template-areas: ". asideh1-content .";
                         grid-area: aside-h1;
+                        background-color: $orange;
                     }
                     @include hd{
                         grid-template-columns: 71px auto 71px;

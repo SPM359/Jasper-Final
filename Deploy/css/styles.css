@@ -1,3 +1,7 @@
+html {
+  font-size: 100%;
+}
+
 figure {
   padding: 0;
   margin: 0;
@@ -354,22 +358,69 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Cinzel", serif;
   margin: 0;
   padding: 0;
+  font-weight: 700;
+  color: #686261;
+}
+
+h1 {
+  font-size: 1.25rem;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+}
+
+h2 {
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 0.75rem;
+}
+@media (min-width: 768px) {
+  h4 {
+    font-size: 1rem;
+  }
 }
 
 p {
   font-family: "Raleway", sans-serif;
   margin: 0;
   padding: 0;
+  font-size: 1rem;
+  color: #686261;
 }
-
-html {
-  font-size: 100%;
+@media (min-width: 1024px) {
+  p {
+    font-size: 1.125rem;
+  }
 }
 
 header {
   display: grid;
   grid-template-columns: 10px auto 10px;
   grid-template-areas: ". header-content .";
+  background-color: #7A4419;
 }
 header > div {
   grid-area: header-content;
@@ -386,6 +437,7 @@ header > div a {
   display: grid;
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". warning-content .";
+  background-color: #D0742B;
 }
 @media (min-width: 768px) {
   #warning {
@@ -409,6 +461,7 @@ footer > div {
   display: grid;
   grid-template-columns: 60% auto;
   grid-template-areas: "footer-left footer-right";
+  background-color: #3B210C;
 }
 @media (min-width: 768px) {
   footer > div {
@@ -650,6 +703,7 @@ footer > div #footer-right #contact .hidden-footer {
     grid-template-columns: 22px auto 22px;
     grid-template-areas: ". asideh1-content .";
     grid-area: aside-h1;
+    background-color: #7A4419;
   }
 }
 @media (min-width: 1440px) {
@@ -827,6 +881,7 @@ footer > div #footer-right #contact .hidden-footer {
     grid-template-columns: 20% auto;
     grid-template-areas: "img-fa para-fa";
     grid-area: aside-f1;
+    background-color: #3B210C;
   }
 }
 #features > div #features-content aside > div {
@@ -953,11 +1008,21 @@ footer > div #footer-right #contact .hidden-footer {
 #features > div #features-list > ul #n1 {
   grid-area: n1;
 }
+@media (min-width: 768px) {
+  #features > div #features-list > ul #n1 {
+    background-color: #363B36;
+  }
+}
 #features > div #features-list > ul #n1 > div {
   background-image: url("../img/Features/athbasca.jpg");
 }
 #features > div #features-list > ul #n2 {
   grid-area: n2;
+}
+@media (min-width: 768px) {
+  #features > div #features-list > ul #n2 {
+    background-color: #727D71;
+  }
 }
 #features > div #features-list > ul #n2 > div {
   background-image: url("../img/Features/icefields.jpg");
@@ -969,6 +1034,7 @@ footer > div #footer-right #contact .hidden-footer {
 @media (min-width: 1024px) {
   #features > div #features-list > ul #n3 {
     display: block;
+    background-color: #363B36;
   }
 }
 #features > div #features-list > ul #n3 > div {
@@ -981,6 +1047,7 @@ footer > div #footer-right #contact .hidden-footer {
 @media (min-width: 1024px) {
   #features > div #features-list > ul #n4 {
     display: block;
+    background-color: #BACCB9;
   }
 }
 #features > div #features-list > ul #n4 > div {
@@ -989,11 +1056,21 @@ footer > div #footer-right #contact .hidden-footer {
 #features > div #features-list > ul #n5 {
   grid-area: n5;
 }
+@media (min-width: 768px) {
+  #features > div #features-list > ul #n5 {
+    background-color: #727D71;
+  }
+}
 #features > div #features-list > ul #n5 > div {
   background-image: url("../img/Features/lake.jpg");
 }
 #features > div #features-list > ul #n6 {
   grid-area: n6;
+}
+@media (min-width: 768px) {
+  #features > div #features-list > ul #n6 {
+    background-color: #BACCB9;
+  }
 }
 #features > div #features-list > ul #n6 > div {
   background-image: url("../img/Features/edith.jpg");
@@ -1005,6 +1082,7 @@ footer > div #footer-right #contact .hidden-footer {
 @media (min-width: 1024px) {
   #features > div #features-list > ul #n7 {
     display: block;
+    background-color: #363B36;
   }
 }
 #features > div #features-list > ul #n7 > div {
@@ -1012,6 +1090,11 @@ footer > div #footer-right #contact .hidden-footer {
 }
 #features > div #features-list > ul #nex {
   grid-area: nex;
+}
+@media (min-width: 1024px) {
+  #features > div #features-list > ul #nex {
+    background-color: #7A4419;
+  }
 }
 #features > div #features-list > ul #nex > div {
   background-image: url("../img/Features/features-video.jpg");
@@ -1285,6 +1368,11 @@ footer > div #footer-right #contact .hidden-footer {
 #wildlife > div #life-zones #zone-content > ul > li > p {
   grid-area: zone-para;
 }
+@media (min-width: 1024px) {
+  #wildlife > div #life-zones #zone-content > ul #z1 {
+    background-color: #BACCB9;
+  }
+}
 #wildlife > div #life-zones #zone-content > ul #z1 > div {
   background-image: url("../img/Wildlife/Zones/montane.jpg");
 }
@@ -1293,6 +1381,11 @@ footer > div #footer-right #contact .hidden-footer {
   grid-template-columns: 65% auto;
   grid-template-areas: "zone-para zone-img ";
 }
+@media (min-width: 1024px) {
+  #wildlife > div #life-zones #zone-content > ul #z2 {
+    background-color: #727D71;
+  }
+}
 @media (min-width: 1440px) {
   #wildlife > div #life-zones #zone-content > ul #z2 {
     grid-template-columns: 60% auto;
@@ -1300,6 +1393,11 @@ footer > div #footer-right #contact .hidden-footer {
 }
 #wildlife > div #life-zones #zone-content > ul #z2 > div {
   background-image: url("../img/Wildlife/Zones/subalpine.jpg");
+}
+@media (min-width: 1024px) {
+  #wildlife > div #life-zones #zone-content > ul #z3 {
+    background-color: #363B36;
+  }
 }
 #wildlife > div #life-zones #zone-content > ul #z3 > div {
   background-image: url("../img/Wildlife/Zones/alpine.jpg");
@@ -1387,6 +1485,7 @@ footer > div #footer-right #contact .hidden-footer {
   #wildlife > div #fauna #fauna-content > div #fauna-callout {
     display: block;
     grid-area: call-f1;
+    background-color: #3B210C;
   }
 }
 #wildlife > div #fauna #fauna-content > div #para-f2 {
@@ -1406,6 +1505,7 @@ footer > div #footer-right #contact .hidden-footer {
 #wildlife > div #fauna #fauna-content > div > aside {
   margin: 0px 24px;
   grid-area: aside-f1;
+  background-color: #7A4419;
 }
 @media (min-width: 1024px) {
   #wildlife > div #fauna #fauna-content > div > aside {
@@ -1490,6 +1590,11 @@ footer > div #footer-right #contact .hidden-footer {
     display: block;
   }
 }
+@media (min-width: 768px) {
+  #wildlife > div #fauna-list > ul #f1 {
+    background-color: #BACCB9;
+  }
+}
 @media (min-width: 1440px) {
   #wildlife > div #fauna-list > ul #f1 {
     grid-area: f1;
@@ -1506,6 +1611,11 @@ footer > div #footer-right #contact .hidden-footer {
 @media (min-width: 1024px) {
   #wildlife > div #fauna-list > ul #f1 div {
     height: 190px;
+  }
+}
+@media (min-width: 768px) {
+  #wildlife > div #fauna-list > ul #f2 {
+    background-color: #727D71;
   }
 }
 @media (min-width: 1440px) {
@@ -1526,6 +1636,11 @@ footer > div #footer-right #contact .hidden-footer {
     height: 190px;
   }
 }
+@media (min-width: 768px) {
+  #wildlife > div #fauna-list > ul #f3 {
+    background-color: #BACCB9;
+  }
+}
 @media (min-width: 1440px) {
   #wildlife > div #fauna-list > ul #f3 {
     grid-area: f3;
@@ -1542,6 +1657,11 @@ footer > div #footer-right #contact .hidden-footer {
 @media (min-width: 1024px) {
   #wildlife > div #fauna-list > ul #f3 div {
     height: 190px;
+  }
+}
+@media (min-width: 768px) {
+  #wildlife > div #fauna-list > ul #f4 {
+    background-color: #727D71;
   }
 }
 @media (min-width: 1440px) {
@@ -1568,6 +1688,7 @@ footer > div #footer-right #contact .hidden-footer {
 @media (min-width: 1024px) {
   #wildlife > div #fauna-list > ul #f5 {
     display: list-item;
+    background-color: #363B36;
   }
 }
 @media (min-width: 1440px) {
@@ -1584,6 +1705,7 @@ footer > div #footer-right #contact .hidden-footer {
 @media (min-width: 1024px) {
   #wildlife > div #fauna-list > ul #f6 {
     display: list-item;
+    background-color: #BACCB9;
   }
 }
 @media (min-width: 1440px) {
@@ -1600,6 +1722,7 @@ footer > div #footer-right #contact .hidden-footer {
 @media (min-width: 1024px) {
   #wildlife > div #fauna-list > ul #f7 {
     display: list-item;
+    background-color: #363B36;
   }
 }
 @media (min-width: 1440px) {
@@ -1758,6 +1881,7 @@ footer > div #footer-right #contact .hidden-footer {
 @media (min-width: 1024px) {
   #camping > div #camping-content #aside-c1 {
     display: block;
+    background-color: #7A4419;
   }
 }
 #camping > div #camping-content #aside-c1 > div {
@@ -1774,6 +1898,9 @@ footer > div #footer-right #contact .hidden-footer {
   #camping > div #camping-content > ul {
     grid-area: camping-list;
   }
+}
+#camping > div #camping-content #aside-c2 {
+  background-color: #3B210C;
 }
 @media (min-width: 768px) {
   #camping > div #camping-content #aside-c2 {
@@ -1994,6 +2121,9 @@ footer > div #footer-right #contact .hidden-footer {
   #activities > div #activities-list > ul > li > div {
     height: 336px;
   }
+}
+#activities > div #activities-list > ul > li > aside {
+  background-color: #948B89;
 }
 #activities > div #activities-list > ul > li > aside > h2 {
   display: none;
