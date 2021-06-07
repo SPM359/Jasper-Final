@@ -239,6 +239,9 @@
                         >div{
                             background-image: url("../img/Wildlife/Zones/montane.jpg");
                         }
+                        >h3{
+                            color: $brownLight;
+                        }
                     }
                     #z2{
                         display: grid;
@@ -255,6 +258,12 @@
                         >div{
                             background-image: url("../img/Wildlife/Zones/subalpine.jpg");
                         }
+                        >h3{
+                            color: $brownLight;
+                        }
+                        >p{
+                            color: $brownLight;
+                        }
                     }
                     #z3{
 
@@ -263,6 +272,9 @@
                         }
                         >div{
                             background-image: url("../img/Wildlife/Zones/alpine.jpg");
+                        }
+                        >p{
+                            color: $brownLight;
                         }
                     }
                 }
@@ -350,6 +362,10 @@
                             display: block;
                             grid-area: call-f1;
                             background-color: $orangeDark;
+                            color: $brownLight;
+                            font-size: rem-calc(48);
+                            font-weight: 700;
+                            font-style: italic;
                         }
                     }
                     #para-f2{
@@ -379,10 +395,10 @@
                         }
 
                         >h2{
-
+                            color: $brownLight;
                         }
                         >p{
-
+                            color: $brownLight;
                         }
                     }
                     #img-f2{
@@ -477,6 +493,9 @@
                             height: 190px;
                         }
                     }
+                    >h3{
+                        color: $brownLight;
+                    }
                 }
                 #f2{
                     @include tab{
@@ -495,6 +514,12 @@
                         @include desk{
                             height: 190px;
                         }
+                    }
+                    >h3{
+                        color: $brownLight;
+                    }
+                    >p{
+                        color: $brownLight;
                     }
                 }
                 #f3{
@@ -515,6 +540,9 @@
                             height: 190px;
                         }
                     }
+                    >h3{
+                        color: $brownLight;
+                    }
                 }
                 #f4{
                     @include tab{
@@ -534,6 +562,12 @@
                             height: 190px;
                         }
                     }
+                    >h3{
+                        color: $brownLight;
+                    }
+                    >p{
+                        color: $brownLight;
+                    }
                 }
                 #f5{
                     display: none;
@@ -548,6 +582,9 @@
 
                     div{
                         background-image: url("../img/Wildlife/Fauna/goat.jpg");
+                    }
+                    >p{
+                        color: $brownLight;
                     }
                 }
                 #f6{
@@ -564,6 +601,9 @@
                     div{
                         background-image: url("../img/Wildlife/Fauna/small.jpg");
                     }
+                    >h3{
+                        color: $brownLight;
+                    }
                 }
                 #f7{
                     display: none;
@@ -578,6 +618,9 @@
                     
                     div{
                         background-image: url("../img/Wildlife/Fauna/wolverine.jpg");
+                    }
+                    >p{
+                        color: $brownLight;
                     }
                 }
             }

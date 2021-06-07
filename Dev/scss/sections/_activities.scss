@@ -134,6 +134,7 @@
 
                             @include tab{
                                 display: block;
+                                color: $brownLight;
                             }
                         }
                         >p{
@@ -141,6 +142,7 @@
 
                             @include desk{
                                 display: block;
+                                color: $brownLight;
                             }
                         }
                     }
@@ -192,6 +194,15 @@
                         background-position: top;
                     }
                 }
+            }
+        }
+        #top{
+            >a{
+                font-family: 'Raleway', sans-serif;
+                font-size: rem-calc(16);
+                font-weight: 400;
+                color: $yellowLight;
+                text-decoration: none;
             }
         }
     }

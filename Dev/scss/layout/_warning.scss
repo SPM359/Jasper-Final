@@ -18,15 +18,16 @@
 
     div{
         grid-area: warning-content;
+        display: flex;
 
         #left-exclam{
-
+            color: $brownLight;
         }
         h4{
-
+            color: $brownLight;
         }
         #right-exclam{
-
+            color: $brownLight;
         }
     }
 }

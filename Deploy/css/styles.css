@@ -501,7 +501,18 @@ header > div form input {
 }
 #warning div {
   grid-area: warning-content;
+  display: flex;
 }
+#warning div #left-exclam {
+  color: #FFEEEA;
+}
+#warning div h4 {
+  color: #FFEEEA;
+}
+#warning div #right-exclam {
+  color: #FFEEEA;
+}
+
 footer > div {
   display: grid;
   grid-template-columns: 60% auto;
@@ -759,6 +770,12 @@ footer > div #footer-right #contact .hidden-footer {
 #history > div #history-content aside > div {
   grid-area: asideh1-content;
 }
+#history > div #history-content aside > div h2 {
+  color: #FFEEEA;
+}
+#history > div #history-content aside > div p {
+  color: #FFEEEA;
+}
 #history > div #article-h2 {
   display: none;
 }
@@ -943,6 +960,10 @@ footer > div #footer-right #contact .hidden-footer {
 }
 #features > div #features-content aside > p {
   grid-area: para-fa;
+  color: #FFEEEA;
+  font-size: 3rem;
+  font-weight: 700;
+  font-style: italic;
 }
 #features > div #features-content #article-f2 {
   display: grid;
@@ -1061,6 +1082,9 @@ footer > div #footer-right #contact .hidden-footer {
 #features > div #features-list > ul #n1 > div {
   background-image: url("../img/Features/athbasca.jpg");
 }
+#features > div #features-list > ul #n1 > p {
+  color: #FFEEEA;
+}
 #features > div #features-list > ul #n2 {
   grid-area: n2;
 }
@@ -1071,6 +1095,12 @@ footer > div #footer-right #contact .hidden-footer {
 }
 #features > div #features-list > ul #n2 > div {
   background-image: url("../img/Features/icefields.jpg");
+}
+#features > div #features-list > ul #n2 > h3 {
+  color: #FFEEEA;
+}
+#features > div #features-list > ul #n2 > p {
+  color: #FFEEEA;
 }
 #features > div #features-list > ul #n3 {
   display: none;
@@ -1085,6 +1115,9 @@ footer > div #footer-right #contact .hidden-footer {
 #features > div #features-list > ul #n3 > div {
   background-image: url("../img/Features/parkway.jpg");
 }
+#features > div #features-list > ul #n3 > p {
+  color: #FFEEEA;
+}
 #features > div #features-list > ul #n4 {
   display: none;
   grid-area: n4;
@@ -1098,6 +1131,9 @@ footer > div #footer-right #contact .hidden-footer {
 #features > div #features-list > ul #n4 > div {
   background-image: url("../img/Features/canyon.jpg");
 }
+#features > div #features-list > ul #n4 > h3 {
+  color: #FFEEEA;
+}
 #features > div #features-list > ul #n5 {
   grid-area: n5;
 }
@@ -1109,6 +1145,12 @@ footer > div #footer-right #contact .hidden-footer {
 #features > div #features-list > ul #n5 > div {
   background-image: url("../img/Features/lake.jpg");
 }
+#features > div #features-list > ul #n5 > h3 {
+  color: #FFEEEA;
+}
+#features > div #features-list > ul #n5 > p {
+  color: #FFEEEA;
+}
 #features > div #features-list > ul #n6 {
   grid-area: n6;
 }
@@ -1119,6 +1161,9 @@ footer > div #footer-right #contact .hidden-footer {
 }
 #features > div #features-list > ul #n6 > div {
   background-image: url("../img/Features/edith.jpg");
+}
+#features > div #features-list > ul #n6 > h3 {
+  color: #FFEEEA;
 }
 #features > div #features-list > ul #n7 {
   display: none;
@@ -1133,6 +1178,9 @@ footer > div #footer-right #contact .hidden-footer {
 #features > div #features-list > ul #n7 > div {
   background-image: url("../img/Features/sunwapta.jpg");
 }
+#features > div #features-list > ul #n7 > p {
+  color: #FFEEEA;
+}
 #features > div #features-list > ul #nex {
   grid-area: nex;
 }
@@ -1143,6 +1191,12 @@ footer > div #footer-right #contact .hidden-footer {
 }
 #features > div #features-list > ul #nex > div {
   background-image: url("../img/Features/features-video.jpg");
+}
+#features > div #features-list > ul #nex > h1 {
+  color: #FFEEEA;
+}
+#features > div #features-list > ul #nex > p {
+  color: #FFEEEA;
 }
 #features > div #break-img2 > div {
   background-image: url("../img/Features/break-img2.jpg");
@@ -1421,6 +1475,9 @@ footer > div #footer-right #contact .hidden-footer {
 #wildlife > div #life-zones #zone-content > ul #z1 > div {
   background-image: url("../img/Wildlife/Zones/montane.jpg");
 }
+#wildlife > div #life-zones #zone-content > ul #z1 > h3 {
+  color: #FFEEEA;
+}
 #wildlife > div #life-zones #zone-content > ul #z2 {
   display: grid;
   grid-template-columns: 65% auto;
@@ -1439,6 +1496,12 @@ footer > div #footer-right #contact .hidden-footer {
 #wildlife > div #life-zones #zone-content > ul #z2 > div {
   background-image: url("../img/Wildlife/Zones/subalpine.jpg");
 }
+#wildlife > div #life-zones #zone-content > ul #z2 > h3 {
+  color: #FFEEEA;
+}
+#wildlife > div #life-zones #zone-content > ul #z2 > p {
+  color: #FFEEEA;
+}
 @media (min-width: 1024px) {
   #wildlife > div #life-zones #zone-content > ul #z3 {
     background-color: #363B36;
@@ -1446,6 +1509,9 @@ footer > div #footer-right #contact .hidden-footer {
 }
 #wildlife > div #life-zones #zone-content > ul #z3 > div {
   background-image: url("../img/Wildlife/Zones/alpine.jpg");
+}
+#wildlife > div #life-zones #zone-content > ul #z3 > p {
+  color: #FFEEEA;
 }
 #wildlife > div #fauna #fauna-title {
   margin-left: 109px;
@@ -1531,6 +1597,10 @@ footer > div #footer-right #contact .hidden-footer {
     display: block;
     grid-area: call-f1;
     background-color: #3B210C;
+    color: #FFEEEA;
+    font-size: 3rem;
+    font-weight: 700;
+    font-style: italic;
   }
 }
 #wildlife > div #fauna #fauna-content > div #para-f2 {
@@ -1561,6 +1631,12 @@ footer > div #footer-right #contact .hidden-footer {
   #wildlife > div #fauna #fauna-content > div > aside {
     margin: 0px 90px;
   }
+}
+#wildlife > div #fauna #fauna-content > div > aside > h2 {
+  color: #FFEEEA;
+}
+#wildlife > div #fauna #fauna-content > div > aside > p {
+  color: #FFEEEA;
 }
 #wildlife > div #fauna #fauna-content > div #img-f2 {
   background-image: url("../img/Wildlife/Fauna/fauna-2.jpg");
@@ -1658,6 +1734,9 @@ footer > div #footer-right #contact .hidden-footer {
     height: 190px;
   }
 }
+#wildlife > div #fauna-list > ul #f1 > h3 {
+  color: #FFEEEA;
+}
 @media (min-width: 768px) {
   #wildlife > div #fauna-list > ul #f2 {
     background-color: #727D71;
@@ -1680,6 +1759,12 @@ footer > div #footer-right #contact .hidden-footer {
   #wildlife > div #fauna-list > ul #f2 div {
     height: 190px;
   }
+}
+#wildlife > div #fauna-list > ul #f2 > h3 {
+  color: #FFEEEA;
+}
+#wildlife > div #fauna-list > ul #f2 > p {
+  color: #FFEEEA;
 }
 @media (min-width: 768px) {
   #wildlife > div #fauna-list > ul #f3 {
@@ -1704,6 +1789,9 @@ footer > div #footer-right #contact .hidden-footer {
     height: 190px;
   }
 }
+#wildlife > div #fauna-list > ul #f3 > h3 {
+  color: #FFEEEA;
+}
 @media (min-width: 768px) {
   #wildlife > div #fauna-list > ul #f4 {
     background-color: #727D71;
@@ -1727,6 +1815,12 @@ footer > div #footer-right #contact .hidden-footer {
     height: 190px;
   }
 }
+#wildlife > div #fauna-list > ul #f4 > h3 {
+  color: #FFEEEA;
+}
+#wildlife > div #fauna-list > ul #f4 > p {
+  color: #FFEEEA;
+}
 #wildlife > div #fauna-list > ul #f5 {
   display: none;
 }
@@ -1743,6 +1837,9 @@ footer > div #footer-right #contact .hidden-footer {
 }
 #wildlife > div #fauna-list > ul #f5 div {
   background-image: url("../img/Wildlife/Fauna/goat.jpg");
+}
+#wildlife > div #fauna-list > ul #f5 > p {
+  color: #FFEEEA;
 }
 #wildlife > div #fauna-list > ul #f6 {
   display: none;
@@ -1761,6 +1858,9 @@ footer > div #footer-right #contact .hidden-footer {
 #wildlife > div #fauna-list > ul #f6 div {
   background-image: url("../img/Wildlife/Fauna/small.jpg");
 }
+#wildlife > div #fauna-list > ul #f6 > h3 {
+  color: #FFEEEA;
+}
 #wildlife > div #fauna-list > ul #f7 {
   display: none;
 }
@@ -1777,6 +1877,9 @@ footer > div #footer-right #contact .hidden-footer {
 }
 #wildlife > div #fauna-list > ul #f7 div {
   background-image: url("../img/Wildlife/Fauna/wolverine.jpg");
+}
+#wildlife > div #fauna-list > ul #f7 > p {
+  color: #FFEEEA;
 }
 #wildlife #break-img3 > div {
   background-image: url("../img/Wildlife/break-img3.jpg");
@@ -1929,6 +2032,9 @@ footer > div #footer-right #contact .hidden-footer {
     background-color: #7A4419;
   }
 }
+#camping > div #camping-content #aside-c1 > h2 {
+  color: #FFEEEA;
+}
 #camping > div #camping-content #aside-c1 > div {
   background-image: url("../img/Camping/camping-weather.jpg");
   background-position: center;
@@ -1962,6 +2068,21 @@ footer > div #footer-right #contact .hidden-footer {
 @media (min-width: 1024px) {
   #camping > div #camping-content #aside-c2 #camping-info {
     grid-area: camping-info;
+  }
+}
+#camping > div #camping-content #aside-c2 #camping-info > h2 {
+  color: #FFEEEA;
+}
+#camping > div #camping-content #aside-c2 #camping-info > a {
+  color: #FFEEEA;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+}
+@media (min-width: 1024px) {
+  #camping > div #camping-content #aside-c2 #camping-info > a {
+    font-size: 1.125rem;
   }
 }
 #camping > div #camping-content #aside-c2 #img-c2 {
@@ -2176,6 +2297,7 @@ footer > div #footer-right #contact .hidden-footer {
 @media (min-width: 768px) {
   #activities > div #activities-list > ul > li > aside > h2 {
     display: block;
+    color: #FFEEEA;
   }
 }
 #activities > div #activities-list > ul > li > aside > p {
@@ -2184,6 +2306,7 @@ footer > div #footer-right #contact .hidden-footer {
 @media (min-width: 1024px) {
   #activities > div #activities-list > ul > li > aside > p {
     display: block;
+    color: #FFEEEA;
   }
 }
 #activities > div #activities-list > ul #a1 {
@@ -2223,4 +2346,11 @@ footer > div #footer-right #contact .hidden-footer {
 #activities > div #activities-list > ul #a6 > div {
   background-image: url("../img/Activities/stargazing.jpg");
   background-position: top;
+}
+#activities > div #top > a {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #F2B876;
+  text-decoration: none;
 }

@@ -125,7 +125,7 @@
                 }
 
                 >h2{
-
+                    color: $brownLight;
                 }
                 >div{
                     background-image: url("../img/Camping/camping-weather.jpg");
@@ -172,10 +172,18 @@
                     }
 
                     >h2{
-    
+                        color: $brownLight;
                     }
                     >a{
-        
+                        color: $brownLight;
+                        text-decoration: none;
+                        font-size: rem-calc(16);
+                        font-weight: 400;
+                        font-family: 'Raleway', sans-serif;
+
+                        @include desk{
+                            font-size: rem-calc(18);
+                        }
                     }
                 }
                 #img-c2{

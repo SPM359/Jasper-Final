@@ -121,6 +121,10 @@
                 }
                 >p{
                     grid-area: para-fa;
+                    color: $brownLight;
+                    font-size: rem-calc(48);
+                    font-weight: 700;
+                    font-style: italic;
                 }
             }
             #article-f2{
@@ -242,6 +246,9 @@
                     >div{
                         background-image: url("../img/Features/athbasca.jpg");
                     }
+                    >p{
+                        color: $brownLight;
+                    }
                 }
                 #n2{
                     grid-area: n2;
@@ -252,6 +259,12 @@
 
                     >div{
                         background-image: url("../img/Features/icefields.jpg");
+                    }
+                    >h3{
+                        color: $brownLight;
+                    }
+                    >p{
+                        color: $brownLight;
                     }
                 }
                 #n3{
@@ -266,6 +279,9 @@
                     >div{
                         background-image: url("../img/Features/parkway.jpg");
                     }
+                    >p{
+                        color: $brownLight;
+                    }
                 }
                 #n4{
                     display: none;
@@ -279,6 +295,9 @@
                     >div{
                         background-image: url("../img/Features/canyon.jpg");
                     }
+                    >h3{
+                        color: $brownLight;
+                    }
                 }
                 #n5{
                     grid-area: n5;
@@ -290,6 +309,12 @@
                     >div{
                         background-image: url("../img/Features/lake.jpg");
                     }
+                    >h3{
+                        color: $brownLight;
+                    }
+                    >p{
+                        color: $brownLight;
+                    }
                 }
                 #n6{
                     grid-area: n6;
@@ -300,6 +325,9 @@
                     
                     >div{
                         background-image: url("../img/Features/edith.jpg");
+                    }
+                    >h3{
+                        color: $brownLight;
                     }
                 }
                 #n7{
@@ -314,6 +342,9 @@
                     >div{
                         background-image: url("../img/Features/sunwapta.jpg");
                     }
+                    >p{
+                        color: $brownLight;
+                    }
                 }
                 #nex{
                     grid-area: nex;
@@ -324,6 +355,12 @@
 
                     >div{
                         background-image: url("../img/Features/features-video.jpg");
+                    }
+                    >h1{
+                        color: $brownLight;
+                    }
+                    >p{
+                        color: $brownLight;
                     }
                 }
             }
