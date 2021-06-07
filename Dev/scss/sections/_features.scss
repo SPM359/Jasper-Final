@@ -357,10 +357,18 @@
                         background-image: url("../img/Features/features-video.jpg");
                     }
                     >h1{
-                        color: $brownLight;
+
+                        @include desk{
+                            color: $brownLight;
+                        }
                     }
                     >p{
-                        color: $brownLight;
+                        display: none;
+
+                        @include desk{
+                            display: block;
+                            color: $brownLight;
+                        }
                     }
                 }
             }

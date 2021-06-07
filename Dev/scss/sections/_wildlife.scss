@@ -439,7 +439,8 @@
                 >li{
                     display: grid;
                     grid-template-columns: 75% auto;
-                    grid-template-areas: "img-fl .";
+                    grid-template-areas: "img-fl box-fl"
+                                         "title-fl .";
 
                     @include tab{
                         grid-template-columns: 45% auto;
@@ -462,6 +463,9 @@
                         }
                     }
                     h3{
+                        // border-top: 50px solid $greenDark;
+                        // border-right: 100px solid transparent;
+                        // width: 200px;
                         grid-area: title-fl;
                     }
                     p{
@@ -470,6 +474,16 @@
 
                         @include tab{
                             display: block;
+                        }
+                    }
+                    article{
+                        height: 200px;
+                        width: 100%;
+                        grid-area: box-fl;
+                        margin-left: 20px;
+
+                        @include tab{
+                            display: none;
                         }
                     }
                 }
@@ -496,6 +510,9 @@
                     >h3{
                         color: $brownLight;
                     }
+                    >article{
+                        background-color: $greenLight;
+                    }
                 }
                 #f2{
                     @include tab{
@@ -521,6 +538,9 @@
                     >p{
                         color: $brownLight;
                     }
+                    >article{
+                        background-color: $green;
+                    }
                 }
                 #f3{
                     @include tab{
@@ -542,6 +562,9 @@
                     }
                     >h3{
                         color: $brownLight;
+                    }
+                    >article{
+                        background-color: $greenLight;
                     }
                 }
                 #f4{
@@ -567,6 +590,9 @@
                     }
                     >p{
                         color: $brownLight;
+                    }
+                    >article{
+                        background-color: $green;
                     }
                 }
                 #f5{

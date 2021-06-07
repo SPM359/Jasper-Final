@@ -1210,11 +1210,19 @@ footer > div #footer-right #contact .hidden-footer {
 #features > div #features-list > ul #nex > div {
   background-image: url("../img/Features/features-video.jpg");
 }
-#features > div #features-list > ul #nex > h1 {
-  color: #FFEEEA;
+@media (min-width: 1024px) {
+  #features > div #features-list > ul #nex > h1 {
+    color: #FFEEEA;
+  }
 }
 #features > div #features-list > ul #nex > p {
-  color: #FFEEEA;
+  display: none;
+}
+@media (min-width: 1024px) {
+  #features > div #features-list > ul #nex > p {
+    display: block;
+    color: #FFEEEA;
+  }
 }
 #features > div #break-img2 > div {
   background-image: url("../img/Features/break-img2.jpg");
@@ -1693,7 +1701,7 @@ footer > div #footer-right #contact .hidden-footer {
 #wildlife > div #fauna-list > ul > li {
   display: grid;
   grid-template-columns: 75% auto;
-  grid-template-areas: "img-fl .";
+  grid-template-areas: "img-fl box-fl" "title-fl .";
 }
 @media (min-width: 768px) {
   #wildlife > div #fauna-list > ul > li {
@@ -1729,6 +1737,17 @@ footer > div #footer-right #contact .hidden-footer {
     display: block;
   }
 }
+#wildlife > div #fauna-list > ul > li article {
+  height: 200px;
+  width: 100%;
+  grid-area: box-fl;
+  margin-left: 20px;
+}
+@media (min-width: 768px) {
+  #wildlife > div #fauna-list > ul > li article {
+    display: none;
+  }
+}
 @media (min-width: 768px) {
   #wildlife > div #fauna-list > ul #f1 {
     background-color: #BACCB9;
@@ -1754,6 +1773,9 @@ footer > div #footer-right #contact .hidden-footer {
 }
 #wildlife > div #fauna-list > ul #f1 > h3 {
   color: #FFEEEA;
+}
+#wildlife > div #fauna-list > ul #f1 > article {
+  background-color: #BACCB9;
 }
 @media (min-width: 768px) {
   #wildlife > div #fauna-list > ul #f2 {
@@ -1784,6 +1806,9 @@ footer > div #footer-right #contact .hidden-footer {
 #wildlife > div #fauna-list > ul #f2 > p {
   color: #FFEEEA;
 }
+#wildlife > div #fauna-list > ul #f2 > article {
+  background-color: #727D71;
+}
 @media (min-width: 768px) {
   #wildlife > div #fauna-list > ul #f3 {
     background-color: #BACCB9;
@@ -1809,6 +1834,9 @@ footer > div #footer-right #contact .hidden-footer {
 }
 #wildlife > div #fauna-list > ul #f3 > h3 {
   color: #FFEEEA;
+}
+#wildlife > div #fauna-list > ul #f3 > article {
+  background-color: #BACCB9;
 }
 @media (min-width: 768px) {
   #wildlife > div #fauna-list > ul #f4 {
@@ -1838,6 +1866,9 @@ footer > div #footer-right #contact .hidden-footer {
 }
 #wildlife > div #fauna-list > ul #f4 > p {
   color: #FFEEEA;
+}
+#wildlife > div #fauna-list > ul #f4 > article {
+  background-color: #727D71;
 }
 #wildlife > div #fauna-list > ul #f5 {
   display: none;
@@ -2364,6 +2395,10 @@ footer > div #footer-right #contact .hidden-footer {
 #activities > div #activities-list > ul #a6 > div {
   background-image: url("../img/Activities/stargazing.jpg");
   background-position: top;
+}
+#activities > div #top {
+  display: flex;
+  justify-content: center;
 }
 #activities > div #top > a {
   font-family: "Raleway", sans-serif;
