@@ -1,10 +1,12 @@
 header{ 
     display: grid;
-    grid-template-columns: 10px auto 10px;
-    grid-template-areas: ". header-content .";
+    grid-template-columns: auto 10px;
+    grid-template-areas: "header-content .";
     background-color: $orange;
 
     >div{
+        display: flex;
+        align-items: center;
         grid-area: header-content;
        
         >div{
@@ -13,14 +15,20 @@ header{
             background-size: cover;
             height: 85px;
             width: 85px;
+            margin-right: 5px;
 
             @include tab{
                 height: 105px;
                 width: 105px;
+                margin-right: 16px;
             }
-            @include tab{
+            @include desk{
                 height: 118px;
                 width: 118px;
+                margin-right: 62px;
+            }
+            @include hd{
+                margin-right: 73px;
             }
         }
         >h1{
@@ -28,6 +36,8 @@ header{
         }
         a{
             display: none;
+            margin-left: auto;
+            margin-right: 10px;
 
             @include tab{
                 display: block;
@@ -44,6 +54,7 @@ header{
         }
         form{
             color: $yellow;
+            margin-left: auto;
             button{
                 i{
                     color: $yellowLight;

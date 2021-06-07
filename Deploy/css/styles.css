@@ -419,11 +419,13 @@ p {
 
 header {
   display: grid;
-  grid-template-columns: 10px auto 10px;
-  grid-template-areas: ". header-content .";
+  grid-template-columns: auto 10px;
+  grid-template-areas: "header-content .";
   background-color: #7A4419;
 }
 header > div {
+  display: flex;
+  align-items: center;
   grid-area: header-content;
 }
 header > div > div {
@@ -432,17 +434,25 @@ header > div > div {
   background-size: cover;
   height: 85px;
   width: 85px;
+  margin-right: 5px;
 }
 @media (min-width: 768px) {
   header > div > div {
     height: 105px;
     width: 105px;
+    margin-right: 16px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   header > div > div {
     height: 118px;
     width: 118px;
+    margin-right: 62px;
+  }
+}
+@media (min-width: 1440px) {
+  header > div > div {
+    margin-right: 73px;
   }
 }
 header > div > h1 {
@@ -450,6 +460,8 @@ header > div > h1 {
 }
 header > div a {
   display: none;
+  margin-left: auto;
+  margin-right: 10px;
 }
 @media (min-width: 768px) {
   header > div a {
@@ -465,6 +477,7 @@ header > div a > h4 {
 }
 header > div form {
   color: #CE9D65;
+  margin-left: auto;
 }
 header > div form button i {
   color: #F2B876;
