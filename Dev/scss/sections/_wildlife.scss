@@ -398,6 +398,14 @@
                 @include tab{
                     margin-right: 10px;
                 }
+                @include hd{
+                    display: grid;
+                    grid-template-columns: 50% auto;
+                    grid-template-areas: "f1 f5"
+                                         "f2 f6"
+                                         "f3 f7"
+                                         "f4 .";
+                }
 
                 >li{
                     display: grid;
@@ -436,6 +444,10 @@
                 }
 
                 #f1{
+                    @include hd{
+                        grid-area: f1;
+                    }
+
                     div{
                         background-image: url("../img/Wildlife/Fauna/grizzly.jpg");
 
@@ -448,6 +460,10 @@
                     }
                 }
                 #f2{
+                    @include hd{
+                        grid-area: f2;
+                    }
+
                     div{
                         background-image: url("../img/Wildlife/Fauna/cougar.jpg");
                         
@@ -460,6 +476,10 @@
                     }
                 }
                 #f3{
+                    @include hd{
+                        grid-area: f3;
+                    }
+
                     div{
                         background-image: url("../img/Wildlife/Fauna/moose.jpg");
 
@@ -472,6 +492,10 @@
                     }
                 }
                 #f4{
+                    @include hd{
+                        grid-area: f4;
+                    }
+
                     div{
                         background-image: url("../img/Wildlife/Fauna/fox.jpg");
 
@@ -486,12 +510,26 @@
                 #f5{
                     display: none;
 
+                    @include desk{
+                        display: list-item;
+                    }
+                    @include hd{
+                        grid-area: f5;
+                    }
+
                     div{
                         background-image: url("../img/Wildlife/Fauna/goat.jpg");
                     }
                 }
                 #f6{
                     display: none;
+
+                    @include desk{
+                        display: list-item;
+                    }
+                    @include hd{
+                        grid-area: f6;
+                    }
 
                     div{
                         background-image: url("../img/Wildlife/Fauna/small.jpg");
@@ -502,6 +540,9 @@
 
                     @include desk{
                         display: list-item;
+                    }
+                    @include hd{
+                        grid-area: f7;
                     }
                     
                     div{
