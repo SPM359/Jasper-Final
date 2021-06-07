@@ -537,8 +537,26 @@ footer > div {
 footer > div #footer-left {
   grid-area: footer-left;
 }
+footer > div #footer-left > ul > li > a {
+  text-decoration: none;
+}
+footer > div #footer-left > ul > li > a > h2 {
+  color: #FFEEEA;
+}
 footer > div #footer-right {
   grid-area: footer-right;
+}
+footer > div #footer-right #media > li > a > i {
+  color: #fff;
+}
+footer > div #footer-right #contact > li > a {
+  text-decoration: none;
+}
+footer > div #footer-right #contact > li > a > h2 {
+  color: #FFEEEA;
+}
+footer > div #footer-right #contact > li > address h2 {
+  color: #FFEEEA;
 }
 footer > div #footer-right #contact .hidden-footer {
   display: none;
@@ -2353,4 +2371,5 @@ footer > div #footer-right #contact .hidden-footer {
   font-weight: 400;
   color: #F2B876;
   text-decoration: none;
+  text-transform: uppercase;
 }

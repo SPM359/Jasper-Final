@@ -20,8 +20,9 @@ footer{
             >ul{
                 >li{
                     >a{
+                        text-decoration: none;
                         >h2{
-
+                            color: $brownLight;
                         }
                     }
                 }
@@ -33,14 +34,24 @@ footer{
                 >li{
                     >a{
                         >i{
-
+                            color: $white;
                         }
                     }
                 }
             }
             #contact{
                 >li{
-
+                    >a{
+                        text-decoration: none;
+                        >h2{
+                            color: $brownLight;
+                        }
+                    }
+                    >address{
+                        h2{
+                            color: $brownLight;
+                        }
+                    }
                 }
 
                 .hidden-footer{
