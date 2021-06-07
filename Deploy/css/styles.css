@@ -1785,3 +1785,192 @@ header > div a {
     height: 243px;
   }
 }
+
+#activities > div #activities-title {
+  margin-left: 106px;
+}
+@media (min-width: 768px) {
+  #activities > div #activities-title {
+    margin-left: 230px;
+  }
+}
+@media (min-width: 1024px) {
+  #activities > div #activities-title {
+    margin-left: 370px;
+  }
+}
+@media (min-width: 1440px) {
+  #activities > div #activities-title {
+    margin-left: 440px;
+  }
+}
+#activities > div #activities-hero {
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-areas: ". activities-hero .";
+}
+#activities > div #activities-hero > div {
+  background-image: url("../img/Activities/activities-hero.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 190px;
+  grid-area: activities-hero;
+}
+@media (min-width: 768px) {
+  #activities > div #activities-hero > div {
+    height: 447px;
+  }
+}
+@media (min-width: 1024px) {
+  #activities > div #activities-hero > div {
+    height: 558px;
+  }
+}
+@media (min-width: 1440px) {
+  #activities > div #activities-hero > div {
+    height: 635px;
+  }
+}
+#activities > div #activities-content {
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-areas: ". activities-content .";
+}
+@media (min-width: 768px) {
+  #activities > div #activities-content {
+    grid-template-columns: 107px auto 10px;
+  }
+}
+@media (min-width: 1024px) {
+  #activities > div #activities-content {
+    grid-template-columns: 10px auto 96px;
+  }
+}
+@media (min-width: 1440px) {
+  #activities > div #activities-content {
+    grid-template-columns: auto 1237px auto;
+  }
+}
+#activities > div #activities-content > div {
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-areas: "img-a1 para-a1";
+  grid-area: activities-content;
+}
+@media (min-width: 768px) {
+  #activities > div #activities-content > div {
+    grid-template-columns: 60% auto;
+    grid-template-areas: "para-a1 img-a1";
+  }
+}
+@media (min-width: 1024px) {
+  #activities > div #activities-content > div {
+    grid-template-columns: 35% auto;
+    grid-template-areas: "img-a1 para-a1";
+  }
+}
+@media (min-width: 1440px) {
+  #activities > div #activities-content > div {
+    grid-template-columns: 40% auto;
+  }
+}
+#activities > div #activities-content > div #img-a1 {
+  background-image: url("../img/Activities/activities-1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 551px;
+  grid-area: img-a1;
+}
+#activities > div #activities-content > div #para-a1 {
+  grid-area: para-a1;
+}
+#activities > div #activities-content > div #para-a1 #para-a12 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #activities > div #activities-content > div #para-a1 #para-a12 {
+    display: block;
+  }
+}
+#activities > div #activities-content > div #para-a1 #para-a13 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #activities > div #activities-content > div #para-a1 #para-a13 {
+    display: block;
+  }
+}
+#activities > div #activities-list > ul > li > div {
+  background-position: center;
+  background-size: cover;
+  height: 144px;
+}
+@media (min-width: 768px) {
+  #activities > div #activities-list > ul > li > div {
+    height: 245px;
+  }
+}
+@media (min-width: 1024px) {
+  #activities > div #activities-list > ul > li > div {
+    height: 345px;
+  }
+}
+@media (min-width: 1440px) {
+  #activities > div #activities-list > ul > li > div {
+    height: 336px;
+  }
+}
+#activities > div #activities-list > ul > li > aside > h2 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #activities > div #activities-list > ul > li > aside > h2 {
+    display: block;
+  }
+}
+#activities > div #activities-list > ul > li > aside > p {
+  display: none;
+}
+@media (min-width: 1024px) {
+  #activities > div #activities-list > ul > li > aside > p {
+    display: block;
+  }
+}
+#activities > div #activities-list > ul #a1 {
+  display: none;
+}
+@media (min-width: 1024px) {
+  #activities > div #activities-list > ul #a1 {
+    display: list-item;
+  }
+}
+#activities > div #activities-list > ul #a1 > div {
+  background-image: url("../img/Activities/climbing.jpg");
+}
+#activities > div #activities-list > ul #a2 > div {
+  background-image: url("../img/Activities/hiking.jpg");
+  background-position: bottom;
+}
+#activities > div #activities-list > ul #a3 > div {
+  background-image: url("../img/Activities/skating.jpg");
+}
+#activities > div #activities-list > ul #a4 > div {
+  background-image: url("../img/Activities/skiing.jpg");
+  background-position: bottom;
+}
+#activities > div #activities-list > ul #a5 {
+  display: none;
+}
+@media (min-width: 1024px) {
+  #activities > div #activities-list > ul #a5 {
+    display: list-item;
+  }
+}
+#activities > div #activities-list > ul #a5 > div {
+  background-image: url("../img/Activities/snowshoeing.jpg");
+  background-position: bottom;
+}
+#activities > div #activities-list > ul #a6 > div {
+  background-image: url("../img/Activities/stargazing.jpg");
+  background-position: top;
+}

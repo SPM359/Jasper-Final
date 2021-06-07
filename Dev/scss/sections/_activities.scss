@@ -1,0 +1,195 @@
+#activities{
+    >div{
+        #activities-title{
+            margin-left: 106px;
+
+            @include tab{
+                margin-left: 230px;
+            }
+            @include desk{
+                margin-left: 370px;
+            }
+            @include hd{
+                margin-left: 440px;
+            }
+
+            >h1{
+
+            }
+        }
+        #activities-hero{
+            display: grid;
+            grid-template-columns: 10px auto 10px;
+            grid-template-areas: ". activities-hero .";
+
+            >div{
+                background-image: url("../img/Activities/activities-hero.jpg");
+                background-position: center;
+                background-size: cover;
+                height: 190px;
+                grid-area: activities-hero;
+
+                @include tab{
+                    height: 447px;
+                }
+                @include desk{
+                    height: 558px;
+                }
+                @include hd{
+                    height: 635px;
+                }
+            }
+        }
+        #activities-content{
+            display: grid;
+            grid-template-columns: 10px auto 10px;
+            grid-template-areas: ". activities-content .";
+
+            @include tab{
+                grid-template-columns: 107px auto 10px;
+            }
+            @include desk{
+                grid-template-columns: 10px auto 96px;
+            }
+            @include hd{
+                grid-template-columns: auto 1237px auto;
+            }
+
+            >div{
+                display: grid;
+                grid-template-columns: 50% auto;
+                grid-template-areas: "img-a1 para-a1";
+                grid-area: activities-content;
+
+                @include tab{
+                    grid-template-columns: 60% auto;
+                    grid-template-areas: "para-a1 img-a1";
+                }
+                @include desk{
+                    grid-template-columns: 35% auto;
+                    grid-template-areas: "img-a1 para-a1";
+                }
+                @include hd{
+                    grid-template-columns: 40% auto;
+                }
+
+                #img-a1{
+                    background-image: url("../img/Activities/activities-1.jpg");
+                    background-size: cover;
+                    background-position: center;
+                    height: 551px;
+                    grid-area: img-a1;
+                }
+                #para-a1{
+                    grid-area: para-a1;
+                    >p{
+    
+                    }
+        
+                    #para-a11{
+
+                    }
+                    #para-a12{
+                        display: none;
+
+                        @include tab{
+                            display: block;
+                        }
+                    }
+                    #para-a13{
+                        display: none;
+
+                        @include tab{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        #activities-list{
+            >ul{
+                >li{
+                    >div{
+                        background-position: center;
+                        background-size: cover;
+                        height: 144px;
+
+                        @include tab{
+                            height: 245px;
+                        }
+                        @include desk{
+                            height: 345px;
+                        }
+                        @include hd{
+                            height: 336px;
+                        }
+                    }
+
+                    >aside{
+                        >h2{
+                            display: none;
+
+                            @include tab{
+                                display: block;
+                            }
+                        }
+                        >p{
+                            display: none;
+
+                            @include desk{
+                                display: block;
+                            }
+                        }
+                    }
+                }
+
+                #a1{
+                    display: none;
+
+                    @include desk{
+                        display: list-item;
+                    }
+
+                    >div{
+                        background-image: url("../img/Activities/climbing.jpg");
+                    }
+                }
+                #a2{
+                    >div{
+                        background-image: url("../img/Activities/hiking.jpg");
+                        background-position: bottom;
+                    }
+                }
+                #a3{
+                    >div{
+                        background-image: url("../img/Activities/skating.jpg");
+                    }
+                }
+                #a4{
+                    >div{
+                        background-image: url("../img/Activities/skiing.jpg");
+                        background-position: bottom;
+                    }
+                }
+                #a5{
+                    display: none;
+
+                    @include desk{
+                        display: list-item;
+                    }
+
+                    >div{
+                        background-image: url("../img/Activities/snowshoeing.jpg");
+                        background-position: bottom;
+                    }
+                }
+                #a6{
+                    >div{
+                        background-image: url("../img/Activities/stargazing.jpg");
+                        background-position: top;
+                    }
+                }
+            }
+        }
+    }
+}
