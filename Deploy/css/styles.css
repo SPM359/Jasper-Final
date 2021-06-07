@@ -1453,6 +1453,8 @@ footer > div #footer-right #contact .hidden-footer {
 }
 #wildlife > div #fauna-list > ul > li {
   display: grid;
+  grid-template-columns: 75% auto;
+  grid-template-areas: "img-fl .";
 }
 @media (min-width: 768px) {
   #wildlife > div #fauna-list > ul > li {

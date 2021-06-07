@@ -409,6 +409,8 @@
 
                 >li{
                     display: grid;
+                    grid-template-columns: 75% auto;
+                    grid-template-areas: "img-fl .";
 
                     @include tab{
                         grid-template-columns: 45% auto;
