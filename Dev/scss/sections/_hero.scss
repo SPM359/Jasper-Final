@@ -1,21 +1,88 @@
 #hero{
-    ul{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: "h2 h3 h4";
+    #hero-imgs{
+        margin: 48px 10px;
 
-        @include desk{
-            grid-template-columns: repeat(5, 1fr);
-            grid-template-areas: "h1 h2 h3 h4 h5";
+        @include tab{
+            margin-top: 56px;
         }
+        @include desk{
+            margin-top: 64px;
+        }
+        @include hd{
+            margin-top: 80px;
+        }
+        ul{
+            display: grid;
+            grid-template-columns: auto 60% auto;
+            grid-template-areas: "h2 h3 h4";
+    
+            @include tab{
+                grid-template-columns: auto 54% auto;
+            }
+            @include desk{
+                grid-template-columns: auto auto 36% auto auto;
+                grid-template-areas: "h1 h2 h3 h4 h5";
+            }
+            @include hd{
+                grid-template-columns: auto auto 52% auto auto;
+            }
+    
+            li{
+                background-position: center;
+                background-size: cover;
+            }
 
-        li{
-            background-position: center;
-			background-size: cover;
+            #hero-left2{
+                background-image: url("../img/Hero/hero-left2.jpg");
+                grid-area: h1;
+
+                @include desk{
+                    margin-right: 10px;
+                }
+            }
+            #hero-left1{
+                background-image: url("../img/Hero/hero-left1.jpg");
+                grid-area: h2;
+
+                @include desk{
+                    margin-left: 10px;
+                }
+            }
+            #hero-mid{
+                background-image: url("../img/Hero/hero-mid.jpg");
+                grid-area: h3;
+                height: 257px;
+                margin: 0px 20px;
+        
+                @include tab{
+                    height: 641px;
+                }
+                @include hd{
+                    height: 918px;
+                }
+            }
+            #hero-right1{
+                background-image: url("../img/Hero/hero-right1.jpg");
+                grid-area: h4;
+                
+                @include desk{
+                    margin-right: 10px;
+                }
+            }
+            #hero-right2{
+                background-image: url("../img/Hero/hero-right2.jpg");
+                grid-area: h5;
+
+                @include desk{
+                    margin-left: 10px;
+                }
+            }
         }
     }
 
-    >div{
+    #hero-buttons{
+        display: flex;
+        justify-content: center;
         button{
             i{
 
@@ -48,34 +115,5 @@
         @include hd{
             height: 422px;
         }
-    }
-
-    #hero-left2{
-        background-image: url("../img/Hero/hero-left2.jpg");
-        grid-area: h1;
-    }
-    #hero-left1{
-        background-image: url("../img/Hero/hero-left1.jpg");
-        grid-area: h2;
-    }
-    #hero-mid{
-        background-image: url("../img/Hero/hero-mid.jpg");
-        grid-area: h3;
-        height: 257px;
-
-        @include tab{
-            height: 641px;
-        }
-        @include hd{
-            height: 918px;
-        }
-    }
-    #hero-right1{
-        background-image: url("../img/Hero/hero-right1.jpg");
-        grid-area: h4;
-    }
-    #hero-right2{
-        background-image: url("../img/Hero/hero-right2.jpg");
-        grid-area: h5;
     }
 }

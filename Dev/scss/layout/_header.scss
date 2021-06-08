@@ -34,39 +34,43 @@ header{
         >h1{
             color: $brownLight;
         }
-        a{
-            display: none;
+        >article{
+            display: flex;
             margin-left: auto;
-            margin-right: 10px;
-
-            @include tab{
-                display: block;
-                text-decoration: none;
-                }
-
-            >h4{
-                color: $yellowLight;
-                font-family: 'Raleway', sans-serif;
-                font-size: rem-calc(16);
-                font-weight: 400;
-            }
-            
-        }
-        form{
-            color: $yellow;
-            margin-left: auto;
-            button{
-                i{
+            align-items: center;
+            a{
+                display: none;
+                margin-left: auto;
+                margin-right: 10px;
+    
+                @include tab{
+                    display: block;
+                    text-decoration: none;
+                    }
+    
+                >h4{
                     color: $yellowLight;
+                    font-family: 'Raleway', sans-serif;
+                    font-size: rem-calc(16);
+                    font-weight: 400;
                 }
+                
             }
-            input{
-                border-color: $yellow;
+            form{
                 color: $yellow;
-                font-family: 'Raleway', sans-serif;
-                font-size: rem-calc(16);
-                font-weight: 400;
-                background-color: $brownLight;
+                button{ 
+                    i{
+                        color: $yellowLight;
+                    }
+                }
+                input{
+                    border-color: $yellow;
+                    color: $yellow;
+                    font-family: 'Raleway', sans-serif;
+                    font-size: rem-calc(16);
+                    font-weight: 400;
+                    background-color: $brownLight;
+                }
             }
         }
     }

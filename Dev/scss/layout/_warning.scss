@@ -9,7 +9,7 @@
     }
 
     @include desk{
-        grid-template-columns: auto 892px auto;
+        grid-template-columns: auto 1000px auto;
     }
 
     @include hd{
@@ -23,37 +23,47 @@
         #left-exclam{
             color: $brownLight;
             font-size: rem-calc(72);
-            margin: 38px 0px 30px;
+            margin: 38px 0px 10px;
 
             @include tab{
-                margin: 30px 0px;
+                font-size: rem-calc(48);
+                margin: 30px 0px 10px;
+            }
+            @include desk{
+                font-size: rem-calc(60);
             }
             @include hd{
-                margin: 20px 0px;
+                font-size: rem-calc(72);
+                margin: 20px 0px 10px;
             }
         }
         h4{
-            margin: 32px 20px;
+            margin: 42px 20px;
             color: $brownLight;
             text-align: center;
 
             @include desk{
-                margin: 42px 28px;
+                margin: 45px 28px;
             }
-            @include desk{
+            @include hd{
                 margin: 45px 38px;
             }
         }
         #right-exclam{
             color: $brownLight;
             font-size: rem-calc(72);
-            margin: 38px 0px 30px;
+            margin: 38px 0px 10px;
 
             @include tab{
-                margin: 30px 0px;
+                font-size: rem-calc(48);
+                margin: 30px 0px 20px;
+            }
+            @include desk{
+                font-size: rem-calc(60);
             }
             @include hd{
-                margin: 20px 0px;
+                font-size: rem-calc(72);
+                margin: 20px 0px 10px;
             }
         }
     }
