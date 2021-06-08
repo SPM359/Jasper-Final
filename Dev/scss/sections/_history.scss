@@ -83,9 +83,14 @@
                 }
                 @include desk{
                     grid-template-columns: 33% 25% 8% 33%;
-                    grid-template-areas: "para-h1 img-h1  img-h1 aside-h1"
+                    grid-template-areas: "para-h1 img-h1 img-h1 aside-h1"
                                          "para-h2 para-h2 . aside-h1"
                                          "para-h2 para-h2 img-h2 img-h2";
+                }
+                @include hd{
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-areas: "img-h1 para-h1 aside-h1"
+                                         "para-h2 para-h2 img-h2";
                 }
 
                 #para-h1{
@@ -112,6 +117,9 @@
                         }
                         @include desk{
                             display: none;
+                        }
+                        @include hd{
+                            display: block;
                         }
                     }
                 }
@@ -163,6 +171,9 @@
                             @include desk{
                                 margin: 32px 0px 36px;
                             }
+                            @include hd{
+                                margin: 40px 0px 44px;
+                            }
                         }
                         p{
                             color: $brownLight;
@@ -172,6 +183,10 @@
                                 border-width: 10px;
                                 padding-bottom: 24px;
                                 margin-bottom: 155px;
+                            }
+                            @include hd{
+                                border: none;
+                                margin-bottom: 48px;
                             }
                         }
                     }
@@ -184,11 +199,17 @@
                         grid-area: para-h2;
                         margin: 24px 20px 0px 0px;
                     }
+                    @include desk{
+                        margin-top: 32px;
+                    }
 
                     #para-aside2{
                         
                         @include desk{
                             margin-bottom: 24px;
+                        }
+                        @include hd{
+                            display: none;
                         }
                     }
                     #para-h21{
@@ -212,6 +233,7 @@
                     }
                     @include hd{
                         height: 287px;
+                        margin-top: 32px;
                     }
                 }
             }
@@ -234,6 +256,7 @@
                 }
                 @include hd{
                     height: 243px;
+                    margin: 80px 0px;
                 }
             }
         }

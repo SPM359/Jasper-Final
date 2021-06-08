@@ -24,6 +24,20 @@
             display: grid;
             grid-template-columns: 10px auto 10px;
             grid-template-areas: ". features-hero .";
+            margin-top: 16px;
+            margin-bottom: 48px;
+
+            @include tab{
+                margin-bottom: 56px;
+            }
+            @include desk{
+                margin-top: 24x;
+                margin-bottom: 64px;
+            }
+            @include hd{
+                margin-top: 32px;
+                margin-bottom: 80px;
+            }
 
             >div{
                 background-image: url("../img/Features/features-hero.jpg");
@@ -75,8 +89,15 @@
                     margin: 0px;
                 }
 
-                >p{
+                #para-f1{
                     grid-area: para-f1;
+                    
+                    #para-f11{
+                        margin-bottom: 24px 0px;
+                    }
+                    #para-f12{
+
+                    }
                 }
                 >div{
                     background-image: url("../img/Features/features-1.jpg");
