@@ -1,34 +1,10 @@
 #test{
-    // display: grid;
-    // grid-template-columns: auto auto auto auto;
-    // grid-template-areas: "div1 div2 div3 div4";
-    display: flex;
-    #div1{
-        border-bottom: 50px solid $purpleDark;
+    >article{
+        border-top: 44px solid $greenLight;
         border-right: 50px solid transparent;
-        width: 171px;
-        grid-area: div1;
-    }
-    #div2{
-        width: 100px;
-        height: 50px;
-        transform: skew(45deg);
-        background-color: $purple;
-        grid-area: div2;
-    }
-    #div3{
-        width: 100px;
-        height: 50px;
-        transform: skew(45deg);
-        background-color: $purpleLight;
-        grid-area: div3;
-    }
-    h3{
-    }
-    #div4{
-        border-top: 50px solid $purpleDark;
-        border-left: 50px solid transparent;
-        width: 200px;
-        grid-area: div4;
+        width: 140px;
+        h3{
+            margin-top: -33px;
+        }
     }
 }

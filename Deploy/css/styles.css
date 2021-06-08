@@ -766,6 +766,15 @@ footer > div #footer-right #contact .hidden-footer {
   }
 }
 
+#test > article {
+  border-top: 44px solid #BACCB9;
+  border-right: 50px solid transparent;
+  width: 140px;
+}
+#test > article h3 {
+  margin-top: -33px;
+}
+
 #history > div #history-title {
   display: grid;
   grid-template-columns: 90px 142px auto;
@@ -1167,7 +1176,7 @@ footer > div #footer-right #contact .hidden-footer {
   grid-area: para-f1;
 }
 #features > div #features-content #article-f1 #para-f1 #para-f11 {
-  margin-bottom: 24px 0px;
+  margin-bottom: 24px;
 }
 #features > div #features-content #article-f1 > div {
   background-image: url("../img/Features/features-1.jpg");
@@ -1175,10 +1184,12 @@ footer > div #footer-right #contact .hidden-footer {
   background-size: cover;
   height: 386px;
   grid-area: img-f1;
+  margin: 16px 0px;
 }
 @media (min-width: 768px) {
   #features > div #features-content #article-f1 > div {
     height: 399px;
+    margin: 0px 20px 56px 0px;
   }
 }
 @media (min-width: 1024px) {
@@ -1248,10 +1259,12 @@ footer > div #footer-right #contact .hidden-footer {
   background-size: cover;
   height: 182px;
   grid-area: img-f2;
+  margin-bottom: 48px;
 }
 @media (min-width: 768px) {
   #features > div #features-content #article-f2 > div {
     height: 539px;
+    margin-bottom: 56px;
   }
 }
 @media (min-width: 1024px) {
@@ -1293,6 +1306,8 @@ footer > div #footer-right #contact .hidden-footer {
   grid-template-columns: repeat(6, 1fr);
   grid-template-areas: "n1 n1 n1 n2 n2 n2" "n5 n5 n5 n6 n6 n6" ". nex nex nex nex .";
   grid-area: features-list;
+  column-gap: 20px;
+  row-gap: 16px;
 }
 @media (min-width: 768px) {
   #features > div #features-list > ul {
@@ -1321,12 +1336,21 @@ footer > div #footer-right #contact .hidden-footer {
     height: 250px;
   }
 }
+#features > div #features-list > ul > li > article {
+  border-top: 44px solid #BACCB9;
+  width: 75%;
+  margin-top: -60px;
+}
+#features > div #features-list > ul > li > article > h3 {
+  margin-top: -44px;
+}
 #features > div #features-list > ul > li > p {
   display: none;
 }
 @media (min-width: 768px) {
   #features > div #features-list > ul > li > p {
     display: block;
+    margin: 32px 24px 16px;
   }
 }
 #features > div #features-list > ul #n1 {
@@ -1339,6 +1363,14 @@ footer > div #footer-right #contact .hidden-footer {
 }
 #features > div #features-list > ul #n1 > div {
   background-image: url("../img/Features/athbasca.jpg");
+}
+#features > div #features-list > ul #n1 > article {
+  border-left: 44px solid transparent;
+  margin-left: auto;
+}
+#features > div #features-list > ul #n1 > article h3 {
+  text-align: right;
+  margin-right: 16px;
 }
 #features > div #features-list > ul #n1 > p {
   color: #FFEEEA;
@@ -1354,7 +1386,14 @@ footer > div #footer-right #contact .hidden-footer {
 #features > div #features-list > ul #n2 > div {
   background-image: url("../img/Features/icefields.jpg");
 }
-#features > div #features-list > ul #n2 > h3 {
+#features > div #features-list > ul #n2 > article {
+  border-top: 44px solid #363B36;
+  border-left: 44px solid transparent;
+  margin-left: auto;
+}
+#features > div #features-list > ul #n2 > article > h3 {
+  text-align: right;
+  margin-right: 16px;
   color: #FFEEEA;
 }
 #features > div #features-list > ul #n2 > p {
@@ -1389,7 +1428,7 @@ footer > div #footer-right #contact .hidden-footer {
 #features > div #features-list > ul #n4 > div {
   background-image: url("../img/Features/canyon.jpg");
 }
-#features > div #features-list > ul #n4 > h3 {
+#features > div #features-list > ul #n4 > article > h3 {
   color: #FFEEEA;
 }
 #features > div #features-list > ul #n5 {
@@ -1403,7 +1442,12 @@ footer > div #footer-right #contact .hidden-footer {
 #features > div #features-list > ul #n5 > div {
   background-image: url("../img/Features/lake.jpg");
 }
-#features > div #features-list > ul #n5 > h3 {
+#features > div #features-list > ul #n5 > article {
+  border-top: 44px solid #363B36;
+  border-right: 44px solid transparent;
+}
+#features > div #features-list > ul #n5 > article > h3 {
+  margin-left: 16px;
   color: #FFEEEA;
 }
 #features > div #features-list > ul #n5 > p {
@@ -1420,7 +1464,12 @@ footer > div #footer-right #contact .hidden-footer {
 #features > div #features-list > ul #n6 > div {
   background-image: url("../img/Features/edith.jpg");
 }
-#features > div #features-list > ul #n6 > h3 {
+#features > div #features-list > ul #n6 > article {
+  border-top: 44px solid #727D71;
+  border-right: 44px solid transparent;
+}
+#features > div #features-list > ul #n6 > article > h3 {
+  margin-left: 16px;
   color: #FFEEEA;
 }
 #features > div #features-list > ul #n7 {
@@ -1441,6 +1490,7 @@ footer > div #footer-right #contact .hidden-footer {
 }
 #features > div #features-list > ul #nex {
   grid-area: nex;
+  margin-top: 32px;
 }
 @media (min-width: 1024px) {
   #features > div #features-list > ul #nex {
@@ -1449,6 +1499,10 @@ footer > div #footer-right #contact .hidden-footer {
 }
 #features > div #features-list > ul #nex > div {
   background-image: url("../img/Features/features-video.jpg");
+}
+#features > div #features-list > ul #nex > h1 {
+  text-align: center;
+  margin-bottom: 16px;
 }
 @media (min-width: 1024px) {
   #features > div #features-list > ul #nex > h1 {
@@ -1470,15 +1524,23 @@ footer > div #footer-right #contact .hidden-footer {
   background-size: cover;
   width: 100%;
   height: 138px;
+  margin: 48px 0px;
+}
+@media (min-width: 768px) {
+  #features > div #break-img2 > div {
+    margin: 56px 0px;
+  }
 }
 @media (min-width: 1024px) {
   #features > div #break-img2 > div {
     height: 198px;
+    margin: 64px 0px;
   }
 }
 @media (min-width: 1440px) {
   #features > div #break-img2 > div {
     height: 243px;
+    margin: 80px 0px;
   }
 }
 
@@ -2115,7 +2177,7 @@ footer > div #footer-right #contact .hidden-footer {
 }
 @media (min-width: 1024px) {
   #wildlife > div #fauna-list > ul #f5 {
-    display: list-item;
+    display: inherit;
     background-color: #363B36;
   }
 }
@@ -2135,7 +2197,7 @@ footer > div #footer-right #contact .hidden-footer {
 }
 @media (min-width: 1024px) {
   #wildlife > div #fauna-list > ul #f6 {
-    display: list-item;
+    display: inherit;
     background-color: #BACCB9;
   }
 }
@@ -2155,7 +2217,7 @@ footer > div #footer-right #contact .hidden-footer {
 }
 @media (min-width: 1024px) {
   #wildlife > div #fauna-list > ul #f7 {
-    display: list-item;
+    display: inherit;
     background-color: #363B36;
   }
 }

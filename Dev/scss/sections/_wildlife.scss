@@ -599,7 +599,7 @@
                     display: none;
 
                     @include desk{
-                        display: list-item;
+                        display: inherit;
                         background-color: $greenDark;
                     }
                     @include hd{
@@ -617,7 +617,7 @@
                     display: none;
 
                     @include desk{
-                        display: list-item;
+                        display: inherit;
                         background-color: $greenLight;
                     }
                     @include hd{
@@ -635,7 +635,7 @@
                     display: none;
 
                     @include desk{
-                        display: list-item;
+                        display: inherit;
                         background-color: $greenDark;
                     }
                     @include hd{

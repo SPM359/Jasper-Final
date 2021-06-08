@@ -93,7 +93,10 @@
                     grid-area: para-f1;
                     
                     #para-f11{
-                        margin-bottom: 24px 0px;
+                        margin-bottom: 24px;
+
+                        @include tab{
+                        }
                     }
                     #para-f12{
 
@@ -105,9 +108,11 @@
                     background-size: cover;
                     height: 386px;
                     grid-area: img-f1;
+                    margin: 16px 0px;
 
                     @include tab{
                         height: 399px;
+                        margin: 0px 20px 56px 0px;
                     }
                     @include desk{
                         height: 391px;
@@ -170,9 +175,11 @@
                     background-size: cover;
                     height: 182px;
                     grid-area: img-f2;
+                    margin-bottom: 48px;
 
                     @include tab{
                         height: 539px;
+                        margin-bottom: 56px;
                     }
                     @include desk{
                         height: 707px;
@@ -212,6 +219,8 @@
                                      "n5 n5 n5 n6 n6 n6"
                                      ". nex nex nex nex .";
                 grid-area: features-list;
+                column-gap: 20px;
+                row-gap: 16px;
 
                 @include tab{
                     grid-template-columns: 50% auto;
@@ -235,6 +244,7 @@
                 }
 
                 >li{
+                    
                     >div{
                         background-size: cover;
                         background-position: center;
@@ -244,8 +254,15 @@
                             height: 250px;
                         }
                     }
-
-                    >h3{
+                    >article{
+                        border-top: 44px solid $greenLight;
+                        width: 75%;
+                        margin-top: -60px;
+                        >h3{
+                            margin-top: -44px;
+                        }
+                    }
+                    >h1{
 
                     }
                     >p{
@@ -253,6 +270,7 @@
 
                         @include tab{
                             display: block;
+                            margin: 32px 24px 16px;
                         }
                     }
                 }
@@ -266,6 +284,14 @@
 
                     >div{
                         background-image: url("../img/Features/athbasca.jpg");
+                    }
+                    >article{
+                        border-left: 44px solid transparent;
+                        margin-left: auto;
+                        h3{
+                            text-align: right;
+                            margin-right: 16px;
+                        }
                     }
                     >p{
                         color: $brownLight;
@@ -281,8 +307,15 @@
                     >div{
                         background-image: url("../img/Features/icefields.jpg");
                     }
-                    >h3{
-                        color: $brownLight;
+                    >article{
+                        border-top: 44px solid $greenDark;
+                        border-left: 44px solid transparent;
+                        margin-left: auto;
+                        >h3{
+                            text-align: right;
+                            margin-right: 16px;
+                            color: $brownLight;
+                        }
                     }
                     >p{
                         color: $brownLight;
@@ -316,8 +349,10 @@
                     >div{
                         background-image: url("../img/Features/canyon.jpg");
                     }
-                    >h3{
-                        color: $brownLight;
+                    >article{
+                        >h3{
+                            color: $brownLight;
+                        }
                     }
                 }
                 #n5{
@@ -330,8 +365,13 @@
                     >div{
                         background-image: url("../img/Features/lake.jpg");
                     }
-                    >h3{
-                        color: $brownLight;
+                    >article{
+                        border-top: 44px solid $greenDark;
+                        border-right: 44px solid transparent;
+                        >h3{
+                            margin-left: 16px;
+                            color: $brownLight;
+                        }
                     }
                     >p{
                         color: $brownLight;
@@ -347,8 +387,13 @@
                     >div{
                         background-image: url("../img/Features/edith.jpg");
                     }
-                    >h3{
-                        color: $brownLight;
+                    >article{
+                        border-top: 44px solid $green;
+                        border-right: 44px solid transparent;
+                        >h3{
+                            margin-left: 16px;
+                            color: $brownLight;
+                        }
                     }
                 }
                 #n7{
@@ -369,6 +414,7 @@
                 }
                 #nex{
                     grid-area: nex;
+                    margin-top: 32px;
 
                     @include desk{
                         background-color: $orange;
@@ -378,9 +424,11 @@
                         background-image: url("../img/Features/features-video.jpg");
                     }
                     >h1{
+                        text-align: center;
+                        margin-bottom: 16px;
 
                         @include desk{
-                            color: $brownLight;
+                            color: $brownLight; 
                         }
                     }
                     >p{
@@ -401,12 +449,18 @@
                 background-size: cover;
                 width: 100%;
                 height: 138px;
+                margin: 48px 0px;
 
+                @include tab{
+                    margin: 56px 0px;
+                }
                 @include desk{
                     height: 198px;
+                    margin: 64px 0px;
                 }
                 @include hd{
                     height: 243px;
+                    margin: 80px 0px;
                 }
             }
         }
