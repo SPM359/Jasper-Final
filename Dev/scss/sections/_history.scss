@@ -25,6 +25,20 @@
             display: grid;
             grid-template-columns: 10px auto 10px;
             grid-template-areas: ". history-hero .";
+            margin-top: 16px;
+            margin-bottom: 48px;
+
+            @include tab{
+                margin-bottom: 56px;
+            }
+            @include desk{
+                margin-top: 24x;
+                margin-bottom: 64px;
+            }
+            @include hd{
+                margin-top: 32px;
+                margin-bottom: 80px;
+            }
 
             >div{
                 background-image: url("../img/History/history-hero.jpg");
@@ -52,13 +66,11 @@
 
             @include desk{
                 grid-template-columns: 95px auto;
-                grid-template-areas: ". article-h1"
-                                     ". article-h2";
+                grid-template-areas: ". article-h1";
             }
             @include hd{
                 grid-template-columns: auto 1242px auto;
-                grid-template-areas: ". article-h1 ."
-                                     ". article-h2 .";
+                grid-template-areas: ". article-h1 .";
             }
 
             #article-h1{
@@ -70,15 +82,26 @@
                     grid-template-areas: "para-h1 img-h1";
                 }
                 @include desk{
-                    grid-template-columns: repeat(3, 1fr);
-                    grid-template-areas: "para-h1 img-h1 aside-h1";
+                    grid-template-columns: 33% 25% 8% 33%;
+                    grid-template-areas: "para-h1 img-h1  img-h1 aside-h1"
+                                         "para-h2 para-h2 . aside-h1"
+                                         "para-h2 para-h2 img-h2 img-h2";
                 }
 
                 #para-h1{
                     grid-area: para-h1;
+                    
+                    @include tab{
+                        margin-right: 10px;
+                    }
 
-                    p{
-
+                    #para-h11{
+                        margin-bottom: 24px;
+                    }
+                    #para-h12{
+                        @include tab{
+                            margin-bottom: 24px;
+                        }
                     }
                     
                     #para-aside1{
@@ -99,14 +122,17 @@
                     background-size: cover;
                     height: 413px;
                     grid-area: img-h1;
+                    margin: 16px 0px 48px;
 
                     @include tab{
                         height: 381px;
+                        margin: 0px 0px 56px 10px;
                     }
-                    @include tab{
+                    @include desk{
                         height: 534px;
+                        margin: 0px 10px;
                     }
-                    @include tab{
+                    @include hd{
                         height: 582px;
                     }
 
@@ -122,6 +148,7 @@
                         grid-template-areas: ". asideh1-content .";
                         grid-area: aside-h1;
                         background-color: $orange;
+                        margin-left: 10px;
                     }
                     @include hd{
                         grid-template-columns: 71px auto 71px;
@@ -132,47 +159,57 @@
 
                         h2{
                             color: $brownLight;
+
+                            @include desk{
+                                margin: 32px 0px 36px;
+                            }
                         }
                         p{
                             color: $brownLight;
+
+                            @include desk{
+                                border-bottom: solid $orangeDark;
+                                border-width: 10px;
+                                padding-bottom: 24px;
+                                margin-bottom: 155px;
+                            }
                         }
                     }
                 }
-            }
-            #article-h2{
-                display: none;
-
-                @include desk{
-                    display: block;
-                    display: grid;
-                    grid-template-columns: 50% auto;
-                    grid-template-areas: "para-h2 img-h2";
-                    grid-area: article-h2;
-                }
-
                 #para-h2{
+                    display: none;
 
                     @include desk{
+                        display: block;
                         grid-area: para-h2;
+                        margin: 24px 20px 0px 0px;
                     }
 
                     #para-aside2{
                         
+                        @include desk{
+                            margin-bottom: 24px;
+                        }
                     }
-                    p{
+                    #para-h21{
 
+                        @include desk{
+                            margin-bottom: 24px;
+                        }
                     }
                 }
                 #img-h2{
+                    display: none;
 
                     @include desk{
+                        display: block;
                         background-image: url("../img/History/history-2.jpg");
                         background-position: center;
                         background-size: cover;
                         height: 283px;
                         grid-area: img-h2;
+                        margin: 45px 0px 0px 10px;
                     }
-
                     @include hd{
                         height: 287px;
                     }
@@ -186,9 +223,14 @@
                 background-size: cover;
                 width: 100%;
                 height: 138px;
+                margin-bottom: 48px;
 
+                @include tab{
+                    margin-bottom: 56px;
+                }
                 @include desk{
                     height: 198px;
+                    margin: 64px 0px;
                 }
                 @include hd{
                     height: 243px;

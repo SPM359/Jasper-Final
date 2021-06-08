@@ -508,7 +508,7 @@ header > div > article form input {
 }
 @media (min-width: 1024px) {
   #warning {
-    grid-template-columns: auto 1000px auto;
+    grid-template-columns: auto 800px auto;
   }
 }
 @media (min-width: 1440px) {
@@ -793,6 +793,25 @@ footer > div #footer-right #contact .hidden-footer {
   display: grid;
   grid-template-columns: 10px auto 10px;
   grid-template-areas: ". history-hero .";
+  margin-top: 16px;
+  margin-bottom: 48px;
+}
+@media (min-width: 768px) {
+  #history > div #history-hero {
+    margin-bottom: 56px;
+  }
+}
+@media (min-width: 1024px) {
+  #history > div #history-hero {
+    margin-top: 24x;
+    margin-bottom: 64px;
+  }
+}
+@media (min-width: 1440px) {
+  #history > div #history-hero {
+    margin-top: 32px;
+    margin-bottom: 80px;
+  }
 }
 #history > div #history-hero > div {
   background-image: url("../img/History/history-hero.jpg");
@@ -824,13 +843,13 @@ footer > div #footer-right #contact .hidden-footer {
 @media (min-width: 1024px) {
   #history > div #history-content {
     grid-template-columns: 95px auto;
-    grid-template-areas: ". article-h1" ". article-h2";
+    grid-template-areas: ". article-h1";
   }
 }
 @media (min-width: 1440px) {
   #history > div #history-content {
     grid-template-columns: auto 1242px auto;
-    grid-template-areas: ". article-h1 ." ". article-h2 .";
+    grid-template-areas: ". article-h1 .";
   }
 }
 #history > div #history-content #article-h1 {
@@ -845,12 +864,25 @@ footer > div #footer-right #contact .hidden-footer {
 }
 @media (min-width: 1024px) {
   #history > div #history-content #article-h1 {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "para-h1 img-h1 aside-h1";
+    grid-template-columns: 33% 25% 8% 33%;
+    grid-template-areas: "para-h1 img-h1  img-h1 aside-h1" "para-h2 para-h2 . aside-h1" "para-h2 para-h2 img-h2 img-h2";
   }
 }
 #history > div #history-content #article-h1 #para-h1 {
   grid-area: para-h1;
+}
+@media (min-width: 768px) {
+  #history > div #history-content #article-h1 #para-h1 {
+    margin-right: 10px;
+  }
+}
+#history > div #history-content #article-h1 #para-h1 #para-h11 {
+  margin-bottom: 24px;
+}
+@media (min-width: 768px) {
+  #history > div #history-content #article-h1 #para-h1 #para-h12 {
+    margin-bottom: 24px;
+  }
 }
 #history > div #history-content #article-h1 #para-h1 #para-aside1 {
   display: none;
@@ -871,18 +903,21 @@ footer > div #footer-right #contact .hidden-footer {
   background-size: cover;
   height: 413px;
   grid-area: img-h1;
+  margin: 16px 0px 48px;
 }
 @media (min-width: 768px) {
   #history > div #history-content #article-h1 #img-h1 {
     height: 381px;
+    margin: 0px 0px 56px 10px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   #history > div #history-content #article-h1 #img-h1 {
     height: 534px;
+    margin: 0px 10px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1440px) {
   #history > div #history-content #article-h1 #img-h1 {
     height: 582px;
   }
@@ -898,6 +933,7 @@ footer > div #footer-right #contact .hidden-footer {
     grid-template-areas: ". asideh1-content .";
     grid-area: aside-h1;
     background-color: #7A4419;
+    margin-left: 10px;
   }
 }
 @media (min-width: 1440px) {
@@ -911,37 +947,58 @@ footer > div #footer-right #contact .hidden-footer {
 #history > div #history-content aside > div h2 {
   color: #FFEEEA;
 }
+@media (min-width: 1024px) {
+  #history > div #history-content aside > div h2 {
+    margin: 32px 0px 36px;
+  }
+}
 #history > div #history-content aside > div p {
   color: #FFEEEA;
 }
-#history > div #article-h2 {
+@media (min-width: 1024px) {
+  #history > div #history-content aside > div p {
+    border-bottom: solid #3B210C;
+    border-width: 10px;
+    padding-bottom: 24px;
+    margin-bottom: 155px;
+  }
+}
+#history > div #history-content #para-h2 {
   display: none;
 }
 @media (min-width: 1024px) {
-  #history > div #article-h2 {
+  #history > div #history-content #para-h2 {
     display: block;
-    display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-areas: "para-h2 img-h2";
-    grid-area: article-h2;
-  }
-}
-@media (min-width: 1024px) {
-  #history > div #article-h2 #para-h2 {
     grid-area: para-h2;
+    margin: 24px 20px 0px 0px;
   }
 }
 @media (min-width: 1024px) {
-  #history > div #article-h2 #img-h2 {
+  #history > div #history-content #para-h2 #para-aside2 {
+    margin-bottom: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  #history > div #history-content #para-h2 #para-h21 {
+    margin-bottom: 24px;
+  }
+}
+#history > div #history-content #img-h2 {
+  display: none;
+}
+@media (min-width: 1024px) {
+  #history > div #history-content #img-h2 {
+    display: block;
     background-image: url("../img/History/history-2.jpg");
     background-position: center;
     background-size: cover;
     height: 283px;
     grid-area: img-h2;
+    margin: 45px 0px 0px 10px;
   }
 }
 @media (min-width: 1440px) {
-  #history > div #article-h2 #img-h2 {
+  #history > div #history-content #img-h2 {
     height: 287px;
   }
 }
@@ -951,10 +1008,17 @@ footer > div #footer-right #contact .hidden-footer {
   background-size: cover;
   width: 100%;
   height: 138px;
+  margin-bottom: 48px;
+}
+@media (min-width: 768px) {
+  #history #break-img1 > div {
+    margin-bottom: 56px;
+  }
 }
 @media (min-width: 1024px) {
   #history #break-img1 > div {
     height: 198px;
+    margin: 64px 0px;
   }
 }
 @media (min-width: 1440px) {
