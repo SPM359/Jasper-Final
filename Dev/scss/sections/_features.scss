@@ -252,17 +252,20 @@
                 }
 
                 @include desk{
-                    grid-template-areas: "n1 n2"
-                                         "n3 n4"
-                                         "n5 n6"
-                                         "nex n7";
+                    grid-template-columns: 85px 85px auto 85px auto 85px;
+                    grid-template-areas: ". . n1 n1 n2 n2"
+                                         ". n3 n3 n4 n4 ."
+                                         ". . n5 n5 n6 n6"
+                                         "nex nex nex nex n7 n7";
+                    row-gap: 64px;   
                 }
 
                 @include hd{
-                    grid-template-columns: repeat(3, 1fr);
-                    grid-template-areas: "n1 n2 n3"
-                                         "n4 n5 n6"
-                                         "nex nex n7";
+                    grid-template-columns: 90px auto 90px 90px auto 90px 90px auto 90px 90px;
+                    grid-template-areas: ". n1 n1 n1 n2 n2 n2 n3 n3 n3"
+                                         "n4 n4 n4 n5 n5 n5 n6 n6 n6 ."
+                                         "nex nex nex nex nex n7 n7 n7 . .";
+                    row-gap: 80px;
                 }
 
                 >li{
@@ -284,12 +287,23 @@
                         @include tab{
                             border-top: 59px solid $greenLight;
                             margin-top: -75px;
+                        @include desk{
+                            width: 60%;
+                            border-left: 59px solid transparent;
+                            margin-left: auto;
+                            margin-top: -83px;
+                        }
                         }
                         >h3{
                             margin-top: -44px;
 
                             @include tab{
                                 margin-top: -50px;
+                            }
+                            @include desk{
+                                margin-right: 16px;
+                                text-align: right;
+                                margin-top: -41px;
                             }
                         }
                     }
@@ -302,6 +316,9 @@
                         @include tab{
                             display: block;
                             margin: 32px 24px 16px;
+                        }
+                        @include desk{
+                            margin: 48px 40px 24px;
                         }
                     }
                 }
@@ -390,6 +407,10 @@
                         background-image: url("../img/Features/canyon.jpg");
                     }
                     >article{
+
+                        @include desk{
+                            border-top: 59px solid $green;
+                        }
                         >h3{
                             color: $brownLight;
                         }
@@ -413,9 +434,16 @@
                             border-top: 59px solid $greenDark;
                             border-right: 59px solid transparent;
                         }
+                        @include desk{
+                            border-right: none;
+                        }
                         >h3{
                             margin-left: 16px;
                             color: $brownLight;
+
+                            @include desk{
+                                margin-left: 0px;
+                            }
                         }
                     }
                     >p{
@@ -440,9 +468,16 @@
                             border-top: 59px solid $green;
                             border-right: 59px solid transparent;
                         }
+                        @include desk{
+                            border-right: none;
+                        }
                         >h3{
                             margin-left: 16px;
                             color: $brownLight;
+
+                            @include desk{
+                                margin-left: 0px;
+                            }
                         }
                     }
                 }

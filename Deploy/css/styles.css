@@ -1351,13 +1351,16 @@ footer > div #footer-right #contact .hidden-footer {
 }
 @media (min-width: 1024px) {
   #features > div #features-list > ul {
-    grid-template-areas: "n1 n2" "n3 n4" "n5 n6" "nex n7";
+    grid-template-columns: 85px 85px auto 85px auto 85px;
+    grid-template-areas: ". . n1 n1 n2 n2" ". n3 n3 n4 n4 ." ". . n5 n5 n6 n6" "nex nex nex nex n7 n7";
+    row-gap: 64px;
   }
 }
 @media (min-width: 1440px) {
   #features > div #features-list > ul {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "n1 n2 n3" "n4 n5 n6" "nex nex n7";
+    grid-template-columns: 90px auto 90px 90px auto 90px 90px auto 90px 90px;
+    grid-template-areas: ". n1 n1 n1 n2 n2 n2 n3 n3 n3" "n4 n4 n4 n5 n5 n5 n6 n6 n6 ." "nex nex nex nex nex n7 n7 n7 . .";
+    row-gap: 80px;
   }
 }
 #features > div #features-list > ul > li > div {
@@ -1381,12 +1384,27 @@ footer > div #footer-right #contact .hidden-footer {
     margin-top: -75px;
   }
 }
+@media (min-width: 768px) and (min-width: 1024px) {
+  #features > div #features-list > ul > li > article {
+    width: 60%;
+    border-left: 59px solid transparent;
+    margin-left: auto;
+    margin-top: -83px;
+  }
+}
 #features > div #features-list > ul > li > article > h3 {
   margin-top: -44px;
 }
 @media (min-width: 768px) {
   #features > div #features-list > ul > li > article > h3 {
     margin-top: -50px;
+  }
+}
+@media (min-width: 1024px) {
+  #features > div #features-list > ul > li > article > h3 {
+    margin-right: 16px;
+    text-align: right;
+    margin-top: -41px;
   }
 }
 #features > div #features-list > ul > li > p {
@@ -1396,6 +1414,11 @@ footer > div #footer-right #contact .hidden-footer {
   #features > div #features-list > ul > li > p {
     display: block;
     margin: 32px 24px 16px;
+  }
+}
+@media (min-width: 1024px) {
+  #features > div #features-list > ul > li > p {
+    margin: 48px 40px 24px;
   }
 }
 #features > div #features-list > ul #n1 {
@@ -1484,6 +1507,11 @@ footer > div #footer-right #contact .hidden-footer {
 #features > div #features-list > ul #n4 > div {
   background-image: url("../img/Features/canyon.jpg");
 }
+@media (min-width: 1024px) {
+  #features > div #features-list > ul #n4 > article {
+    border-top: 59px solid #727D71;
+  }
+}
 #features > div #features-list > ul #n4 > article > h3 {
   color: #FFEEEA;
 }
@@ -1508,9 +1536,19 @@ footer > div #footer-right #contact .hidden-footer {
     border-right: 59px solid transparent;
   }
 }
+@media (min-width: 1024px) {
+  #features > div #features-list > ul #n5 > article {
+    border-right: none;
+  }
+}
 #features > div #features-list > ul #n5 > article > h3 {
   margin-left: 16px;
   color: #FFEEEA;
+}
+@media (min-width: 1024px) {
+  #features > div #features-list > ul #n5 > article > h3 {
+    margin-left: 0px;
+  }
 }
 #features > div #features-list > ul #n5 > p {
   color: #FFEEEA;
@@ -1536,9 +1574,19 @@ footer > div #footer-right #contact .hidden-footer {
     border-right: 59px solid transparent;
   }
 }
+@media (min-width: 1024px) {
+  #features > div #features-list > ul #n6 > article {
+    border-right: none;
+  }
+}
 #features > div #features-list > ul #n6 > article > h3 {
   margin-left: 16px;
   color: #FFEEEA;
+}
+@media (min-width: 1024px) {
+  #features > div #features-list > ul #n6 > article > h3 {
+    margin-left: 0px;
+  }
 }
 #features > div #features-list > ul #n7 {
   display: none;
