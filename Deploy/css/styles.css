@@ -766,15 +766,6 @@ footer > div #footer-right #contact .hidden-footer {
   }
 }
 
-#test > article {
-  border-top: 44px solid #BACCB9;
-  border-right: 50px solid transparent;
-  width: 140px;
-}
-#test > article h3 {
-  margin-top: -33px;
-}
-
 #history > div #history-title {
   display: grid;
   grid-template-columns: 90px 142px auto;
