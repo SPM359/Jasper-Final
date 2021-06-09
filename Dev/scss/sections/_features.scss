@@ -156,6 +156,8 @@
                         width: 246px;
                         grid-area: img-fa;
                         margin-top: -50px;
+                        z-index: -1;
+                        position: relative;
                     }
                     @include hd{
                         height: 327px;
@@ -279,11 +281,15 @@
                         @include tab{
                             height: 250px;
                         }
+                        @include desk{
+                            margin-left: 100px;
+                        }
                     }
                     >article{
                         border-top: 44px solid $greenLight;
                         width: 75%;
                         margin-top: -60px;
+                        margin-bottom: 16px;
 
                         @include tab{
                             border-top: 59px solid $greenLight;
@@ -293,6 +299,7 @@
                             border-left: 59px solid transparent;
                             margin-left: auto;
                             margin-top: -83px;
+                            margin-bottom: 0px;
                         }
                         @include hd{
                             margin-top: -91px;
@@ -314,28 +321,34 @@
                     >h1{
 
                     }
-                    >p{
-                        display: none;
-
-                        @include tab{
-                            display: block;
-                            margin: 32px 24px 16px;
-                        }
+                    >section{
                         @include desk{
-                            margin: 48px 40px 24px;
+                            margin: -101px 86px 0px 0px;
+                            padding: 150px 40px 24px;
+                            z-index: -1;
+                            position: relative;
                         }
                         @include hd{
-                            margin: 56px 40px 32px;
+                            padding-bottom: 32px;
+                            padding-top: 160px;
+                            margin-top: -93px;
+                        }
+                        >p{
+                            display: none;
+    
+                            @include tab{
+                                display: block;
+                                padding: 16px 26px;
+                            }
+                            @include desk{
+                                padding: 0px 0px;
+                            }
                         }
                     }
                 }
 
                 #n1{
                     grid-area: n1;
-
-                    @include tab{
-                        background-color: $greenDark;
-                    }
 
                     >div{
                         background-image: url("../img/Features/athbasca.jpg");
@@ -352,16 +365,23 @@
                             margin-right: 16px;
                         }
                     }
-                    >p{
-                        color: $brownLight;
+                    >section{
+                        @include tab{
+                            background-color: $greenDark;
+                        }
+                        >p{
+                            color: $brownLight;
+
+                            @include hd{
+                                border-bottom: 8px solid $greenLight;
+                                padding-bottom: 16px;
+                                margin-bottom: -6px;
+                            }
+                        }
                     }
                 }
                 #n2{
                     grid-area: n2;
-
-                    @include tab{
-                        background-color: $green;
-                    }
 
                     >div{
                         background-image: url("../img/Features/icefields.jpg");
@@ -381,8 +401,19 @@
                             color: $brownLight;
                         }
                     }
-                    >p{
-                        color: $brownLight;
+                    >section{
+                        @include tab{
+                            background-color: $green;
+                        }
+                        >p{
+                            color: $brownLight;
+
+                            @include hd{
+                                border-bottom: 8px solid $greenDark;
+                                padding-bottom: 16px;
+                                margin-bottom: 16px;
+                            }
+                        }
                     }
                 }
                 #n3{
@@ -391,14 +422,18 @@
 
                     @include desk{
                         display: block;
-                        background-color: $greenDark;
                     }
 
                     >div{
                         background-image: url("../img/Features/parkway.jpg");
                     }
-                    >p{
-                        color: $brownLight;
+                    >section{
+                        @include desk{
+                            background-color: $greenDark;
+                        }
+                        >p{
+                            color: $brownLight;
+                        }
                     }
                 }
                 #n4{
@@ -407,7 +442,6 @@
 
                     @include desk{
                         display: block;
-                        background-color: $greenLight;
                     }
 
                     >div{
@@ -422,13 +456,21 @@
                             color: $brownLight;
                         }
                     }
+                    >section{
+                        @include desk{
+                            background-color: $greenLight;
+                        }
+                        >p{
+                            @include hd{
+                                border-bottom: 8px solid $green;
+                                padding-bottom: 16px;
+                                margin-bottom: 16px;
+                            }
+                        }
+                    }
                 }
                 #n5{
                     grid-area: n5;
-
-                    @include tab{
-                        background-color: $green;
-                    }
                     
                     >div{
                         background-image: url("../img/Features/lake.jpg");
@@ -453,16 +495,17 @@
                             }
                         }
                     }
-                    >p{
-                        color: $brownLight;
+                    >section{
+                        @include tab{
+                            background-color: $green;
+                        }
+                        >p{
+                            color: $brownLight;
+                        }
                     }
                 }
                 #n6{
                     grid-area: n6;
-
-                    @include tab{
-                        background-color: $greenLight;
-                    }
                     
                     >div{
                         background-image: url("../img/Features/edith.jpg");
@@ -487,6 +530,14 @@
                             }
                         }
                     }
+                    >section{
+                        @include tab{
+                            background-color: $greenLight;
+                        }
+                        >p{
+
+                        }
+                    }
                 }
                 #n7{
                     display: none;
@@ -494,14 +545,18 @@
 
                     @include desk{
                         display: block;
-                        background-color: $greenDark;
                     }
 
                     >div{
                         background-image: url("../img/Features/sunwapta.jpg");
                     }
-                    >p{
-                        color: $brownLight;
+                    >section{
+                        @include desk{
+                            background-color: $greenDark;
+                        }
+                        >p{
+                            color: $brownLight;
+                        }
                     }
                 }
                 #nex{
@@ -511,12 +566,26 @@
                     @include tab{
                         margin-top: 0px;
                     }
-                    @include desk{
-                        background-color: $orange;
+                    @include hd{
+                        margin-right: 90px;
                     }
 
                     >div{
                         background-image: url("../img/Features/features-video.jpg");
+                        height: 125px;
+
+                        @include tab{
+                            height: 314px;
+                        }
+                        @include desk{
+                            margin-top: -156px;
+                            margin-left: 170px;
+                            height: 230px;
+                        }
+                        @include hd{
+                            height: 317px;
+                            margin-top: -242px;
+                        }
                     }
                     >h1{
                         text-align: center;
@@ -524,17 +593,32 @@
 
                         @include desk{
                             color: $brownLight; 
-                            margin: 56px 85px 0px;
                             text-align: left;
+                            margin: 56px 85px 32px;
+                        }
+                        @include desk{
+                            margin: 48px 100px;
                         }
                     }
-                    >p{
-                        display: none;
-
+                    >section{
                         @include desk{
-                            display: block;
-                            color: $brownLight;
-                            margin: 32px 85px 0px;
+                            background-color: $orange;
+                            padding: 120px 85px 183px;
+                            margin: -120px 85px 0px 0px;
+                        }
+                        @include hd{
+                            padding: 120px 100px 275px;
+                            margin-right: 0px;
+                        }
+                        >p{
+                            display: none;
+
+                            @include desk{
+                                display: block;
+                                color: $brownLight;
+                                padding: 0px;
+                                margin: 0px;
+                            }
                         }
                     }
                 }
