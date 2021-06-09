@@ -1331,6 +1331,7 @@ footer > div #footer-right #contact .hidden-footer {
 }
 @media (min-width: 1440px) {
   #features > div #features-list {
+    grid-template-columns: auto 1420px auto;
     margin-top: 80px;
   }
 }
@@ -1392,6 +1393,11 @@ footer > div #footer-right #contact .hidden-footer {
     margin-top: -83px;
   }
 }
+@media (min-width: 768px) and (min-width: 1440px) {
+  #features > div #features-list > ul > li > article {
+    margin-top: -91px;
+  }
+}
 #features > div #features-list > ul > li > article > h3 {
   margin-top: -44px;
 }
@@ -1419,6 +1425,11 @@ footer > div #footer-right #contact .hidden-footer {
 @media (min-width: 1024px) {
   #features > div #features-list > ul > li > p {
     margin: 48px 40px 24px;
+  }
+}
+@media (min-width: 1440px) {
+  #features > div #features-list > ul > li > p {
+    margin: 56px 40px 32px;
   }
 }
 #features > div #features-list > ul #n1 {
@@ -1628,6 +1639,8 @@ footer > div #footer-right #contact .hidden-footer {
 @media (min-width: 1024px) {
   #features > div #features-list > ul #nex > h1 {
     color: #FFEEEA;
+    margin: 56px 85px 0px;
+    text-align: left;
   }
 }
 #features > div #features-list > ul #nex > p {
@@ -1637,6 +1650,7 @@ footer > div #footer-right #contact .hidden-footer {
   #features > div #features-list > ul #nex > p {
     display: block;
     color: #FFEEEA;
+    margin: 32px 85px 0px;
   }
 }
 #features > div #break-img2 > div {

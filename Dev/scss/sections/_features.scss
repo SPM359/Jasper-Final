@@ -230,6 +230,7 @@
                 margin-top: 64px;
             }
             @include hd{
+                grid-template-columns: auto 1420px auto;
                 margin-top: 80px;
             }
 
@@ -293,6 +294,9 @@
                             margin-left: auto;
                             margin-top: -83px;
                         }
+                        @include hd{
+                            margin-top: -91px;
+                        }
                         }
                         >h3{
                             margin-top: -44px;
@@ -319,6 +323,9 @@
                         }
                         @include desk{
                             margin: 48px 40px 24px;
+                        }
+                        @include hd{
+                            margin: 56px 40px 32px;
                         }
                     }
                 }
@@ -517,6 +524,8 @@
 
                         @include desk{
                             color: $brownLight; 
+                            margin: 56px 85px 0px;
+                            text-align: left;
                         }
                     }
                     >p{
@@ -525,6 +534,7 @@
                         @include desk{
                             display: block;
                             color: $brownLight;
+                            margin: 32px 85px 0px;
                         }
                     }
                 }
