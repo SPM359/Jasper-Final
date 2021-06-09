@@ -1325,7 +1325,7 @@ footer > div #footer-right #contact .hidden-footer {
 }
 @media (min-width: 1024px) {
   #features > div #features-list {
-    grid-template-columns: auto;
+    grid-template-columns: 10px auto 10px;
     margin-top: 64px;
   }
 }

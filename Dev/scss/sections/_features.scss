@@ -226,7 +226,7 @@
                 grid-template-columns: 106px auto 106px;
             }
             @include desk{
-                grid-template-columns: auto;
+                grid-template-columns: 10px auto 10px;
                 margin-top: 64px;
             }
             @include hd{
