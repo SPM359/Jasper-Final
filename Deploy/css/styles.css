@@ -1168,7 +1168,7 @@ footer > div #footer-right #contact .hidden-footer {
 }
 @media (min-width: 1440px) {
   #features > div #features-content #article-f1 {
-    grid-template-columns: 30% auto;
+    grid-template-columns: 32% auto;
     margin: 0px;
   }
 }
@@ -1195,11 +1195,13 @@ footer > div #footer-right #contact .hidden-footer {
 @media (min-width: 1024px) {
   #features > div #features-content #article-f1 > div {
     height: 391px;
+    margin: 0px 0px 64px 20px;
   }
 }
 @media (min-width: 1440px) {
   #features > div #features-content #article-f1 > div {
     height: 429px;
+    margin-bottom: 80px;
   }
 }
 #features > div #features-content aside {
@@ -1208,31 +1210,47 @@ footer > div #footer-right #contact .hidden-footer {
 @media (min-width: 1024px) {
   #features > div #features-content aside {
     display: block;
-    display: grid;
-    grid-template-columns: 20% auto;
-    grid-template-areas: "img-fa para-fa";
     grid-area: aside-f1;
+    margin-bottom: 0px;
+  }
+}
+@media (min-width: 1024px) {
+  #features > div #features-content aside > p {
+    grid-area: para-fa;
+    color: #FFEEEA;
+    font-size: 3rem;
+    font-weight: 700;
+    font-style: italic;
     background-color: #3B210C;
+    margin-left: 95px;
+    padding: 48px 87px;
+  }
+}
+@media (min-width: 1440px) {
+  #features > div #features-content aside > p {
+    margin-left: 280px;
+    padding: 32px 70px;
   }
 }
 #features > div #features-content aside > div {
   background-image: url("../img/Features/features-aside.jpg");
   background-position: center;
   background-size: cover;
-  height: 230px;
-  grid-area: img-fa;
+}
+@media (min-width: 1024px) {
+  #features > div #features-content aside > div {
+    height: 230px;
+    width: 246px;
+    grid-area: img-fa;
+    margin-top: -50px;
+  }
 }
 @media (min-width: 1440px) {
   #features > div #features-content aside > div {
     height: 327px;
+    width: 350px;
+    margin-top: -90px;
   }
-}
-#features > div #features-content aside > p {
-  grid-area: para-fa;
-  color: #FFEEEA;
-  font-size: 3rem;
-  font-weight: 700;
-  font-style: italic;
 }
 #features > div #features-content #article-f2 {
   display: grid;
@@ -1244,13 +1262,14 @@ footer > div #footer-right #contact .hidden-footer {
   #features > div #features-content #article-f2 {
     grid-template-columns: 40% auto;
     grid-template-areas: "para-f2 img-f2";
-    margin: 0px 95px;
+    margin: -116px 95px 0px;
   }
 }
 @media (min-width: 1440px) {
   #features > div #features-content #article-f2 {
-    grid-template-columns: 30% auto;
-    margin: 0px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: ". img-f2 para-f2";
+    margin: -157px 0px 0px;
   }
 }
 #features > div #features-content #article-f2 > div {
@@ -1270,6 +1289,8 @@ footer > div #footer-right #contact .hidden-footer {
 @media (min-width: 1024px) {
   #features > div #features-content #article-f2 > div {
     height: 707px;
+    margin-left: 10px;
+    margin-bottom: 0px;
   }
 }
 @media (min-width: 1440px) {
@@ -1284,6 +1305,12 @@ footer > div #footer-right #contact .hidden-footer {
   #features > div #features-content #article-f2 > p {
     display: block;
     grid-area: para-f2;
+    margin: 180px 10px 0px 0px;
+  }
+}
+@media (min-width: 1440px) {
+  #features > div #features-content #article-f2 > p {
+    margin: 0px 0px 0px 20px;
   }
 }
 #features > div #features-list {
@@ -1299,6 +1326,12 @@ footer > div #footer-right #contact .hidden-footer {
 @media (min-width: 1024px) {
   #features > div #features-list {
     grid-template-columns: auto;
+    margin-top: 64px;
+  }
+}
+@media (min-width: 1440px) {
+  #features > div #features-list {
+    margin-top: 80px;
   }
 }
 #features > div #features-list > ul {
@@ -1307,12 +1340,13 @@ footer > div #footer-right #contact .hidden-footer {
   grid-template-areas: "n1 n1 n1 n2 n2 n2" "n5 n5 n5 n6 n6 n6" ". nex nex nex nex .";
   grid-area: features-list;
   column-gap: 20px;
-  row-gap: 16px;
+  row-gap: 32px;
 }
 @media (min-width: 768px) {
   #features > div #features-list > ul {
     grid-template-columns: 50% auto;
     grid-template-areas: "n1 n2" "n5 n6" "nex nex";
+    row-gap: 56px;
   }
 }
 @media (min-width: 1024px) {
@@ -1341,8 +1375,19 @@ footer > div #footer-right #contact .hidden-footer {
   width: 75%;
   margin-top: -60px;
 }
+@media (min-width: 768px) {
+  #features > div #features-list > ul > li > article {
+    border-top: 59px solid #BACCB9;
+    margin-top: -75px;
+  }
+}
 #features > div #features-list > ul > li > article > h3 {
   margin-top: -44px;
+}
+@media (min-width: 768px) {
+  #features > div #features-list > ul > li > article > h3 {
+    margin-top: -50px;
+  }
 }
 #features > div #features-list > ul > li > p {
   display: none;
@@ -1368,6 +1413,11 @@ footer > div #footer-right #contact .hidden-footer {
   border-left: 44px solid transparent;
   margin-left: auto;
 }
+@media (min-width: 768px) {
+  #features > div #features-list > ul #n1 > article {
+    border-left: 59px solid transparent;
+  }
+}
 #features > div #features-list > ul #n1 > article h3 {
   text-align: right;
   margin-right: 16px;
@@ -1390,6 +1440,12 @@ footer > div #footer-right #contact .hidden-footer {
   border-top: 44px solid #363B36;
   border-left: 44px solid transparent;
   margin-left: auto;
+}
+@media (min-width: 768px) {
+  #features > div #features-list > ul #n2 > article {
+    border-top: 59px solid #363B36;
+    border-left: 59px solid transparent;
+  }
 }
 #features > div #features-list > ul #n2 > article > h3 {
   text-align: right;
@@ -1446,6 +1502,12 @@ footer > div #footer-right #contact .hidden-footer {
   border-top: 44px solid #363B36;
   border-right: 44px solid transparent;
 }
+@media (min-width: 768px) {
+  #features > div #features-list > ul #n5 > article {
+    border-top: 59px solid #363B36;
+    border-right: 59px solid transparent;
+  }
+}
 #features > div #features-list > ul #n5 > article > h3 {
   margin-left: 16px;
   color: #FFEEEA;
@@ -1467,6 +1529,12 @@ footer > div #footer-right #contact .hidden-footer {
 #features > div #features-list > ul #n6 > article {
   border-top: 44px solid #727D71;
   border-right: 44px solid transparent;
+}
+@media (min-width: 768px) {
+  #features > div #features-list > ul #n6 > article {
+    border-top: 59px solid #727D71;
+    border-right: 59px solid transparent;
+  }
 }
 #features > div #features-list > ul #n6 > article > h3 {
   margin-left: 16px;
@@ -1491,6 +1559,11 @@ footer > div #footer-right #contact .hidden-footer {
 #features > div #features-list > ul #nex {
   grid-area: nex;
   margin-top: 32px;
+}
+@media (min-width: 768px) {
+  #features > div #features-list > ul #nex {
+    margin-top: 0px;
+  }
 }
 @media (min-width: 1024px) {
   #features > div #features-list > ul #nex {

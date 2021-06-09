@@ -85,7 +85,7 @@
                     margin: 0px 95px;
                 }
                 @include hd{
-                    grid-template-columns: 30% auto;
+                    grid-template-columns: 32% auto;
                     margin: 0px;
                 }
 
@@ -94,9 +94,6 @@
                     
                     #para-f11{
                         margin-bottom: 24px;
-
-                        @include tab{
-                        }
                     }
                     #para-f12{
 
@@ -116,9 +113,11 @@
                     }
                     @include desk{
                         height: 391px;
+                        margin: 0px 0px 64px 20px;
                     }
                     @include hd{
                         height: 429px;
+                        margin-bottom: 80px;
                     }
                 }
             }
@@ -127,30 +126,42 @@
 
                 @include desk{
                     display: block;
-                    display: grid;
-                    grid-template-columns: 20% auto;
-                    grid-template-areas: "img-fa para-fa";
                     grid-area: aside-f1;
-                    background-color: $orangeDark;
+                    margin-bottom: 0px;
                 }
 
+                >p{
+                    @include desk{
+                        grid-area: para-fa;
+                        color: $brownLight;
+                        font-size: rem-calc(48);
+                        font-weight: 700;
+                        font-style: italic;
+                        background-color: $orangeDark;
+                        margin-left: 95px;
+                        padding: 48px 87px;
+                    }
+                    @include hd{
+                        margin-left: 280px;
+                        padding: 32px 70px;
+                    }
+                }
                 >div{
                     background-image: url("../img/Features/features-aside.jpg");
                     background-position: center;
                     background-size: cover;
-                    height: 230px;
-                    grid-area: img-fa;
 
+                    @include desk{
+                        height: 230px;
+                        width: 246px;
+                        grid-area: img-fa;
+                        margin-top: -50px;
+                    }
                     @include hd{
                         height: 327px;
+                        width: 350px;
+                        margin-top: -90px;
                     }
-                }
-                >p{
-                    grid-area: para-fa;
-                    color: $brownLight;
-                    font-size: rem-calc(48);
-                    font-weight: 700;
-                    font-style: italic;
                 }
             }
             #article-f2{
@@ -162,11 +173,12 @@
                 @include desk{
                     grid-template-columns: 40% auto;
                     grid-template-areas: "para-f2 img-f2";
-                    margin: 0px 95px;
+                    margin: -116px 95px 0px;
                 }
                 @include hd{
-                    grid-template-columns: 30% auto;
-                    margin: 0px;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-areas: ". img-f2 para-f2";
+                    margin: -157px 0px 0px;
                 }
 
                 >div{
@@ -183,6 +195,8 @@
                     }
                     @include desk{
                         height: 707px;
+                        margin-left: 10px;
+                        margin-bottom: 0px;
                     }
                     @include hd{
                         height: 399px;
@@ -194,6 +208,10 @@
                     @include desk{
                         display: block;
                         grid-area: para-f2;
+                        margin: 180px 10px 0px 0px;
+                    }
+                    @include hd{
+                        margin: 0px 0px 0px 20px;
                     }
                 }
             }
@@ -207,9 +225,12 @@
             @include tab{
                 grid-template-columns: 106px auto 106px;
             }
-
             @include desk{
                 grid-template-columns: auto;
+                margin-top: 64px;
+            }
+            @include hd{
+                margin-top: 80px;
             }
 
             >ul{
@@ -220,13 +241,14 @@
                                      ". nex nex nex nex .";
                 grid-area: features-list;
                 column-gap: 20px;
-                row-gap: 16px;
+                row-gap: 32px;
 
                 @include tab{
                     grid-template-columns: 50% auto;
                     grid-template-areas: "n1 n2"
                                          "n5 n6"
                                          "nex nex";
+                    row-gap: 56px;
                 }
 
                 @include desk{
@@ -258,8 +280,17 @@
                         border-top: 44px solid $greenLight;
                         width: 75%;
                         margin-top: -60px;
+
+                        @include tab{
+                            border-top: 59px solid $greenLight;
+                            margin-top: -75px;
+                        }
                         >h3{
                             margin-top: -44px;
+
+                            @include tab{
+                                margin-top: -50px;
+                            }
                         }
                     }
                     >h1{
@@ -288,6 +319,10 @@
                     >article{
                         border-left: 44px solid transparent;
                         margin-left: auto;
+
+                        @include tab{
+                            border-left: 59px solid transparent;
+                        }
                         h3{
                             text-align: right;
                             margin-right: 16px;
@@ -311,6 +346,11 @@
                         border-top: 44px solid $greenDark;
                         border-left: 44px solid transparent;
                         margin-left: auto;
+
+                        @include tab{
+                            border-top: 59px solid $greenDark;
+                            border-left: 59px solid transparent;
+                        }
                         >h3{
                             text-align: right;
                             margin-right: 16px;
@@ -368,6 +408,11 @@
                     >article{
                         border-top: 44px solid $greenDark;
                         border-right: 44px solid transparent;
+
+                        @include tab{
+                            border-top: 59px solid $greenDark;
+                            border-right: 59px solid transparent;
+                        }
                         >h3{
                             margin-left: 16px;
                             color: $brownLight;
@@ -390,6 +435,11 @@
                     >article{
                         border-top: 44px solid $green;
                         border-right: 44px solid transparent;
+
+                        @include tab{
+                            border-top: 59px solid $green;
+                            border-right: 59px solid transparent;
+                        }
                         >h3{
                             margin-left: 16px;
                             color: $brownLight;
@@ -416,6 +466,9 @@
                     grid-area: nex;
                     margin-top: 32px;
 
+                    @include tab{
+                        margin-top: 0px;
+                    }
                     @include desk{
                         background-color: $orange;
                     }
