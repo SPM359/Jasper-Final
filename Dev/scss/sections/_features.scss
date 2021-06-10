@@ -294,6 +294,7 @@
                         @include tab{
                             border-top: 59px solid $greenLight;
                             margin-top: -75px;
+                        }
                         @include desk{
                             width: 60%;
                             border-left: 59px solid transparent;
@@ -303,7 +304,6 @@
                         }
                         @include hd{
                             margin-top: -91px;
-                        }
                         }
                         >h3{
                             margin-top: -44px;

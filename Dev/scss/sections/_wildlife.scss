@@ -199,83 +199,172 @@
             }
 
             #zone-content{
-                display: grid;
-                grid-template-columns: 10px auto 10px;
-                grid-template-areas: ". zone-content .";
 
+                @include desk{
+                    display: grid;
+                    grid-template-columns: 10px auto 10px;
+                    grid-template-areas: ". zone-content .";
+                    margin: 64px 0px;
+                }
                 @include hd{
                     grid-template-columns: auto 1420px auto;
+                    margin: 80px 0px;
                 }
                 
                 >ul{
                     grid-area: zone-content;
                     
                     >li{
-                        display: grid;
-                        grid-template-columns: 35% auto;
-                        grid-template-areas: "zone-img zone-para";
-
-                        @include hd{
-                            grid-template-columns: 40% auto;
-                        }
                         
                         >div{
                             background-position: center;
                             background-size: cover;
-                            grid-area: zone-img;
+
+                            @include desk{
+                                height: 131px;
+                                margin-right: 60%;
+                            }
+                            @include hd{
+                                height: 161px;
+                            }
                         }
-                        >h3{
-    
+                        >article{
+                            
+                            @include desk{
+                                border-left: 59px solid transparent;
+                                width: 15%;
+                                margin-left: auto;
+                                margin-right: 60%;
+                                margin-top: -83px;
+                            }
+                            @include hd{
+                                margin-top: -91px;
+                            }
+                            >h3{
+                                margin-top: -41px;
+                            }
                         }
-                        >p{
-                            grid-area: zone-para;
+                        >section{
+                            @include desk{
+                                margin: -30px 0px 0px 85px;
+                                padding: 80px 85px 24px;
+                                z-index: -1;
+                                position: relative;
+                            }
+                            @include hd{
+                                margin-right: 90px;
+                                padding: 96px 90px 32px;
+                            }
+                            >p{
+                                @include desk{
+ 
+                                }
+                            }
                         }
                     }
     
                     #z1{
                         @include desk{
-                            background-color: $greenLight;
+                            margin-bottom: 64px;
                         }
-
+                        @include hd{
+                            margin-bottom: 80px;
+                        }
                         >div{
                             background-image: url("../img/Wildlife/Zones/montane.jpg");
                         }
-                        >h3{
-                            color: $brownLight;
+                        >article{
+                            @include desk{
+                                border-top: 59px solid $green;
+                            }
+                            >h3{
+                                @include desk{
+                                    color: $brownLight;
+                                    margin-right: 40px;
+                                    text-align: right;
+                                }
+                            }
+                        }
+                        >section{
+                            @include desk{
+                                background-color: $greenLight;
+                            }
+                            >p{
+                                @include desk{
+                                }
+                            }
                         }
                     }
                     #z2{
-                        display: grid;
-                        grid-template-columns: 65% auto;
-                        grid-template-areas: "zone-para zone-img ";
-
                         @include desk{
-                            background-color: $green;
+                            margin-bottom: 64px;
                         }
                         @include hd{
-                            grid-template-columns: 60% auto;
+                            margin-bottom: 80px;
                         }
-
                         >div{
                             background-image: url("../img/Wildlife/Zones/subalpine.jpg");
+
+                            @include desk{
+                                margin-right: 0%;
+                                margin-left: 60%;
+                            }
                         }
-                        >h3{
-                            color: $brownLight;
+                        >article{
+                            @include desk{
+                                border-top: 59px solid $greenDark;
+                                margin-left: 60%;
+                                margin-right: 0%;
+                                border-left: none;
+                                border-right: 59px solid transparent;
+                            }
+                            >h3{
+                                @include desk{
+                                    color: $brownLight;
+                                    margin-left: 40px;
+                                }
+                            }
                         }
-                        >p{
-                            color: $brownLight;
+                        >section{
+                            @include desk{
+                                background-color: $green;
+                                margin: -30px 85px 0px 0px;
+                            }
+                            @include hd{
+                                margin-left: 0px;
+                                margin-right: 90px;
+                            }
+                            >p{
+                                @include desk{
+                                    color: $brownLight;
+                                }
+                            }
                         }
                     }
                     #z3{
-
-                        @include desk{
-                            background-color: $greenDark;
-                        }
                         >div{
                             background-image: url("../img/Wildlife/Zones/alpine.jpg");
                         }
-                        >p{
-                            color: $brownLight;
+                        >article{
+                            @include desk{
+                                border-top: 59px solid $greenLight;
+                            }
+                            >h3{
+                                @include desk{
+                                    margin-right: 40px;
+                                    text-align: right;
+                                }
+                            }
+                        }
+                        >section{
+                            @include desk{
+                                background-color: $greenDark;
+                            }
+                            >p{
+                                @include desk{
+                                    color: $brownLight;
+                                }
+                            }
                         }
                     }
                 }
