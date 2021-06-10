@@ -585,6 +585,7 @@ footer > div {
   grid-template-columns: 60% auto;
   grid-template-areas: "footer-left footer-right";
   background-color: #3B210C;
+  column-gap: 20px;
 }
 @media (min-width: 768px) {
   footer > div {
@@ -593,7 +594,7 @@ footer > div {
 }
 @media (min-width: 1024px) {
   footer > div {
-    grid-template-columns: 40% auto;
+    grid-template-columns: 50% auto;
   }
 }
 @media (min-width: 1440px) {
@@ -603,6 +604,46 @@ footer > div {
 }
 footer > div #footer-left {
   grid-area: footer-left;
+  text-align: right;
+  margin-top: 16px;
+}
+@media (min-width: 768px) {
+  footer > div #footer-left {
+    border-right: 8px solid #7A4419;
+    padding-right: 86px;
+    margin-top: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  footer > div #footer-left {
+    padding-right: 73px;
+    margin-right: 86px;
+    margin-top: 32px;
+  }
+}
+@media (min-width: 1440px) {
+  footer > div #footer-left {
+    margin-top: 48px;
+    margin-right: 290px;
+  }
+}
+footer > div #footer-left > ul > li {
+  margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  footer > div #footer-left > ul > li {
+    margin-bottom: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  footer > div #footer-left > ul > li {
+    margin-bottom: 32px;
+  }
+}
+@media (min-width: 1440px) {
+  footer > div #footer-left > ul > li {
+    margin-bottom: 48px;
+  }
 }
 footer > div #footer-left > ul > li > a {
   text-decoration: none;
@@ -612,9 +653,67 @@ footer > div #footer-left > ul > li > a > h2 {
 }
 footer > div #footer-right {
   grid-area: footer-right;
+  margin-top: 16px;
+}
+@media (min-width: 768px) {
+  footer > div #footer-right {
+    margin-top: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  footer > div #footer-right {
+    margin-top: 32px;
+  }
+}
+@media (min-width: 1440px) {
+  footer > div #footer-right {
+    margin-top: 48px;
+  }
+}
+footer > div #footer-right #media {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "facebook twitter . . ." "youtube instagram . . .";
+  column-gap: 16px;
+  row-gap: 16px;
+}
+@media (min-width: 768px) {
+  footer > div #footer-right #media {
+    display: flex;
+  }
 }
 footer > div #footer-right #media > li > a > i {
   color: #fff;
+}
+footer > div #footer-right #media #facebook {
+  grid-area: facebook;
+}
+footer > div #footer-right #media #twitter {
+  grid-area: twitter;
+}
+footer > div #footer-right #media #youtube {
+  grid-area: youtube;
+}
+footer > div #footer-right #media #instagram {
+  grid-area: instagram;
+}
+footer > div #footer-right #contact > li {
+  margin-top: 16px;
+}
+@media (min-width: 768px) {
+  footer > div #footer-right #contact > li {
+    margin-top: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  footer > div #footer-right #contact > li {
+    margin-top: 32px;
+  }
+}
+@media (min-width: 1440px) {
+  footer > div #footer-right #contact > li {
+    margin-top: 48px;
+  }
 }
 footer > div #footer-right #contact > li > a {
   text-decoration: none;
@@ -2459,7 +2558,7 @@ footer > div #footer-right #contact .hidden-footer {
 @media (min-width: 1440px) {
   #wildlife > div #fauna-list > ul {
     grid-template-columns: 50% auto;
-    grid-template-areas: "f1 f5" "f2 f6" "f3 f7" "f4 .";
+    grid-template-areas: "f1 ." "f1 f5" "f2 f5" "f2 f6" "f3 f6" "f3 f7" "f4 f7" "f4 .";
     row-gap: 16px;
     column-gap: 20px;
     grid-area: fauna-list;
@@ -2863,7 +2962,7 @@ footer > div #footer-right #contact .hidden-footer {
 @media (min-width: 1440px) {
   #wildlife > div #fauna-list > ul #f5 {
     grid-area: f5;
-    margin: 0px;
+    margin: 0px 0px 0px 0px;
   }
 }
 #wildlife > div #fauna-list > ul #f5 div {
@@ -3592,17 +3691,25 @@ footer > div #footer-right #contact .hidden-footer {
     display: block;
   }
 }
+#activities > div #activities-list > ul > li {
+  margin-bottom: 16px;
+}
+@media (min-width: 1024px) {
+  #activities > div #activities-list > ul > li {
+    margin-bottom: 24px;
+  }
+}
+@media (min-width: 1440px) {
+  #activities > div #activities-list > ul > li {
+    margin-bottom: 32px;
+  }
+}
 #activities > div #activities-list > ul > li > div {
   background-position: center;
   background-size: cover;
   height: 144px;
 }
 @media (min-width: 768px) {
-  #activities > div #activities-list > ul > li > div {
-    height: 245px;
-  }
-}
-@media (min-width: 1024px) {
   #activities > div #activities-list > ul > li > div {
     height: 345px;
   }
@@ -3614,6 +3721,32 @@ footer > div #footer-right #contact .hidden-footer {
 }
 #activities > div #activities-list > ul > li > aside {
   background-color: #948B89;
+  opacity: 85%;
+  margin-top: -144px;
+  height: 144px;
+  width: 70px;
+}
+@media (min-width: 768px) {
+  #activities > div #activities-list > ul > li > aside {
+    margin-top: -345px;
+    height: 345px;
+    width: 182px;
+    padding: 0px 16px;
+  }
+}
+@media (min-width: 1024px) {
+  #activities > div #activities-list > ul > li > aside {
+    width: 587px;
+    padding: 0px 76px 0px 85px;
+  }
+}
+@media (min-width: 1440px) {
+  #activities > div #activities-list > ul > li > aside {
+    margin-top: -336px;
+    height: 336px;
+    width: 621px;
+    padding: 0px 90px 0px 101px;
+  }
 }
 #activities > div #activities-list > ul > li > aside > h2 {
   display: none;
@@ -3622,6 +3755,17 @@ footer > div #footer-right #contact .hidden-footer {
   #activities > div #activities-list > ul > li > aside > h2 {
     display: block;
     color: #FFEEEA;
+    padding: 24px 0px;
+  }
+}
+@media (min-width: 1024px) {
+  #activities > div #activities-list > ul > li > aside > h2 {
+    padding: 32px 0px;
+  }
+}
+@media (min-width: 1440px) {
+  #activities > div #activities-list > ul > li > aside > h2 {
+    padding: 48px 0px;
   }
 }
 #activities > div #activities-list > ul > li > aside > p {
@@ -3648,8 +3792,28 @@ footer > div #footer-right #contact .hidden-footer {
   background-image: url("../img/Activities/hiking.jpg");
   background-position: bottom;
 }
+@media (min-width: 1024px) {
+  #activities > div #activities-list > ul #a2 > aside {
+    margin-left: 95px;
+  }
+}
+@media (min-width: 1440px) {
+  #activities > div #activities-list > ul #a2 > aside {
+    margin-left: 100px;
+  }
+}
 #activities > div #activities-list > ul #a3 > div {
   background-image: url("../img/Activities/skating.jpg");
+}
+@media (min-width: 1024px) {
+  #activities > div #activities-list > ul #a3 > aside {
+    margin-left: 180px;
+  }
+}
+@media (min-width: 1440px) {
+  #activities > div #activities-list > ul #a3 > aside {
+    margin-left: 190px;
+  }
 }
 #activities > div #activities-list > ul #a4 > div {
   background-image: url("../img/Activities/skiing.jpg");
@@ -3667,6 +3831,16 @@ footer > div #footer-right #contact .hidden-footer {
   background-image: url("../img/Activities/snowshoeing.jpg");
   background-position: bottom;
 }
+@media (min-width: 1024px) {
+  #activities > div #activities-list > ul #a5 > aside {
+    margin-left: 95px;
+  }
+}
+@media (min-width: 1440px) {
+  #activities > div #activities-list > ul #a5 > aside {
+    margin-left: 100px;
+  }
+}
 #activities > div #activities-list > ul #a6 > div {
   background-image: url("../img/Activities/stargazing.jpg");
   background-position: top;
@@ -3674,6 +3848,26 @@ footer > div #footer-right #contact .hidden-footer {
 #activities > div #top {
   display: flex;
   justify-content: center;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+@media (min-width: 768px) {
+  #activities > div #top {
+    margin-top: 56px;
+    margin-bottom: 56px;
+  }
+}
+@media (min-width: 1024px) {
+  #activities > div #top {
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
+}
+@media (min-width: 1440px) {
+  #activities > div #top {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
 }
 #activities > div #top > a {
   font-family: "Raleway", sans-serif;

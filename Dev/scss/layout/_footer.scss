@@ -4,12 +4,13 @@ footer{
         grid-template-columns: 60% auto;
         grid-template-areas: "footer-left footer-right";
         background-color: $orangeDark;
+        column-gap: 20px;
 
         @include tab{
             grid-template-columns: 50% auto; 
         }
         @include desk{
-            grid-template-columns: 40% auto; 
+            grid-template-columns: 50% auto; 
         }
         @include hd{
             grid-template-columns: 60% auto; 
@@ -17,8 +18,37 @@ footer{
         
         #footer-left{
             grid-area: footer-left;
+            text-align: right;
+            margin-top: 16px;
+
+            @include tab{
+                border-right: 8px solid $orange;
+                padding-right: 86px;
+                margin-top: 24px;
+            }
+            @include desk{
+                padding-right: 73px;
+                margin-right: 86px;
+                margin-top: 32px;
+            }
+            @include hd{
+                margin-top: 48px;
+                margin-right: 290px;
+            }
+
             >ul{
                 >li{
+                    margin-bottom: 16px;
+
+                    @include tab{
+                        margin-bottom: 24px;
+                    }
+                    @include desk{
+                        margin-bottom: 32px;
+                    }
+                    @include hd{
+                        margin-bottom: 48px;
+                    }
                     >a{
                         text-decoration: none;
                         >h2{
@@ -30,17 +60,65 @@ footer{
         }
         #footer-right{
             grid-area: footer-right;
+            margin-top: 16px;
+
+            @include tab{
+                margin-top: 24px;
+            }
+            @include desk{
+                margin-top: 32px;
+            }
+            @include hd{
+                margin-top: 48px;
+            }
+
             #media{
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-areas: "facebook twitter . . ."
+                                     "youtube instagram . . .";
+                column-gap: 16px;
+                row-gap: 16px;
+
+                @include tab{
+                    display: flex;
+                }
                 >li{
+
+                    
                     >a{
                         >i{
                             color: $white;
                         }
                     }
                 }
+                #facebook{
+                    grid-area: facebook;
+                }
+                #twitter{
+                    grid-area: twitter;
+                }
+                #youtube{
+                    grid-area: youtube;
+                }
+                #instagram{
+                    grid-area: instagram;
+                }
             }
             #contact{
                 >li{
+                    margin-top: 16px;
+
+                    @include tab{
+                        margin-top: 24px;
+                    }
+                    @include desk{
+                        margin-top: 32px;
+                    }
+                    @include hd{
+                        margin-top: 48px;
+                    }
+                    
                     >a{
                         text-decoration: none;
                         >h2{

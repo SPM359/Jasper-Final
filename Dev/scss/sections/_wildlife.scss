@@ -641,9 +641,13 @@
                 }
                 @include hd{
                     grid-template-columns: 50% auto;
-                    grid-template-areas: "f1 f5"
+                    grid-template-areas: "f1 ."
+                                         "f1 f5"
+                                         "f2 f5"
                                          "f2 f6"
+                                         "f3 f6"
                                          "f3 f7"
+                                         "f4 f7"
                                          "f4 .";
                     row-gap: 16px;
                     column-gap: 20px;
@@ -987,7 +991,7 @@
                     }
                     @include hd{
                         grid-area: f5;
-                        margin: 0px;
+                        margin: 0px 0px 0px 0px;
                     }
 
                     div{

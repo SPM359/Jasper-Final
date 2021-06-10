@@ -139,15 +139,20 @@
         #activities-list{
             >ul{
                 >li{
+                    margin-bottom: 16px;
+
+                    @include desk{
+                        margin-bottom: 24px;
+                    }
+                    @include hd{
+                        margin-bottom: 32px;
+                    }
                     >div{
                         background-position: center;
                         background-size: cover;
                         height: 144px;
 
                         @include tab{
-                            height: 245px;
-                        }
-                        @include desk{
                             height: 345px;
                         }
                         @include hd{
@@ -158,13 +163,40 @@
                     >aside{
 
                         background-color: $brown;
-                        //opacity: 85%;
+                        opacity: 85%;
+                        margin-top: -144px;
+                        height: 144px;
+                        width: 70px;
+
+                        @include tab{
+                            margin-top: -345px;
+                            height: 345px;
+                            width: 182px;
+                            padding: 0px 16px;
+                        }
+                        @include desk{
+                            width: 587px;
+                            padding: 0px 76px 0px 85px;
+                        }
+                        @include hd{
+                            margin-top: -336px;
+                            height: 336px;
+                            width: 621px;
+                            padding: 0px 90px 0px 101px;
+                        }
                         >h2{
                             display: none;
 
                             @include tab{
                                 display: block;
                                 color: $brownLight;
+                                padding: 24px 0px;
+                            }
+                            @include desk{
+                                padding: 32px 0px;
+                            }
+                            @include hd{
+                                padding: 48px 0px;
                             }
                         }
                         >p{
@@ -194,10 +226,26 @@
                         background-image: url("../img/Activities/hiking.jpg");
                         background-position: bottom;
                     }
+                    >aside{
+                        @include desk{
+                            margin-left: 95px;
+                        }
+                        @include hd{
+                            margin-left: 100px;
+                        }
+                    }
                 }
                 #a3{
                     >div{
                         background-image: url("../img/Activities/skating.jpg");
+                    }
+                    >aside{
+                        @include desk{
+                            margin-left: 180px;
+                        }
+                        @include hd{
+                            margin-left: 190px;
+                        }
                     }
                 }
                 #a4{
@@ -217,6 +265,14 @@
                         background-image: url("../img/Activities/snowshoeing.jpg");
                         background-position: bottom;
                     }
+                    >aside{
+                        @include desk{
+                            margin-left: 95px;
+                        }
+                        @include hd{
+                            margin-left: 100px;
+                        }
+                    }
                 }
                 #a6{
                     >div{
@@ -229,6 +285,22 @@
         #top{
             display: flex;
             justify-content: center;
+            margin-top: 48px;
+            margin-bottom: 48px;
+
+            @include tab{
+                margin-top: 56px;
+                margin-bottom: 56px;
+            }
+            @include desk{
+                margin-top: 64px;
+                margin-bottom: 64px;
+            }
+            @include hd{
+                margin-top: 80px;
+                margin-bottom: 80px;
+            }
+
             >a{
                 font-family: 'Raleway', sans-serif;
                 font-size: rem-calc(16);
