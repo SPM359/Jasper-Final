@@ -269,15 +269,19 @@
             
             #zones-title{
                 margin-left: 109px;
+                margin-top: 48px;
 
                 @include tab{
                     margin-left: 153px;
+                    margin-top: 56px;
                 }
                 @include desk{
                     margin-left: 211px;
+                    margin-top: 64px;
                 }
                 @include hd{
                     margin-left: 220px;
+                    margin-top: 80px;
                 }
 
                 >h3{
@@ -525,7 +529,7 @@
                         }
                         @include hd{
                             margin-left: 248px;
-                            margin-bottom: 32px;
+                            margin-bottom: 32px; 
                         }
                         >h3{
         

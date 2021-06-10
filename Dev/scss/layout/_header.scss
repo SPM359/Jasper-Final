@@ -73,5 +73,15 @@ header{
                 }
             }
         }
+        #nav-container {
+            background-color: $brownDark;
+            display: none;
+            grid-area: nav;
+            padding: 20px 10px 10px;
+            @include desk {
+                background-color: $orangeDark;
+                display: block !important;
+            }
+        }
     }
 }
