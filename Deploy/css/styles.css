@@ -2425,6 +2425,11 @@ footer > div #footer-right #contact .hidden-footer {
   }
 }
 @media (min-width: 768px) {
+  #wildlife > div #fauna-list {
+    margin-top: 56px;
+  }
+}
+@media (min-width: 768px) {
   #wildlife > div #fauna-list > ul {
     margin-right: 10px;
   }
@@ -2440,55 +2445,76 @@ footer > div #footer-right #contact .hidden-footer {
   display: grid;
   grid-template-columns: 75% auto;
   grid-template-areas: "img-fl box-fl" "title-fl .";
+  column-gap: 20px;
+  row-gap: 48px;
 }
 @media (min-width: 768px) {
   #wildlife > div #fauna-list > ul > li {
     grid-template-columns: 45% auto;
     grid-template-areas: "img-fl para-fl" "img-fl title-fl";
+    row-gap: 56px;
+    column-gap: 0px;
   }
 }
-@media (min-width: 1024px) {
-  #wildlife > div #fauna-list > ul > li {
-    grid-template-areas: "img-fl para-fl" "title-fl .";
-  }
-}
-#wildlife > div #fauna-list > ul > li div {
+#wildlife > div #fauna-list > ul > li > div {
   background-position: center;
   background-size: cover;
   height: 200px;
   grid-area: img-fl;
 }
 @media (min-width: 1024px) {
-  #wildlife > div #fauna-list > ul > li div {
+  #wildlife > div #fauna-list > ul > li > div {
     height: 190px;
   }
 }
-#wildlife > div #fauna-list > ul > li h3 {
+#wildlife > div #fauna-list > ul > li .title-fl {
   grid-area: title-fl;
-}
-#wildlife > div #fauna-list > ul > li p {
-  display: none;
-  grid-area: para-fl;
+  border-right: 44px solid transparent;
+  width: 70%;
+  margin-top: -108px;
+  margin-bottom: 16px;
 }
 @media (min-width: 768px) {
-  #wildlife > div #fauna-list > ul > li p {
-    display: block;
+  #wildlife > div #fauna-list > ul > li .title-fl {
+    width: 50%;
+    border-right: 59px solid transparent;
+    margin-top: -131px;
   }
 }
-#wildlife > div #fauna-list > ul > li article {
+#wildlife > div #fauna-list > ul > li .title-fl > h3 {
+  margin-top: -33px;
+  margin-left: 10px;
+}
+@media (min-width: 768px) {
+  #wildlife > div #fauna-list > ul > li .title-fl > h3 {
+    margin-top: -41px;
+    margin-left: 20px;
+  }
+}
+#wildlife > div #fauna-list > ul > li .box-fl {
   height: 200px;
   width: 100%;
   grid-area: box-fl;
-  margin-left: 20px;
 }
 @media (min-width: 768px) {
-  #wildlife > div #fauna-list > ul > li article {
+  #wildlife > div #fauna-list > ul > li .box-fl {
     display: none;
   }
 }
 @media (min-width: 768px) {
-  #wildlife > div #fauna-list > ul #f1 {
-    background-color: #BACCB9;
+  #wildlife > div #fauna-list > ul > li section {
+    padding: 16px 96px 0px 20px;
+    z-index: -1;
+    position: relative;
+  }
+}
+#wildlife > div #fauna-list > ul > li section p {
+  display: none;
+  grid-area: para-fl;
+}
+@media (min-width: 768px) {
+  #wildlife > div #fauna-list > ul > li section p {
+    display: block;
   }
 }
 @media (min-width: 1440px) {
@@ -2509,15 +2535,26 @@ footer > div #footer-right #contact .hidden-footer {
     height: 190px;
   }
 }
-#wildlife > div #fauna-list > ul #f1 > h3 {
+#wildlife > div #fauna-list > ul #f1 .title-fl {
+  border-top: 44px solid #727D71;
+}
+@media (min-width: 768px) {
+  #wildlife > div #fauna-list > ul #f1 .title-fl {
+    border-top: 59px solid #727D71;
+  }
+}
+#wildlife > div #fauna-list > ul #f1 .title-fl > h3 {
   color: #FFEEEA;
 }
-#wildlife > div #fauna-list > ul #f1 > article {
+#wildlife > div #fauna-list > ul #f1 .box-fl {
+  background-color: #BACCB9;
+}
+#wildlife > div #fauna-list > ul #f1 > section {
   background-color: #BACCB9;
 }
 @media (min-width: 768px) {
-  #wildlife > div #fauna-list > ul #f2 {
-    background-color: #727D71;
+  #wildlife > div #fauna-list > ul #f1 > section {
+    height: 224px;
   }
 }
 @media (min-width: 1440px) {
@@ -2538,19 +2575,30 @@ footer > div #footer-right #contact .hidden-footer {
     height: 190px;
   }
 }
-#wildlife > div #fauna-list > ul #f2 > h3 {
+#wildlife > div #fauna-list > ul #f2 .title-fl {
+  border-top: 44px solid #363B36;
+}
+@media (min-width: 768px) {
+  #wildlife > div #fauna-list > ul #f2 .title-fl {
+    border-top: 59px solid #363B36;
+  }
+}
+#wildlife > div #fauna-list > ul #f2 .title-fl > h3 {
   color: #FFEEEA;
 }
-#wildlife > div #fauna-list > ul #f2 > p {
-  color: #FFEEEA;
+#wildlife > div #fauna-list > ul #f2 .box-fl {
+  background-color: #727D71;
 }
-#wildlife > div #fauna-list > ul #f2 > article {
+#wildlife > div #fauna-list > ul #f2 > section {
   background-color: #727D71;
 }
 @media (min-width: 768px) {
-  #wildlife > div #fauna-list > ul #f3 {
-    background-color: #BACCB9;
+  #wildlife > div #fauna-list > ul #f2 > section {
+    height: 205px;
   }
+}
+#wildlife > div #fauna-list > ul #f2 > section > p {
+  color: #FFEEEA;
 }
 @media (min-width: 1440px) {
   #wildlife > div #fauna-list > ul #f3 {
@@ -2570,15 +2618,26 @@ footer > div #footer-right #contact .hidden-footer {
     height: 190px;
   }
 }
-#wildlife > div #fauna-list > ul #f3 > h3 {
+#wildlife > div #fauna-list > ul #f3 .title-fl {
+  border-top: 44px solid #727D71;
+}
+@media (min-width: 768px) {
+  #wildlife > div #fauna-list > ul #f3 .title-fl {
+    border-top: 59px solid #727D71;
+  }
+}
+#wildlife > div #fauna-list > ul #f3 .title-fl > h3 {
   color: #FFEEEA;
 }
-#wildlife > div #fauna-list > ul #f3 > article {
+#wildlife > div #fauna-list > ul #f3 .box-fl {
+  background-color: #BACCB9;
+}
+#wildlife > div #fauna-list > ul #f3 > section {
   background-color: #BACCB9;
 }
 @media (min-width: 768px) {
-  #wildlife > div #fauna-list > ul #f4 {
-    background-color: #727D71;
+  #wildlife > div #fauna-list > ul #f3 > section {
+    height: 190px;
   }
 }
 @media (min-width: 1440px) {
@@ -2599,14 +2658,30 @@ footer > div #footer-right #contact .hidden-footer {
     height: 190px;
   }
 }
-#wildlife > div #fauna-list > ul #f4 > h3 {
+#wildlife > div #fauna-list > ul #f4 .title-fl {
+  border-top: 44px solid #363B36;
+}
+@media (min-width: 768px) {
+  #wildlife > div #fauna-list > ul #f4 .title-fl {
+    border-top: 59px solid #363B36;
+  }
+}
+#wildlife > div #fauna-list > ul #f4 .title-fl > h3 {
   color: #FFEEEA;
 }
-#wildlife > div #fauna-list > ul #f4 > p {
-  color: #FFEEEA;
-}
-#wildlife > div #fauna-list > ul #f4 > article {
+#wildlife > div #fauna-list > ul #f4 .box-fl {
   background-color: #727D71;
+}
+#wildlife > div #fauna-list > ul #f4 > section {
+  background-color: #727D71;
+}
+@media (min-width: 768px) {
+  #wildlife > div #fauna-list > ul #f4 > section {
+    height: 186px;
+  }
+}
+#wildlife > div #fauna-list > ul #f4 > section > p {
+  color: #FFEEEA;
 }
 #wildlife > div #fauna-list > ul #f5 {
   display: none;
@@ -2614,7 +2689,6 @@ footer > div #footer-right #contact .hidden-footer {
 @media (min-width: 1024px) {
   #wildlife > div #fauna-list > ul #f5 {
     display: inherit;
-    background-color: #363B36;
   }
 }
 @media (min-width: 1440px) {
@@ -2625,7 +2699,12 @@ footer > div #footer-right #contact .hidden-footer {
 #wildlife > div #fauna-list > ul #f5 div {
   background-image: url("../img/Wildlife/Fauna/goat.jpg");
 }
-#wildlife > div #fauna-list > ul #f5 > p {
+@media (min-width: 1024px) {
+  #wildlife > div #fauna-list > ul #f5 > section {
+    background-color: #363B36;
+  }
+}
+#wildlife > div #fauna-list > ul #f5 > section > p {
   color: #FFEEEA;
 }
 #wildlife > div #fauna-list > ul #f6 {
@@ -2634,7 +2713,6 @@ footer > div #footer-right #contact .hidden-footer {
 @media (min-width: 1024px) {
   #wildlife > div #fauna-list > ul #f6 {
     display: inherit;
-    background-color: #BACCB9;
   }
 }
 @media (min-width: 1440px) {
@@ -2645,8 +2723,13 @@ footer > div #footer-right #contact .hidden-footer {
 #wildlife > div #fauna-list > ul #f6 div {
   background-image: url("../img/Wildlife/Fauna/small.jpg");
 }
-#wildlife > div #fauna-list > ul #f6 > h3 {
+#wildlife > div #fauna-list > ul #f6 .title-fl > h3 {
   color: #FFEEEA;
+}
+@media (min-width: 1024px) {
+  #wildlife > div #fauna-list > ul #f6 > section {
+    background-color: #BACCB9;
+  }
 }
 #wildlife > div #fauna-list > ul #f7 {
   display: none;
@@ -2654,7 +2737,6 @@ footer > div #footer-right #contact .hidden-footer {
 @media (min-width: 1024px) {
   #wildlife > div #fauna-list > ul #f7 {
     display: inherit;
-    background-color: #363B36;
   }
 }
 @media (min-width: 1440px) {
@@ -2665,7 +2747,12 @@ footer > div #footer-right #contact .hidden-footer {
 #wildlife > div #fauna-list > ul #f7 div {
   background-image: url("../img/Wildlife/Fauna/wolverine.jpg");
 }
-#wildlife > div #fauna-list > ul #f7 > p {
+@media (min-width: 1024px) {
+  #wildlife > div #fauna-list > ul #f7 > section {
+    background-color: #363B36;
+  }
+}
+#wildlife > div #fauna-list > ul #f7 > section > p {
   color: #FFEEEA;
 }
 #wildlife #break-img3 > div {
@@ -2674,15 +2761,23 @@ footer > div #footer-right #contact .hidden-footer {
   background-size: cover;
   width: 100%;
   height: 138px;
+  margin-bottom: 48px;
+}
+@media (min-width: 768px) {
+  #wildlife #break-img3 > div {
+    margin-bottom: 56px;
+  }
 }
 @media (min-width: 1024px) {
   #wildlife #break-img3 > div {
     height: 198px;
+    margin-bottom: 64x;
   }
 }
 @media (min-width: 1440px) {
   #wildlife #break-img3 > div {
     height: 243px;
+    margin-bottom: 80px;
   }
 }
 

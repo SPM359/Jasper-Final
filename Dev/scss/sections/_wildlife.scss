@@ -609,6 +609,9 @@
             }
         }
         #fauna-list{
+            @include tab{
+                margin-top: 56px;
+            }
             >ul{
 
                 @include tab{
@@ -628,18 +631,22 @@
                     grid-template-columns: 75% auto;
                     grid-template-areas: "img-fl box-fl"
                                          "title-fl .";
+                    column-gap: 20px;
+                    row-gap: 48px;
 
                     @include tab{
                         grid-template-columns: 45% auto;
                         grid-template-areas: "img-fl para-fl"
                                              "img-fl title-fl";
+                        row-gap: 56px;
+                        column-gap: 0px;
                     }
-                    @include desk{
-                        grid-template-areas: "img-fl para-fl"
-                                             "title-fl .";
-                    }
+                    // @include desk{
+                    //     grid-template-areas: "img-fl para-fl"
+                    //                          "title-fl .";
+                    // }
 
-                    div{
+                    >div{
                         background-position: center;
                         background-size: cover;
                         height: 200px;
@@ -649,37 +656,57 @@
                             height: 190px;
                         }
                     }
-                    h3{ 
-                        // border-top: 50px solid $greenDark;
-                        // border-right: 100px solid transparent;
-                        // width: 200px;
+                    .title-fl{
                         grid-area: title-fl;
-                    }
-                    p{
-                        display: none;
-                        grid-area: para-fl;
+                            border-right: 44px solid transparent;
+                            width: 70%;
+                            margin-top: -108px;
+                            margin-bottom: 16px;
+                            
+                            @include tab{
+                                width: 50%;
+                                border-right: 59px solid transparent;
+                                margin-top: -131px;
+                            }
+                        >h3{ 
+                            margin-top: -33px;
+                            margin-left: 10px;
 
-                        @include tab{
-                            display: block;
+                            @include tab{
+                                margin-top: -41px;
+                                margin-left: 20px;
+                            }
                         }
                     }
-                    article{
+                    .box-fl{
                         height: 200px;
                         width: 100%;
                         grid-area: box-fl;
-                        margin-left: 20px;
 
                         @include tab{
                             display: none;
+                        }
+                    }
+                    section{
+
+                        @include tab{
+                            padding: 16px 96px 0px 20px;
+                            z-index: -1;
+                            position: relative;
+                        }
+                        p{
+                            display: none;
+                            grid-area: para-fl;
+    
+                            @include tab{
+                                display: block;
+                            }
                         }
                     }
                 }
 
                 #f1{
 
-                    @include tab{
-                        background-color: $greenLight;
-                    }
                     @include hd{
                         grid-area: f1;
                     }
@@ -694,17 +721,32 @@
                             height: 190px;
                         }
                     }
-                    >h3{
-                        color: $brownLight;
+                    .title-fl{
+                        border-top: 44px solid $green;
+
+                        @include tab{
+                            border-top: 59px solid $green;
+                        }
+                        >h3{
+                            color: $brownLight;
+                        }
                     }
-                    >article{
+                    .box-fl{
                         background-color: $greenLight;
+                    }
+                    >section{
+                        background-color:$greenLight;
+
+                        @include tab{
+                            height: 224px;
+                        }
+                        >p{
+
+                        }
                     }
                 }
                 #f2{
-                    @include tab{
-                        background-color: $green;
-                    }
+
                     @include hd{
                         grid-area: f2;
                     }
@@ -719,20 +761,32 @@
                             height: 190px;
                         }
                     }
-                    >h3{
-                        color: $brownLight;
+                    .title-fl{
+                        border-top: 44px solid $greenDark;
+
+                        @include tab{
+                            border-top: 59px solid $greenDark;
+                        }
+                        >h3{
+                            color: $brownLight;
+                        }
                     }
-                    >p{
-                        color: $brownLight;
-                    }
-                    >article{
+                    .box-fl{
                         background-color: $green;
+                    }
+                    >section{
+                        background-color:$green;
+
+                        @include tab{
+                            height: 205px;
+                        }
+                        >p{
+                            color: $brownLight;
+                        }
                     }
                 }
                 #f3{
-                    @include tab{
-                        background-color: $greenLight;
-                    }
+
                     @include hd{
                         grid-area: f3;
                     }
@@ -747,17 +801,32 @@
                             height: 190px;
                         }
                     }
-                    >h3{
-                        color: $brownLight;
+                    .title-fl{
+                        border-top: 44px solid $green;
+
+                        @include tab{
+                            border-top: 59px solid $green;
+                        }
+                        >h3{
+                            color: $brownLight;
+                        }
                     }
-                    >article{
+                    .box-fl{
                         background-color: $greenLight;
+                    }
+                    >section{
+                        background-color:$greenLight;
+
+                        @include tab{
+                            height: 190px;
+                        }
+                        >p{
+
+                        }
                     }
                 }
                 #f4{
-                    @include tab{
-                        background-color: $green;
-                    }
+
                     @include hd{
                         grid-area: f4;
                     }
@@ -772,14 +841,28 @@
                             height: 190px;
                         }
                     }
-                    >h3{
-                        color: $brownLight;
+                    .title-fl{
+                        border-top: 44px solid $greenDark;
+
+                        @include tab{
+                            border-top: 59px solid $greenDark;
+                        }
+                        >h3{
+                            color: $brownLight;
+                        }
                     }
-                    >p{
-                        color: $brownLight;
-                    }
-                    >article{
+                    .box-fl{
                         background-color: $green;
+                    }
+                    >section{
+                        background-color:$green;
+
+                        @include tab{
+                            height: 186px;
+                        }
+                        >p{
+                            color: $brownLight;
+                        }
                     }
                 }
                 #f5{
@@ -787,7 +870,6 @@
 
                     @include desk{
                         display: inherit;
-                        background-color: $greenDark;
                     }
                     @include hd{
                         grid-area: f5;
@@ -796,8 +878,20 @@
                     div{
                         background-image: url("../img/Wildlife/Fauna/goat.jpg");
                     }
-                    >p{
-                        color: $brownLight;
+                    .title-fl{
+                        
+                        >h3{
+
+                        }
+                    }
+                    >section{
+                        @include desk{
+                            background-color:$greenDark;
+                        }
+
+                        >p{
+                            color: $brownLight;
+                        }
                     }
                 }
                 #f6{
@@ -805,7 +899,6 @@
 
                     @include desk{
                         display: inherit;
-                        background-color: $greenLight;
                     }
                     @include hd{
                         grid-area: f6;
@@ -814,8 +907,19 @@
                     div{
                         background-image: url("../img/Wildlife/Fauna/small.jpg");
                     }
-                    >h3{
+                    .title-fl{
+                        >h3{
                         color: $brownLight;
+                        }   
+                    }
+                    >section{
+
+                        @include desk{
+                            background-color:$greenLight;
+                        }
+                        >p{
+
+                        }
                     }
                 }
                 #f7{
@@ -823,7 +927,6 @@
 
                     @include desk{
                         display: inherit;
-                        background-color: $greenDark;
                     }
                     @include hd{
                         grid-area: f7;
@@ -832,8 +935,13 @@
                     div{
                         background-image: url("../img/Wildlife/Fauna/wolverine.jpg");
                     }
-                    >p{
-                        color: $brownLight;
+                    >section{
+                        @include desk{
+                            background-color:$greenDark;                            
+                        }
+                        >p{
+                            color: $brownLight;
+                        }
                     }
                 }
             }
@@ -846,12 +954,18 @@
             background-size: cover;
             width: 100%;
             height: 138px;
+            margin-bottom: 48px;
 
+            @include tab{
+                margin-bottom: 56px;
+            }
             @include desk{
                 height: 198px;
+                margin-bottom: 64x;
             }
             @include hd{
                 height: 243px;
+                margin-bottom: 80px;
             }
         }
     }
