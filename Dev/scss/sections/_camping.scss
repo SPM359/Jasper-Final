@@ -21,6 +21,20 @@
             display: grid;
             grid-template-columns: 10px auto 10px;
             grid-template-areas: ". camping-hero .";
+            margin-top: 16px;
+            margin-bottom: 48px;
+
+            @include tab{
+                margin-bottom: 56px;
+            }
+            @include desk{
+                margin-top: 24x;
+                margin-bottom: 64px;
+            }
+            @include hd{
+                margin-top: 32px;
+                margin-bottom: 80px;
+            }
 
             >div{
                 background-image: url("../img/Camping/camping-hero.jpg");
@@ -48,6 +62,7 @@
                 grid-template-columns: 35% auto;
                 grid-template-areas: "backcountry img-c1";
                 margin-left: 118px;
+                column-gap: 20px;
             }
             @include desk{
                 grid-template-areas: "backcountry img-c1"
@@ -59,10 +74,21 @@
                 grid-area: backcountry;
 
                 >h3{
+                    margin-bottom: 24px;
 
+                    @include desk{
+                        margin-bottom: 32px;
+                    }
                 }
-                >p{
+                #para-c1{
+                    margin-bottom: 24px;
+                }
+                #para-c2{
+                    margin-bottom: 16px;
 
+                    @include desk{
+                        margin-bottom: 24px;
+                    }
                 }
             }
             #img-c1{
@@ -71,7 +97,11 @@
                 background-size: cover;
                 height: 396px;
                 grid-area: img-c1;
+                margin-bottom: 48px;
 
+                @include tab{
+                    margin-bottom: 0px;
+                }
                 @include desk{
                     height: 624px;
                 }
@@ -102,12 +132,14 @@
                 display: grid;
                 grid-template-columns: 65% auto;
                 grid-template-areas: "camping-list aside-c2";
-                margin-left: 118px;
+                margin: 56px 0px 32px 118px;
+                column-gap: 20px;
             }
             @include desk{
                 grid-template-areas: "camping-list aside-c1"
                                      "aside-c2 aside-c2";
                 margin-left: 98px;
+                margin-top: 64px;
             }
             @include hd{
                 grid-template-columns: 35% auto;
@@ -144,8 +176,23 @@
                 }
 
                 >li{
-                    >h3{
+                    margin-bottom: 16px;
 
+                    @include desk{
+                        margin-bottom: 24px;
+                    }
+                    @include desk{
+                        margin-bottom: 32px;
+                    }
+                    >h3{
+                        margin-bottom: 16px;
+
+                        @include tab{
+                            margin-bottom: 24px;
+                        }
+                        @include desk{
+                            margin-bottom: 32px;
+                        }
                     }
                     >p{
 
@@ -155,9 +202,12 @@
             #aside-c2{
 
                 background-color: $orangeDark;
+                margin-top: 32px;
+                margin-bottom: 48px;
 
                 @include tab{
                     grid-area: aside-c2;
+                    margin-top: 0px;
                 }
                 @include desk{
                     display: grid;
@@ -166,13 +216,20 @@
                 }
 
                 #camping-info{
+                    display: grid;
+                    grid-template-columns: 100%;
+                    padding: 24px 16px 0px;
 
+                    @include tab{
+                        padding: 24px 39px 0px;
+                    }
                     @include desk{
                         grid-area: camping-info;
                     }
 
                     >h2{
                         color: $brownLight;
+                        margin-bottom: 24px;
                     }
                     >a{
                         color: $brownLight;
@@ -180,6 +237,7 @@
                         font-size: rem-calc(16);
                         font-weight: 400;
                         font-family: 'Raleway', sans-serif;
+                        margin-bottom: 16px;
 
                         @include desk{
                             font-size: rem-calc(18);
@@ -238,7 +296,11 @@
                 background-size: cover;
                 width: 100%;
                 height: 138px;
+                margin-bottom: 48px;
 
+                @include tab{
+                    margin-bottom: 56px;
+                }
                 @include desk{
                     height: 198px;
                 }

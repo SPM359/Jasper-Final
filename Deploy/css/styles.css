@@ -3035,6 +3035,25 @@ footer > div #footer-right #contact .hidden-footer {
   display: grid;
   grid-template-columns: 10px auto 10px;
   grid-template-areas: ". camping-hero .";
+  margin-top: 16px;
+  margin-bottom: 48px;
+}
+@media (min-width: 768px) {
+  #camping > div #camping-hero {
+    margin-bottom: 56px;
+  }
+}
+@media (min-width: 1024px) {
+  #camping > div #camping-hero {
+    margin-top: 24x;
+    margin-bottom: 64px;
+  }
+}
+@media (min-width: 1440px) {
+  #camping > div #camping-hero {
+    margin-top: 32px;
+    margin-bottom: 80px;
+  }
 }
 #camping > div #camping-hero > div {
   background-image: url("../img/Camping/camping-hero.jpg");
@@ -3067,6 +3086,7 @@ footer > div #footer-right #contact .hidden-footer {
     grid-template-columns: 35% auto;
     grid-template-areas: "backcountry img-c1";
     margin-left: 118px;
+    column-gap: 20px;
   }
 }
 @media (min-width: 1024px) {
@@ -3078,12 +3098,37 @@ footer > div #footer-right #contact .hidden-footer {
 #camping > div #camping-intro #backcountry {
   grid-area: backcountry;
 }
+#camping > div #camping-intro #backcountry > h3 {
+  margin-bottom: 24px;
+}
+@media (min-width: 1024px) {
+  #camping > div #camping-intro #backcountry > h3 {
+    margin-bottom: 32px;
+  }
+}
+#camping > div #camping-intro #backcountry #para-c1 {
+  margin-bottom: 24px;
+}
+#camping > div #camping-intro #backcountry #para-c2 {
+  margin-bottom: 16px;
+}
+@media (min-width: 1024px) {
+  #camping > div #camping-intro #backcountry #para-c2 {
+    margin-bottom: 24px;
+  }
+}
 #camping > div #camping-intro #img-c1 {
   background-image: url("../img/Camping/camping-1.jpg");
   background-position: bottom;
   background-size: cover;
   height: 396px;
   grid-area: img-c1;
+  margin-bottom: 48px;
+}
+@media (min-width: 768px) {
+  #camping > div #camping-intro #img-c1 {
+    margin-bottom: 0px;
+  }
 }
 @media (min-width: 1024px) {
   #camping > div #camping-intro #img-c1 {
@@ -3121,13 +3166,15 @@ footer > div #footer-right #contact .hidden-footer {
     display: grid;
     grid-template-columns: 65% auto;
     grid-template-areas: "camping-list aside-c2";
-    margin-left: 118px;
+    margin: 56px 0px 32px 118px;
+    column-gap: 20px;
   }
 }
 @media (min-width: 1024px) {
   #camping > div #camping-content {
     grid-template-areas: "camping-list aside-c1" "aside-c2 aside-c2";
     margin-left: 98px;
+    margin-top: 64px;
   }
 }
 @media (min-width: 1440px) {
@@ -3164,12 +3211,41 @@ footer > div #footer-right #contact .hidden-footer {
     grid-area: camping-list;
   }
 }
+#camping > div #camping-content > ul > li {
+  margin-bottom: 16px;
+}
+@media (min-width: 1024px) {
+  #camping > div #camping-content > ul > li {
+    margin-bottom: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  #camping > div #camping-content > ul > li {
+    margin-bottom: 32px;
+  }
+}
+#camping > div #camping-content > ul > li > h3 {
+  margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  #camping > div #camping-content > ul > li > h3 {
+    margin-bottom: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  #camping > div #camping-content > ul > li > h3 {
+    margin-bottom: 32px;
+  }
+}
 #camping > div #camping-content #aside-c2 {
   background-color: #3B210C;
+  margin-top: 32px;
+  margin-bottom: 48px;
 }
 @media (min-width: 768px) {
   #camping > div #camping-content #aside-c2 {
     grid-area: aside-c2;
+    margin-top: 0px;
   }
 }
 @media (min-width: 1024px) {
@@ -3179,6 +3255,16 @@ footer > div #footer-right #contact .hidden-footer {
     grid-template-areas: "camping-info img-c2";
   }
 }
+#camping > div #camping-content #aside-c2 #camping-info {
+  display: grid;
+  grid-template-columns: 100%;
+  padding: 24px 16px 0px;
+}
+@media (min-width: 768px) {
+  #camping > div #camping-content #aside-c2 #camping-info {
+    padding: 24px 39px 0px;
+  }
+}
 @media (min-width: 1024px) {
   #camping > div #camping-content #aside-c2 #camping-info {
     grid-area: camping-info;
@@ -3186,6 +3272,7 @@ footer > div #footer-right #contact .hidden-footer {
 }
 #camping > div #camping-content #aside-c2 #camping-info > h2 {
   color: #FFEEEA;
+  margin-bottom: 24px;
 }
 #camping > div #camping-content #aside-c2 #camping-info > a {
   color: #FFEEEA;
@@ -3193,6 +3280,7 @@ footer > div #footer-right #contact .hidden-footer {
   font-size: 1rem;
   font-weight: 400;
   font-family: "Raleway", sans-serif;
+  margin-bottom: 16px;
 }
 @media (min-width: 1024px) {
   #camping > div #camping-content #aside-c2 #camping-info > a {
@@ -3256,6 +3344,12 @@ footer > div #footer-right #contact .hidden-footer {
   background-size: cover;
   width: 100%;
   height: 138px;
+  margin-bottom: 48px;
+}
+@media (min-width: 768px) {
+  #camping > div #break-img4 > div {
+    margin-bottom: 56px;
+  }
 }
 @media (min-width: 1024px) {
   #camping > div #break-img4 > div {
