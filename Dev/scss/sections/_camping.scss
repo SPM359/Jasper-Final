@@ -309,32 +309,34 @@
                     }
                 }
             }
-            #map{
-                display: none;
-                
+        }
+        #map{
+            display: none;
+            
+            @include desk{
+                display: list-item;
+            }
+            >h3{
+
                 @include desk{
-                    display: block;
+                    margin-left: 222px;
                 }
-                >h3{
-    
-                    @include desk{
-                        margin-left: 222px;
-                    }
-                    @include hd{
-                        margin-left: 216px; 
-                    }
+                @include hd{
+                    margin-left: 216px; 
                 }
-                >div{
-                    background-image: url("../img/Camping/camping-map.jpg");
-                    background-position: center;
-                    background-size: cover;
-    
-                    @include desk{
-                        height: 706px;
-                    }
-                    @include hd{
-                        height: 879px;
-                    }
+            }
+            >div{
+                background-image: url("../img/Camping/camping-map.jpg");
+                background-position: center;
+                background-size: cover;
+
+                @include desk{
+                    height: 706px;
+                    margin: 64px 0px;
+                }
+                @include hd{
+                    height: 879px;
+                    margin: 80px 0px;
                 }
             }
         }
@@ -352,9 +354,11 @@
                 }
                 @include desk{
                     height: 198px;
+                    margin-bottom: 64px;
                 }
                 @include hd{
                     height: 243px;
+                    margin-bottom: 80px;
                 }
             }
         }

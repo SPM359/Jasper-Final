@@ -3374,37 +3374,39 @@ footer > div #footer-right #contact .hidden-footer {
     margin-right: 10px;
   }
 }
-#camping > div > article #map {
+#camping > div #map {
   display: none;
 }
 @media (min-width: 1024px) {
-  #camping > div > article #map {
-    display: block;
+  #camping > div #map {
+    display: list-item;
   }
 }
 @media (min-width: 1024px) {
-  #camping > div > article #map > h3 {
+  #camping > div #map > h3 {
     margin-left: 222px;
   }
 }
 @media (min-width: 1440px) {
-  #camping > div > article #map > h3 {
+  #camping > div #map > h3 {
     margin-left: 216px;
   }
 }
-#camping > div > article #map > div {
+#camping > div #map > div {
   background-image: url("../img/Camping/camping-map.jpg");
   background-position: center;
   background-size: cover;
 }
 @media (min-width: 1024px) {
-  #camping > div > article #map > div {
+  #camping > div #map > div {
     height: 706px;
+    margin: 64px 0px;
   }
 }
 @media (min-width: 1440px) {
-  #camping > div > article #map > div {
+  #camping > div #map > div {
     height: 879px;
+    margin: 80px 0px;
   }
 }
 #camping > div #break-img4 > div {
@@ -3423,11 +3425,13 @@ footer > div #footer-right #contact .hidden-footer {
 @media (min-width: 1024px) {
   #camping > div #break-img4 > div {
     height: 198px;
+    margin-bottom: 64px;
   }
 }
 @media (min-width: 1440px) {
   #camping > div #break-img4 > div {
     height: 243px;
+    margin-bottom: 80px;
   }
 }
 
@@ -3453,6 +3457,25 @@ footer > div #footer-right #contact .hidden-footer {
   display: grid;
   grid-template-columns: 10px auto 10px;
   grid-template-areas: ". activities-hero .";
+  margin-top: 16px;
+  margin-bottom: 48px;
+}
+@media (min-width: 768px) {
+  #activities > div #activities-hero {
+    margin-bottom: 56px;
+  }
+}
+@media (min-width: 1024px) {
+  #activities > div #activities-hero {
+    margin-top: 24x;
+    margin-bottom: 64px;
+  }
+}
+@media (min-width: 1440px) {
+  #activities > div #activities-hero {
+    margin-top: 32px;
+    margin-bottom: 80px;
+  }
 }
 #activities > div #activities-hero > div {
   background-image: url("../img/Activities/activities-hero.jpg");
@@ -3501,6 +3524,8 @@ footer > div #footer-right #contact .hidden-footer {
   grid-template-columns: 50% auto;
   grid-template-areas: "img-a1 para-a1";
   grid-area: activities-content;
+  column-gap: 20px;
+  margin-bottom: 48px;
 }
 @media (min-width: 768px) {
   #activities > div #activities-content > div {
@@ -3516,7 +3541,8 @@ footer > div #footer-right #contact .hidden-footer {
 }
 @media (min-width: 1440px) {
   #activities > div #activities-content > div {
-    grid-template-columns: 40% auto;
+    grid-template-columns: 45% auto;
+    column-gap: 110px;
   }
 }
 #activities > div #activities-content > div #img-a1 {
@@ -3526,8 +3552,28 @@ footer > div #footer-right #contact .hidden-footer {
   height: 551px;
   grid-area: img-a1;
 }
+@media (min-width: 768px) {
+  #activities > div #activities-content > div #img-a1 {
+    height: 399px;
+  }
+}
+@media (min-width: 1024px) {
+  #activities > div #activities-content > div #img-a1 {
+    height: 408px;
+  }
+}
+@media (min-width: 1440px) {
+  #activities > div #activities-content > div #img-a1 {
+    height: 336px;
+  }
+}
 #activities > div #activities-content > div #para-a1 {
   grid-area: para-a1;
+}
+@media (min-width: 768px) {
+  #activities > div #activities-content > div #para-a1 #para-a11 {
+    margin-bottom: 24px;
+  }
 }
 #activities > div #activities-content > div #para-a1 #para-a12 {
   display: none;
@@ -3535,6 +3581,7 @@ footer > div #footer-right #contact .hidden-footer {
 @media (min-width: 768px) {
   #activities > div #activities-content > div #para-a1 #para-a12 {
     display: block;
+    margin-bottom: 24px;
   }
 }
 #activities > div #activities-content > div #para-a1 #para-a13 {
