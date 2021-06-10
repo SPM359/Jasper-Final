@@ -2,20 +2,35 @@
     >div{
 
         #history-title{
-            display: grid;
-            grid-template-columns: 90px 142px auto;
-            grid-template-areas: ". history-title .";
-
-            @include tab{
-                grid-template-columns: 214px 172px auto;
+            >article{
+                display: flex;
+                #hdiv-1{
+                    border-right: 31px solid transparent;
+                    border-bottom: 31px solid $purpleDark;
+                    width: 42px;
+                }
+                #hdiv-2{
+                    border-right: 31px solid transparent;
+                    border-bottom: 31px solid $purple;
+                    width: 60px;
+                    margin-left: -33px;
+                    z-index: -1;
+                    position: relative;
+                }
+                #hdiv-3{
+                    border-right: 31px solid transparent;
+                    border-bottom: 31px solid $purpleLight;
+                    width: 242px;
+                    margin-left: -33px;
+                    z-index: -2;
+                    position: relative;
+                }
+                #hdiv-4{
+                    border-right: 31px solid transparent;
+                    border-bottom: 31px solid $purpleDark;
+                    width: 50px;
+                }
             }
-            @include desk{
-                grid-template-columns: 372px 198px auto;
-            }
-            @include hd{
-                grid-template-columns: 406px 200px auto;
-            }
-
             >h1{
                 grid-area: history-title;
             }
