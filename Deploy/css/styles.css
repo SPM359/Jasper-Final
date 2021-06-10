@@ -2429,16 +2429,40 @@ footer > div #footer-right #contact .hidden-footer {
     margin-top: 56px;
   }
 }
+@media (min-width: 1024px) {
+  #wildlife > div #fauna-list {
+    margin-top: 64px;
+  }
+}
+@media (min-width: 1440px) {
+  #wildlife > div #fauna-list {
+    display: grid;
+    grid-template-columns: auto 1400px auto;
+    grid-template-areas: ". fauna-list .";
+    margin-top: 80px;
+    margin-bottom: 16px;
+  }
+}
 @media (min-width: 768px) {
   #wildlife > div #fauna-list > ul {
     margin-right: 10px;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   #wildlife > div #fauna-list > ul {
     display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "f1" "f2" "f3" "f4" "f5" "f6" "f7";
+    margin-right: 0px;
+  }
+}
+@media (min-width: 1440px) {
+  #wildlife > div #fauna-list > ul {
     grid-template-columns: 50% auto;
     grid-template-areas: "f1 f5" "f2 f6" "f3 f7" "f4 .";
+    row-gap: 16px;
+    column-gap: 20px;
+    grid-area: fauna-list;
   }
 }
 #wildlife > div #fauna-list > ul > li {
@@ -2454,6 +2478,13 @@ footer > div #footer-right #contact .hidden-footer {
     grid-template-areas: "img-fl para-fl" "img-fl title-fl";
     row-gap: 56px;
     column-gap: 0px;
+  }
+}
+@media (min-width: 1024px) {
+  #wildlife > div #fauna-list > ul > li {
+    grid-template-columns: 430px auto;
+    grid-template-areas: "img-fl para-fl" "title-fl .";
+    row-gap: 64px;
   }
 }
 #wildlife > div #fauna-list > ul > li > div {
@@ -2479,6 +2510,16 @@ footer > div #footer-right #contact .hidden-footer {
     width: 50%;
     border-right: 59px solid transparent;
     margin-top: -131px;
+  }
+}
+@media (min-width: 1024px) {
+  #wildlife > div #fauna-list > ul > li .title-fl {
+    width: 63%;
+  }
+}
+@media (min-width: 1440px) {
+  #wildlife > div #fauna-list > ul > li .title-fl {
+    margin-left: 110px;
   }
 }
 #wildlife > div #fauna-list > ul > li .title-fl > h3 {
@@ -2508,6 +2549,19 @@ footer > div #footer-right #contact .hidden-footer {
     position: relative;
   }
 }
+@media (min-width: 1024px) {
+  #wildlife > div #fauna-list > ul > li section {
+    margin-top: 30px;
+    margin-left: -430px;
+    padding: 32px 86px 32px 450px;
+  }
+}
+@media (min-width: 1440px) {
+  #wildlife > div #fauna-list > ul > li section {
+    padding: 32px 40px 128px 340px;
+    margin-left: -320px;
+  }
+}
 #wildlife > div #fauna-list > ul > li section p {
   display: none;
   grid-area: para-fl;
@@ -2517,9 +2571,21 @@ footer > div #footer-right #contact .hidden-footer {
     display: block;
   }
 }
+@media (min-width: 1024px) {
+  #wildlife > div #fauna-list > ul > li section p {
+    padding-bottom: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  #wildlife > div #fauna-list > ul #f1 {
+    margin-left: 10px;
+    margin-right: 180px;
+  }
+}
 @media (min-width: 1440px) {
   #wildlife > div #fauna-list > ul #f1 {
     grid-area: f1;
+    margin: 0px;
   }
 }
 #wildlife > div #fauna-list > ul #f1 div {
@@ -2543,6 +2609,16 @@ footer > div #footer-right #contact .hidden-footer {
     border-top: 59px solid #727D71;
   }
 }
+@media (min-width: 1024px) {
+  #wildlife > div #fauna-list > ul #f1 .title-fl {
+    margin-top: -94px;
+  }
+}
+@media (min-width: 1440px) {
+  #wildlife > div #fauna-list > ul #f1 .title-fl {
+    margin-top: -196px;
+  }
+}
 #wildlife > div #fauna-list > ul #f1 .title-fl > h3 {
   color: #FFEEEA;
 }
@@ -2557,9 +2633,26 @@ footer > div #footer-right #contact .hidden-footer {
     height: 224px;
   }
 }
+@media (min-width: 1024px) {
+  #wildlife > div #fauna-list > ul #f1 > section {
+    height: 150px;
+  }
+}
+@media (min-width: 1024px) {
+  #wildlife > div #fauna-list > ul #f1 > section > p {
+    border-bottom: 8px solid #727D71;
+  }
+}
+@media (min-width: 1024px) {
+  #wildlife > div #fauna-list > ul #f2 {
+    margin-left: 180px;
+    margin-right: 10px;
+  }
+}
 @media (min-width: 1440px) {
   #wildlife > div #fauna-list > ul #f2 {
     grid-area: f2;
+    margin: 0px;
   }
 }
 #wildlife > div #fauna-list > ul #f2 div {
@@ -2583,6 +2676,16 @@ footer > div #footer-right #contact .hidden-footer {
     border-top: 59px solid #363B36;
   }
 }
+@media (min-width: 1024px) {
+  #wildlife > div #fauna-list > ul #f2 .title-fl {
+    margin-top: -94px;
+  }
+}
+@media (min-width: 1440px) {
+  #wildlife > div #fauna-list > ul #f2 .title-fl {
+    margin-top: -196px;
+  }
+}
 #wildlife > div #fauna-list > ul #f2 .title-fl > h3 {
   color: #FFEEEA;
 }
@@ -2597,12 +2700,29 @@ footer > div #footer-right #contact .hidden-footer {
     height: 205px;
   }
 }
+@media (min-width: 1024px) {
+  #wildlife > div #fauna-list > ul #f2 > section {
+    height: 150px;
+  }
+}
 #wildlife > div #fauna-list > ul #f2 > section > p {
   color: #FFEEEA;
+}
+@media (min-width: 1024px) {
+  #wildlife > div #fauna-list > ul #f2 > section > p {
+    border-bottom: 8px solid #363B36;
+  }
+}
+@media (min-width: 1024px) {
+  #wildlife > div #fauna-list > ul #f3 {
+    margin-left: 95px;
+    margin-right: 95px;
+  }
 }
 @media (min-width: 1440px) {
   #wildlife > div #fauna-list > ul #f3 {
     grid-area: f3;
+    margin: 0px;
   }
 }
 #wildlife > div #fauna-list > ul #f3 div {
@@ -2626,6 +2746,16 @@ footer > div #footer-right #contact .hidden-footer {
     border-top: 59px solid #727D71;
   }
 }
+@media (min-width: 1024px) {
+  #wildlife > div #fauna-list > ul #f3 .title-fl {
+    margin-top: -94px;
+  }
+}
+@media (min-width: 1440px) {
+  #wildlife > div #fauna-list > ul #f3 .title-fl {
+    margin-top: -196px;
+  }
+}
 #wildlife > div #fauna-list > ul #f3 .title-fl > h3 {
   color: #FFEEEA;
 }
@@ -2640,9 +2770,26 @@ footer > div #footer-right #contact .hidden-footer {
     height: 190px;
   }
 }
+@media (min-width: 1024px) {
+  #wildlife > div #fauna-list > ul #f3 > section {
+    height: 150px;
+  }
+}
+@media (min-width: 1024px) {
+  #wildlife > div #fauna-list > ul #f3 > section > p {
+    border-bottom: 8px solid #727D71;
+  }
+}
+@media (min-width: 1024px) {
+  #wildlife > div #fauna-list > ul #f4 {
+    margin-left: 180px;
+    margin-right: 10px;
+  }
+}
 @media (min-width: 1440px) {
   #wildlife > div #fauna-list > ul #f4 {
     grid-area: f4;
+    margin: 0px;
   }
 }
 #wildlife > div #fauna-list > ul #f4 div {
@@ -2666,6 +2813,16 @@ footer > div #footer-right #contact .hidden-footer {
     border-top: 59px solid #363B36;
   }
 }
+@media (min-width: 1024px) {
+  #wildlife > div #fauna-list > ul #f4 .title-fl {
+    margin-top: -94px;
+  }
+}
+@media (min-width: 1440px) {
+  #wildlife > div #fauna-list > ul #f4 .title-fl {
+    margin-top: -196px;
+  }
+}
 #wildlife > div #fauna-list > ul #f4 .title-fl > h3 {
   color: #FFEEEA;
 }
@@ -2680,8 +2837,18 @@ footer > div #footer-right #contact .hidden-footer {
     height: 186px;
   }
 }
+@media (min-width: 1024px) {
+  #wildlife > div #fauna-list > ul #f4 > section {
+    height: 150px;
+  }
+}
 #wildlife > div #fauna-list > ul #f4 > section > p {
   color: #FFEEEA;
+}
+@media (min-width: 1024px) {
+  #wildlife > div #fauna-list > ul #f4 > section > p {
+    border-bottom: 8px solid #363B36;
+  }
 }
 #wildlife > div #fauna-list > ul #f5 {
   display: none;
@@ -2689,23 +2856,48 @@ footer > div #footer-right #contact .hidden-footer {
 @media (min-width: 1024px) {
   #wildlife > div #fauna-list > ul #f5 {
     display: inherit;
+    margin-left: 10px;
+    margin-right: 180px;
   }
 }
 @media (min-width: 1440px) {
   #wildlife > div #fauna-list > ul #f5 {
     grid-area: f5;
+    margin: 0px;
   }
 }
 #wildlife > div #fauna-list > ul #f5 div {
   background-image: url("../img/Wildlife/Fauna/goat.jpg");
 }
 @media (min-width: 1024px) {
+  #wildlife > div #fauna-list > ul #f5 div {
+    height: 190px;
+  }
+}
+@media (min-width: 1024px) {
+  #wildlife > div #fauna-list > ul #f5 .title-fl {
+    border-top: 59px solid #BACCB9;
+    margin-top: -94px;
+  }
+}
+@media (min-width: 1440px) {
+  #wildlife > div #fauna-list > ul #f5 .title-fl {
+    margin-top: -196px;
+  }
+}
+@media (min-width: 1024px) {
   #wildlife > div #fauna-list > ul #f5 > section {
     background-color: #363B36;
+    height: 150px;
   }
 }
 #wildlife > div #fauna-list > ul #f5 > section > p {
   color: #FFEEEA;
+}
+@media (min-width: 1024px) {
+  #wildlife > div #fauna-list > ul #f5 > section > p {
+    border-bottom: 8px solid #BACCB9;
+  }
 }
 #wildlife > div #fauna-list > ul #f6 {
   display: none;
@@ -2713,15 +2905,29 @@ footer > div #footer-right #contact .hidden-footer {
 @media (min-width: 1024px) {
   #wildlife > div #fauna-list > ul #f6 {
     display: inherit;
+    margin-left: 95px;
+    margin-right: 95px;
   }
 }
 @media (min-width: 1440px) {
   #wildlife > div #fauna-list > ul #f6 {
     grid-area: f6;
+    margin: 0px;
   }
 }
 #wildlife > div #fauna-list > ul #f6 div {
   background-image: url("../img/Wildlife/Fauna/small.jpg");
+}
+@media (min-width: 1024px) {
+  #wildlife > div #fauna-list > ul #f6 .title-fl {
+    border-top: 59px solid #727D71;
+    margin-top: -94px;
+  }
+}
+@media (min-width: 1440px) {
+  #wildlife > div #fauna-list > ul #f6 .title-fl {
+    margin-top: -196px;
+  }
 }
 #wildlife > div #fauna-list > ul #f6 .title-fl > h3 {
   color: #FFEEEA;
@@ -2729,6 +2935,12 @@ footer > div #footer-right #contact .hidden-footer {
 @media (min-width: 1024px) {
   #wildlife > div #fauna-list > ul #f6 > section {
     background-color: #BACCB9;
+    height: 150px;
+  }
+}
+@media (min-width: 1024px) {
+  #wildlife > div #fauna-list > ul #f6 > section > p {
+    border-bottom: 8px solid #727D71;
   }
 }
 #wildlife > div #fauna-list > ul #f7 {
@@ -2737,23 +2949,43 @@ footer > div #footer-right #contact .hidden-footer {
 @media (min-width: 1024px) {
   #wildlife > div #fauna-list > ul #f7 {
     display: inherit;
+    margin-left: 10px;
+    margin-right: 180px;
   }
 }
 @media (min-width: 1440px) {
   #wildlife > div #fauna-list > ul #f7 {
     grid-area: f7;
+    margin: 0px;
   }
 }
 #wildlife > div #fauna-list > ul #f7 div {
   background-image: url("../img/Wildlife/Fauna/wolverine.jpg");
 }
 @media (min-width: 1024px) {
+  #wildlife > div #fauna-list > ul #f7 .title-fl {
+    border-top: 59px solid #BACCB9;
+    margin-top: -94px;
+  }
+}
+@media (min-width: 1440px) {
+  #wildlife > div #fauna-list > ul #f7 .title-fl {
+    margin-top: -196px;
+  }
+}
+@media (min-width: 1024px) {
   #wildlife > div #fauna-list > ul #f7 > section {
     background-color: #363B36;
+    height: 150px;
   }
 }
 #wildlife > div #fauna-list > ul #f7 > section > p {
   color: #FFEEEA;
+}
+@media (min-width: 1024px) {
+  #wildlife > div #fauna-list > ul #f7 > section > p {
+    border-bottom: 8px solid #BACCB9;
+  }
 }
 #wildlife #break-img3 > div {
   background-image: url("../img/Wildlife/break-img3.jpg");

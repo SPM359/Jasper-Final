@@ -612,18 +612,42 @@
             @include tab{
                 margin-top: 56px;
             }
+            @include desk{
+                margin-top: 64px;
+            }
+            @include hd{
+                display: grid;
+                grid-template-columns: auto 1400px auto;
+                grid-template-areas: ". fauna-list .";
+                margin-top: 80px;
+                margin-bottom: 16px;
+            }
             >ul{
 
                 @include tab{
                     margin-right: 10px;
                 }
-                @include hd{
+                @include desk{
                     display: grid;
+                    grid-template-columns: 100%;
+                    grid-template-areas: "f1"
+                                         "f2"
+                                         "f3"
+                                         "f4"
+                                         "f5"
+                                         "f6"
+                                         "f7";
+                    margin-right: 0px;
+                }
+                @include hd{
                     grid-template-columns: 50% auto;
                     grid-template-areas: "f1 f5"
                                          "f2 f6"
                                          "f3 f7"
                                          "f4 .";
+                    row-gap: 16px;
+                    column-gap: 20px;
+                    grid-area: fauna-list;
                 }
 
                 >li{
@@ -641,10 +665,12 @@
                         row-gap: 56px;
                         column-gap: 0px;
                     }
-                    // @include desk{
-                    //     grid-template-areas: "img-fl para-fl"
-                    //                          "title-fl .";
-                    // }
+                    @include desk{
+                        grid-template-columns: 430px auto;
+                        grid-template-areas: "img-fl para-fl"
+                                             "title-fl .";
+                        row-gap: 64px;
+                    }
 
                     >div{
                         background-position: center;
@@ -658,16 +684,22 @@
                     }
                     .title-fl{
                         grid-area: title-fl;
-                            border-right: 44px solid transparent;
-                            width: 70%;
-                            margin-top: -108px;
-                            margin-bottom: 16px;
+                        border-right: 44px solid transparent;
+                        width: 70%;
+                        margin-top: -108px;
+                        margin-bottom: 16px;
                             
-                            @include tab{
-                                width: 50%;
-                                border-right: 59px solid transparent;
-                                margin-top: -131px;
-                            }
+                        @include tab{
+                            width: 50%;
+                            border-right: 59px solid transparent;
+                            margin-top: -131px;
+                        }
+                        @include desk{
+                            width: 63%;
+                        }
+                        @include hd{
+                            margin-left: 110px;
+                        }
                         >h3{ 
                             margin-top: -33px;
                             margin-left: 10px;
@@ -694,6 +726,15 @@
                             z-index: -1;
                             position: relative;
                         }
+                        @include desk{
+                            margin-top: 30px;
+                            margin-left: -430px;
+                            padding: 32px 86px 32px 450px;
+                        }
+                        @include hd{
+                            padding: 32px 40px 128px 340px;
+                            margin-left: -320px;
+                        }
                         p{
                             display: none;
                             grid-area: para-fl;
@@ -701,14 +742,22 @@
                             @include tab{
                                 display: block;
                             }
+                            @include desk{
+                                padding-bottom: 16px;
+                            }
                         }
                     }
                 }
 
                 #f1{
 
+                    @include desk{
+                        margin-left: 10px;
+                        margin-right: 180px;
+                    }
                     @include hd{
                         grid-area: f1;
+                        margin: 0px;
                     }
 
                     div{
@@ -727,6 +776,12 @@
                         @include tab{
                             border-top: 59px solid $green;
                         }
+                        @include desk{
+                            margin-top: -94px;
+                        }
+                        @include hd{
+                            margin-top: -196px;
+                        }
                         >h3{
                             color: $brownLight;
                         }
@@ -740,15 +795,25 @@
                         @include tab{
                             height: 224px;
                         }
+                        @include desk{
+                            height: 150px;
+                        }
                         >p{
-
+                            @include desk{
+                                border-bottom: 8px solid $green;
+                            }
                         }
                     }
                 }
                 #f2{
 
+                    @include desk{
+                        margin-left: 180px;
+                        margin-right: 10px;
+                    }
                     @include hd{
                         grid-area: f2;
+                        margin: 0px;
                     }
 
                     div{
@@ -767,6 +832,12 @@
                         @include tab{
                             border-top: 59px solid $greenDark;
                         }
+                        @include desk{
+                            margin-top: -94px;
+                        }
+                        @include hd{
+                            margin-top: -196px;
+                        }
                         >h3{
                             color: $brownLight;
                         }
@@ -780,15 +851,27 @@
                         @include tab{
                             height: 205px;
                         }
+                        @include desk{
+                            height: 150px;
+                        }
                         >p{
                             color: $brownLight;
+
+                            @include desk{
+                                border-bottom: 8px solid $greenDark;
+                            }
                         }
                     }
                 }
                 #f3{
 
+                    @include desk{
+                        margin-left: 95px;
+                        margin-right: 95px;
+                    }
                     @include hd{
                         grid-area: f3;
+                        margin: 0px;
                     }
 
                     div{
@@ -807,6 +890,12 @@
                         @include tab{
                             border-top: 59px solid $green;
                         }
+                        @include desk{
+                            margin-top: -94px;
+                        }
+                        @include hd{
+                            margin-top: -196px;
+                        }
                         >h3{
                             color: $brownLight;
                         }
@@ -820,15 +909,25 @@
                         @include tab{
                             height: 190px;
                         }
+                        @include desk{
+                            height: 150px;
+                        }
                         >p{
-
+                            @include desk{
+                                border-bottom: 8px solid $green;
+                            }
                         }
                     }
                 }
                 #f4{
 
+                    @include desk{
+                        margin-left: 180px;
+                        margin-right: 10px;
+                    }
                     @include hd{
                         grid-area: f4;
+                        margin: 0px;
                     }
 
                     div{
@@ -847,6 +946,12 @@
                         @include tab{
                             border-top: 59px solid $greenDark;
                         }
+                        @include desk{
+                            margin-top: -94px;
+                        }
+                        @include hd{
+                            margin-top: -196px;
+                        }
                         >h3{
                             color: $brownLight;
                         }
@@ -860,8 +965,15 @@
                         @include tab{
                             height: 186px;
                         }
+                        @include desk{
+                            height: 150px;
+                        }
                         >p{
                             color: $brownLight;
+
+                            @include desk{
+                                border-bottom: 8px solid $greenDark;
+                            }
                         }
                     }
                 }
@@ -870,16 +982,29 @@
 
                     @include desk{
                         display: inherit;
+                        margin-left: 10px;
+                        margin-right: 180px;
                     }
                     @include hd{
                         grid-area: f5;
+                        margin: 0px;
                     }
 
                     div{
                         background-image: url("../img/Wildlife/Fauna/goat.jpg");
+                        
+                        @include desk{
+                            height: 190px;
+                        };
                     }
                     .title-fl{
-                        
+                        @include desk{
+                            border-top: 59px solid $greenLight;
+                            margin-top: -94px;
+                        }
+                        @include hd{
+                            margin-top: -196px;
+                        }
                         >h3{
 
                         }
@@ -887,10 +1012,15 @@
                     >section{
                         @include desk{
                             background-color:$greenDark;
+                            height: 150px;
                         }
 
                         >p{
                             color: $brownLight;
+
+                            @include desk{
+                                border-bottom: 8px solid $greenLight;
+                            }
                         }
                     }
                 }
@@ -899,15 +1029,25 @@
 
                     @include desk{
                         display: inherit;
+                        margin-left: 95px;
+                        margin-right: 95px;
                     }
                     @include hd{
                         grid-area: f6;
+                        margin: 0px;
                     }
 
                     div{
                         background-image: url("../img/Wildlife/Fauna/small.jpg");
                     }
                     .title-fl{
+                        @include desk{
+                            border-top: 59px solid $green;
+                            margin-top: -94px;
+                        }
+                        @include hd{
+                            margin-top: -196px;
+                        }
                         >h3{
                         color: $brownLight;
                         }   
@@ -916,9 +1056,12 @@
 
                         @include desk{
                             background-color:$greenLight;
+                            height: 150px;
                         }
                         >p{
-
+                            @include desk{
+                                border-bottom: 8px solid $green;
+                            }
                         }
                     }
                 }
@@ -927,20 +1070,40 @@
 
                     @include desk{
                         display: inherit;
+                        margin-left: 10px;
+                        margin-right: 180px;
                     }
                     @include hd{
                         grid-area: f7;
+                        margin: 0px;
                     }
                     
                     div{
                         background-image: url("../img/Wildlife/Fauna/wolverine.jpg");
                     }
+                    .title-fl{
+                        @include desk{
+                            border-top: 59px solid $greenLight;
+                            margin-top: -94px;
+                        }
+                        @include hd{
+                            margin-top: -196px;
+                        }
+                        >h3{
+
+                        }
+                    }
                     >section{
                         @include desk{
-                            background-color:$greenDark;                            
+                            background-color:$greenDark;   
+                            height: 150px;                         
                         }
                         >p{
                             color: $brownLight;
+
+                            @include desk{
+                                border-bottom: 8px solid $greenLight;
+                            }
                         }
                     }
                 }
