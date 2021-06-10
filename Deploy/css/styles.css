@@ -2167,28 +2167,22 @@ footer > div #footer-right #contact .hidden-footer {
     color: #FFEEEA;
   }
 }
-#wildlife > div #fauna #fauna-title {
-  margin-left: 109px;
-}
-@media (min-width: 768px) {
-  #wildlife > div #fauna #fauna-title {
-    margin-left: 153px;
-  }
-}
-@media (min-width: 1024px) {
-  #wildlife > div #fauna #fauna-title {
-    margin-left: 218px;
-  }
-}
-@media (min-width: 1440px) {
-  #wildlife > div #fauna #fauna-title {
-    margin-left: 248px;
-  }
-}
 #wildlife > div #fauna #fauna-content {
   display: grid;
   grid-template-columns: 10px auto 10px;
   grid-template-areas: ". fauna-content .";
+}
+@media (min-width: 1024px) {
+  #wildlife > div #fauna #fauna-content {
+    grid-template-columns: none;
+    grid-template-areas: none;
+  }
+}
+@media (min-width: 1024px) {
+  #wildlife > div #fauna #fauna-content {
+    grid-template-columns: 10px auto 10px;
+    grid-template-areas: ". fauna-content .";
+  }
 }
 #wildlife > div #fauna #fauna-content > div {
   grid-area: fauna-content;
@@ -2197,19 +2191,43 @@ footer > div #footer-right #contact .hidden-footer {
   #wildlife > div #fauna #fauna-content > div {
     display: grid;
     grid-template-columns: 60% auto;
-    grid-template-areas: "img-f1 img-f1" "para-f2 aside-f1" "para-f3 aside-f1" "img-f2 aside-f1";
+    grid-template-areas: "fauna-title ." "img-f1 img-f1" "para-f2 aside-f1" "para-f3 aside-f1" "img-f2 aside-f1";
+    column-gap: 20px;
   }
 }
 @media (min-width: 1024px) {
   #wildlife > div #fauna #fauna-content > div {
     grid-template-columns: 50% auto;
-    grid-template-areas: "para-f1 img-f1" "call-f1 aside-f1" "para-f2 aside-f1" "para-f3 aside-f1" "img-f2 img-f2";
+    grid-template-areas: "fauna-title img-f1" "para-f1 img-f1" "para-f1 aside-f1" "call-f1 aside-f1" "para-f2 aside-f1" "para-f3 aside-f1" "img-f2 img-f2";
+    column-gap: 108px;
   }
 }
 @media (min-width: 1440px) {
   #wildlife > div #fauna #fauna-content > div {
-    grid-template-columns: 60% auto;
-    grid-template-areas: "para-f1 img-f1" "call-f1 aside-f1" "para-f2 aside-f1" "para-f3 aside-f1" "img-f2 .";
+    grid-template-columns: 70% auto;
+    grid-template-areas: "fauna-title img-f1" "para-f1 img-f1" "call-f1 aside-f1" "para-f2 aside-f1" "para-f3 aside-f1" "img-f2 .";
+    column-gap: 20px;
+  }
+}
+#wildlife > div #fauna #fauna-content > div #fauna-title {
+  margin-left: 109px;
+}
+@media (min-width: 768px) {
+  #wildlife > div #fauna #fauna-content > div #fauna-title {
+    margin-left: 153px;
+    grid-area: fauna-title;
+  }
+}
+@media (min-width: 1024px) {
+  #wildlife > div #fauna #fauna-content > div #fauna-title {
+    margin-left: 218px;
+    margin-bottom: 24px;
+  }
+}
+@media (min-width: 1440px) {
+  #wildlife > div #fauna #fauna-content > div #fauna-title {
+    margin-left: 248px;
+    margin-bottom: 32px;
   }
 }
 #wildlife > div #fauna #fauna-content > div #para-f1 {
@@ -2219,6 +2237,14 @@ footer > div #footer-right #contact .hidden-footer {
   #wildlife > div #fauna #fauna-content > div #para-f1 {
     display: block;
     grid-area: para-f1;
+    margin-left: 95px;
+    margin-bottom: 24px;
+  }
+}
+@media (min-width: 1440px) {
+  #wildlife > div #fauna #fauna-content > div #para-f1 {
+    margin-bottom: 32px;
+    margin-left: 90px;
   }
 }
 #wildlife > div #fauna #fauna-content > div #img-f1 {
@@ -2227,6 +2253,7 @@ footer > div #footer-right #contact .hidden-footer {
   background-position: center;
   height: 364px;
   grid-area: img-f1;
+  margin: 16px 0px;
 }
 @media (min-width: 768px) {
   #wildlife > div #fauna #fauna-content > div #img-f1 {
@@ -2236,11 +2263,14 @@ footer > div #footer-right #contact .hidden-footer {
 @media (min-width: 1024px) {
   #wildlife > div #fauna #fauna-content > div #img-f1 {
     height: 192px;
+    margin: 0px 10px 0px 0px;
   }
 }
 @media (min-width: 1440px) {
   #wildlife > div #fauna #fauna-content > div #img-f1 {
     height: 264px;
+    margin-bottom: 32px;
+    margin-right: 0px;
   }
 }
 #wildlife > div #fauna #fauna-content > div #fauna-callout {
@@ -2252,9 +2282,19 @@ footer > div #footer-right #contact .hidden-footer {
     grid-area: call-f1;
     background-color: #3B210C;
     color: #FFEEEA;
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: 700;
     font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0px;
+  }
+}
+@media (min-width: 1440px) {
+  #wildlife > div #fauna #fauna-content > div #fauna-callout {
+    font-size: 2.5rem;
+    padding: 48px 0px;
   }
 }
 #wildlife > div #fauna #fauna-content > div #para-f2 {
@@ -2264,33 +2304,92 @@ footer > div #footer-right #contact .hidden-footer {
   #wildlife > div #fauna #fauna-content > div #para-f2 {
     display: block;
     grid-area: para-f2;
+    margin-bottom: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  #wildlife > div #fauna #fauna-content > div #para-f2 {
+    margin-top: 24px;
+    margin-left: 95px;
+  }
+}
+@media (min-width: 1440px) {
+  #wildlife > div #fauna #fauna-content > div #para-f2 {
+    margin-left: 90px;
+    margin-top: 32px;
   }
 }
 @media (min-width: 768px) {
   #wildlife > div #fauna #fauna-content > div #para-f3 {
     grid-area: para-f3;
+    margin-bottom: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  #wildlife > div #fauna #fauna-content > div #para-f3 {
+    margin: 0px 0px 0px 95px;
+  }
+}
+@media (min-width: 1440px) {
+  #wildlife > div #fauna #fauna-content > div #para-f3 {
+    margin-left: 90px;
+    margin-top: -60px;
+    margin-bottom: 80px;
   }
 }
 #wildlife > div #fauna #fauna-content > div > aside {
-  margin: 0px 24px;
   grid-area: aside-f1;
   background-color: #7A4419;
+  margin: 48px 0px 16px;
+  padding: 24px 24px 50px;
+}
+@media (min-width: 768px) {
+  #wildlife > div #fauna #fauna-content > div > aside {
+    padding-bottom: 140px;
+    margin: 0px 0px;
+  }
 }
 @media (min-width: 1024px) {
   #wildlife > div #fauna #fauna-content > div > aside {
-    margin: 0px 85px;
+    margin: 24px 0px 0px;
+    padding: 32px 85px 54px;
   }
 }
 @media (min-width: 1440px) {
   #wildlife > div #fauna #fauna-content > div > aside {
-    margin: 0px 90px;
+    padding: 56px 90px 32px;
+    margin-top: 0px;
   }
 }
 #wildlife > div #fauna #fauna-content > div > aside > h2 {
   color: #FFEEEA;
+  margin-bottom: 24px;
+}
+@media (min-width: 1024px) {
+  #wildlife > div #fauna #fauna-content > div > aside > h2 {
+    padding-bottom: 32px;
+  }
+}
+@media (min-width: 1440px) {
+  #wildlife > div #fauna #fauna-content > div > aside > h2 {
+    padding-bottom: 48px;
+  }
 }
 #wildlife > div #fauna #fauna-content > div > aside > p {
   color: #FFEEEA;
+  padding-bottom: 16px;
+  border-bottom: 8px solid #3B210C;
+}
+@media (min-width: 1024px) {
+  #wildlife > div #fauna #fauna-content > div > aside > p {
+    padding-bottom: 24px;
+  }
+}
+@media (min-width: 1440px) {
+  #wildlife > div #fauna #fauna-content > div > aside > p {
+    border-bottom: none;
+    padding: 0px;
+  }
 }
 #wildlife > div #fauna #fauna-content > div #img-f2 {
   background-image: url("../img/Wildlife/Fauna/fauna-2.jpg");
@@ -2298,20 +2397,31 @@ footer > div #footer-right #contact .hidden-footer {
   background-position: center;
   height: 312px;
   grid-area: img-f2;
+  margin-bottom: 48px;
 }
 @media (min-width: 768px) {
   #wildlife > div #fauna #fauna-content > div #img-f2 {
     height: 215px;
+    margin-bottom: 0px;
   }
 }
 @media (min-width: 1024px) {
   #wildlife > div #fauna #fauna-content > div #img-f2 {
-    height: 486px;
+    height: 305px;
+    width: 59%;
+    margin-left: 95px;
+    margin-top: 24px;
   }
 }
 @media (min-width: 1440px) {
   #wildlife > div #fauna #fauna-content > div #img-f2 {
     height: 512px;
+    width: 100%;
+    margin-left: 0px;
+    padding-right: 95px;
+    margin-top: -100px;
+    z-index: -1;
+    position: relative;
   }
 }
 @media (min-width: 768px) {

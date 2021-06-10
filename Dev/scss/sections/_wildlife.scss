@@ -375,26 +375,20 @@
             }
         }
         #fauna{
-            #fauna-title{
-                margin-left: 109px;
 
-                @include tab{
-                    margin-left: 153px;
-                }
-                @include desk{
-                    margin-left: 218px;
-                }
-                @include hd{
-                    margin-left: 248px;
-                }
-                >h3{
-
-                }
-            }
             #fauna-content{
                 display: grid;
                 grid-template-columns: 10px auto 10px;
                 grid-template-areas: ". fauna-content .";
+
+                @include desk{
+                    grid-template-columns: none;
+                    grid-template-areas: none;
+                }
+                @include desk{
+                    grid-template-columns: 10px auto 10px;
+                    grid-template-areas: ". fauna-content .";
+                }
 
                 >div{
                     grid-area: fauna-content;
@@ -402,26 +396,53 @@
                     @include tab{
                         display: grid;
                         grid-template-columns: 60% auto;
-                        grid-template-areas: "img-f1 img-f1"
+                        grid-template-areas:   "fauna-title ."
+                                               "img-f1 img-f1"
                                                "para-f2 aside-f1"
                                                "para-f3 aside-f1"
                                                "img-f2 aside-f1";
+                        column-gap: 20px;
                     }
                     @include desk{
                         grid-template-columns: 50% auto;
-                        grid-template-areas: "para-f1 img-f1"
+                        grid-template-areas: "fauna-title img-f1"
+                                             "para-f1 img-f1"
+                                             "para-f1 aside-f1"
                                              "call-f1 aside-f1"
                                              "para-f2 aside-f1"
                                              "para-f3 aside-f1"
                                              "img-f2 img-f2";
+                        column-gap: 108px;
                     }
                     @include hd{
-                        grid-template-columns: 60% auto;
-                        grid-template-areas: "para-f1 img-f1"
-                        "call-f1 aside-f1"
-                        "para-f2 aside-f1"
-                        "para-f3 aside-f1"
-                        "img-f2 .";
+                        grid-template-columns: 70% auto;
+                        grid-template-areas: "fauna-title img-f1"
+                                             "para-f1 img-f1"
+                                             "call-f1 aside-f1"
+                                             "para-f2 aside-f1"
+                                             "para-f3 aside-f1"
+                                             "img-f2 .";
+                        column-gap: 20px;
+                    }
+
+                    #fauna-title{
+                        margin-left: 109px;
+        
+                        @include tab{
+                            margin-left: 153px;
+                            grid-area: fauna-title;
+                        }
+                        @include desk{
+                            margin-left: 218px;
+                            margin-bottom: 24px;
+                        }
+                        @include hd{
+                            margin-left: 248px;
+                            margin-bottom: 32px;
+                        }
+                        >h3{
+        
+                        }
                     }
 
                     #para-f1{
@@ -430,6 +451,12 @@
                         @include desk{
                             display: block;
                             grid-area: para-f1;
+                            margin-left: 95px;
+                            margin-bottom: 24px;
+                        }
+                        @include hd{
+                            margin-bottom: 32px;
+                            margin-left: 90px;
                         }
                     }
                     #img-f1{
@@ -438,15 +465,19 @@
                         background-position: center;
                         height: 364px;
                         grid-area: img-f1;
+                        margin: 16px 0px;
 
                         @include tab{
                             height: 364px;
                         }
                         @include desk{
                             height: 192px;
+                            margin: 0px 10px 0px 0px;
                         }
                         @include hd{
                             height: 264px;
+                            margin-bottom: 32px;
+                            margin-right: 0px;
                         }
                     }
                     #fauna-callout{
@@ -457,9 +488,17 @@
                             grid-area: call-f1;
                             background-color: $orangeDark;
                             color: $brownLight;
-                            font-size: rem-calc(48);
+                            font-size: rem-calc(24);
                             font-weight: 700;
                             font-style: italic;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 32px 0px;
+                        }
+                        @include hd{
+                            font-size: rem-calc(40);
+                            padding: 48px 0px;
                         }
                     }
                     #para-f2{
@@ -468,31 +507,74 @@
                         @include tab{
                             display: block;
                             grid-area: para-f2;
+                            margin-bottom: 24px;
+                        }
+                        @include desk{
+                            margin-top: 24px;
+                            margin-left: 95px;
+                        }
+                        @include hd{
+                            margin-left: 90px;
+                            margin-top: 32px;
                         }
                     }
                     #para-f3{
 
                         @include tab{
                             grid-area: para-f3;
+                            margin-bottom: 16px;
+                        }
+                        @include desk{
+                            margin: 0px 0px 0px 95px;
+                        }
+                        @include hd{
+                            margin-left: 90px;
+                            margin-top: -60px;
+                            margin-bottom: 80px;
                         }
                     }
                     >aside{
-                        margin: 0px 24px;
                         grid-area: aside-f1;
                         background-color: $orange;
+                        margin: 48px 0px 16px;
+                        padding: 24px 24px 50px;
 
+                        @include tab{
+                            padding-bottom: 140px;
+                            margin: 0px 0px;
+                        }
                         @include desk{
-                            margin: 0px 85px;
+                            margin: 24px 0px 0px;
+                            padding: 32px 85px 54px;
                         }
                         @include hd{
-                            margin: 0px 90px;
+                            padding: 56px 90px 32px;
+                            margin-top: 0px;
                         }
 
                         >h2{
                             color: $brownLight;
+                            margin-bottom: 24px;
+
+                            @include desk{
+                                padding-bottom: 32px;
+                            }
+                            @include hd{
+                                padding-bottom: 48px;
+                            }
                         }
                         >p{
                             color: $brownLight;
+                            padding-bottom: 16px;
+                            border-bottom: 8px solid $orangeDark;
+
+                            @include desk{
+                                padding-bottom: 24px;
+                            }
+                            @include hd{
+                                border-bottom: none;
+                                padding: 0px;
+                            }
                         }
                     }
                     #img-f2{
@@ -501,15 +583,26 @@
                         background-position: center;
                         height: 312px;
                         grid-area: img-f2;
+                        margin-bottom: 48px;
 
                         @include tab{
                             height: 215px;
+                            margin-bottom: 0px;
                         }
                         @include desk{
-                            height: 486px;
+                            height: 305px;
+                            width: 59%;
+                            margin-left: 95px;
+                            margin-top: 24px;
                         }
                         @include hd{
-                            height: 512px;
+                            height: 512px; 
+                            width: 100%;
+                            margin-left: 0px;
+                            padding-right: 95px;
+                            margin-top: -100px;
+                            z-index: -1;
+                            position: relative;
                         }
                     }
                 }
