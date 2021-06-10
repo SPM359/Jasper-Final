@@ -3,6 +3,10 @@ header{
     grid-template-columns: auto 10px;
     grid-template-areas: "header-content .";
     background-color: $orange;
+    background-color: $tealDark;
+	left: 0;
+	position: fixed;
+	top: 0;
 
     >div{
         display: flex;
@@ -73,15 +77,35 @@ header{
                 }
             }
         }
-        #nav-container {
-            background-color: $brownDark;
-            display: none;
-            grid-area: nav;
-            padding: 20px 10px 10px;
-            @include desk {
-                background-color: $orangeDark;
-                display: block !important;
-            }
-        }
+        // #burger-container {
+        //     align-items: center;
+        //     display: flex;
+        //     grid-area: burger;
+        //     margin-right: 16px;
+        //     padding: 10px;
+        //     @include desk{
+        //         display: none !important;
+        //     }
+        //     i {
+        //         color: $red;
+        //         cursor: pointer;
+        //         font-size: rem-calc(30);
+        //         margin-left: auto;
+        //         &:hover, &:active {
+        //             color: $indigo;
+        //             transition: 0.25s;
+        //         }
+        //     }
+        // }
+        // #nav-container {
+        //     background-color: $brownDark;
+        //     display: none;
+        //     grid-area: nav;
+        //     padding: 20px 10px 10px;
+        //     @include desk{
+        //         background-color: $orangeDark;
+        //         display: block !important;
+        //     }
+        // }
     }
 }

@@ -1,14 +1,16 @@
 #nav-container {
 	ul {
 		height: 100%;
-		@include desk {
+
+		@include desk{
 			display: flex;
 			justify-content: flex-end;
 		}
 		li {
 			margin-bottom: 20px;
 			text-align: right;
-			@include desk {
+			
+			@include desk{
 				align-items: center;
 				border-right: 2px solid $green;
 				display: flex;
