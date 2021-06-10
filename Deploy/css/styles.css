@@ -1787,6 +1787,25 @@ footer > div #footer-right #contact .hidden-footer {
   display: grid;
   grid-template-columns: 10px auto 10px;
   grid-template-areas: ". wildlife-hero .";
+  margin-top: 16px;
+  margin-bottom: 48px;
+}
+@media (min-width: 768px) {
+  #wildlife > div #wildlife-hero {
+    margin-bottom: 56px;
+  }
+}
+@media (min-width: 1024px) {
+  #wildlife > div #wildlife-hero {
+    margin-top: 24x;
+    margin-bottom: 64px;
+  }
+}
+@media (min-width: 1440px) {
+  #wildlife > div #wildlife-hero {
+    margin-top: 32px;
+    margin-bottom: 80px;
+  }
 }
 #wildlife > div #wildlife-hero > div {
   background-image: url("../img/Wildlife/wildlife-hero.jpg");
@@ -1827,131 +1846,126 @@ footer > div #footer-right #contact .hidden-footer {
 }
 #wildlife > div #wildlife-content > div {
   display: grid;
-  grid-template-columns: auto;
-  grid-template-areas: "article-w1" "article-w2";
+  grid-template-columns: 50% auto;
+  grid-template-areas: "para-w1 img-w1" "para-w1 img-w2";
   grid-area: wildlife-content;
 }
 @media (min-width: 768px) {
   #wildlife > div #wildlife-content > div {
-    grid-template-areas: "article-w1 article-w2";
+    grid-template-areas: "img-w1 img-w2" "para-w1 para-w3";
   }
 }
 @media (min-width: 1024px) {
   #wildlife > div #wildlife-content > div {
-    grid-template-areas: "article-w1 article-w1" "article-w2 article-w2";
-  }
-}
-#wildlife > div #wildlife-content > div #article-w1 {
-  display: grid;
-  grid-template-columns: 50% auto;
-  grid-template-areas: "para-w1 img-w1";
-  grid-area: article-w1;
-}
-@media (min-width: 768px) {
-  #wildlife > div #wildlife-content > div #article-w1 {
-    grid-template-columns: none;
-    grid-template-areas: "img-w1" "para-w1";
-  }
-}
-@media (min-width: 1024px) {
-  #wildlife > div #wildlife-content > div #article-w1 {
-    display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-areas: "para-w1 img-w1";
+    grid-template-areas: "para-w1 img-w1" "para-w3 img-w1" "para-w3 img-w2" "para-w4 para-w4";
   }
 }
 @media (min-width: 1440px) {
-  #wildlife > div #wildlife-content > div #article-w1 {
-    grid-template-areas: "para-w1 img-w1" "para-w2 img-w1";
+  #wildlife > div #wildlife-content > div {
+    grid-template-columns: 45% auto 45%;
+    grid-template-areas: "para-w1 img-w1 img-w1" "para-w3 img-w1 img-w1" "para-w4 para-w4 img-w2";
   }
 }
-#wildlife > div #wildlife-content > div #article-w1 > div {
+#wildlife > div #wildlife-content > div #img-w1 {
   background-image: url("../img/Wildlife/wildlife-1.jpg");
   background-size: cover;
   background-position: center;
   height: 288px;
   grid-area: img-w1;
-}
-@media (min-width: 1440px) {
-  #wildlife > div #wildlife-content > div #article-w1 > div {
-    height: 512px;
-  }
-}
-#wildlife > div #wildlife-content > div #article-w1 #para-w1 {
-  grid-area: para-w1;
-}
-#wildlife > div #wildlife-content > div #article-w1 #para-w2 {
-  display: none;
-}
-@media (min-width: 1440px) {
-  #wildlife > div #wildlife-content > div #article-w1 #para-w2 {
-    display: block;
-    grid-area: para-w2;
-  }
-}
-#wildlife > div #wildlife-content > div #article-w2 {
-  display: grid;
-  grid-template-columns: 50% auto;
-  grid-template-areas: ". img-w2";
-  grid-area: article-w2;
+  margin-bottom: 16px;
 }
 @media (min-width: 768px) {
-  #wildlife > div #wildlife-content > div #article-w2 {
-    grid-template-columns: none;
-    grid-template-areas: "img-w2" "para-w3";
+  #wildlife > div #wildlife-content > div #img-w1 {
+    margin-right: 10px;
   }
 }
 @media (min-width: 1024px) {
-  #wildlife > div #wildlife-content > div #article-w2 {
-    display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-areas: "para-w3 img-w2" "para-w4 para-w4";
+  #wildlife > div #wildlife-content > div #img-w1 {
+    margin: 0px 0px 24px 10px;
   }
 }
 @media (min-width: 1440px) {
-  #wildlife > div #wildlife-content > div #article-w2 {
-    grid-template-columns: 60% auto;
-    grid-template-areas: "para-w4 img-w2";
+  #wildlife > div #wildlife-content > div #img-w1 {
+    height: 512px;
+    margin-bottom: 32px;
   }
 }
-#wildlife > div #wildlife-content > div #article-w2 > div {
+#wildlife > div #wildlife-content > div #para-w1 {
+  grid-area: para-w1;
+}
+@media (min-width: 768px) {
+  #wildlife > div #wildlife-content > div #para-w1 {
+    margin-right: 10px;
+  }
+}
+@media (min-width: 1024px) {
+  #wildlife > div #wildlife-content > div #para-w1 {
+    margin-right: 100px;
+  }
+}
+@media (min-width: 1440px) {
+  #wildlife > div #wildlife-content > div #para-w1 {
+    margin-bottom: 32px;
+  }
+}
+#wildlife > div #wildlife-content > div #img-w2 {
   background-image: url("../img/Wildlife/wildlife-2.jpg");
   background-size: cover;
   background-position: center;
   height: 288px;
   grid-area: img-w2;
 }
+@media (min-width: 768px) {
+  #wildlife > div #wildlife-content > div #img-w2 {
+    margin-bottom: 16px;
+    margin-left: 10px;
+  }
+}
 @media (min-width: 1024px) {
-  #wildlife > div #wildlife-content > div #article-w2 > div {
+  #wildlife > div #wildlife-content > div #img-w2 {
     height: 216px;
+    margin-bottom: 24px;
   }
 }
 @media (min-width: 1440px) {
-  #wildlife > div #wildlife-content > div #article-w2 > div {
+  #wildlife > div #wildlife-content > div #img-w2 {
     height: 210px;
+    margin-bottom: 0px;
   }
 }
-#wildlife > div #wildlife-content > div #article-w2 #para-w3 {
+#wildlife > div #wildlife-content > div #para-w3 {
   display: none;
 }
 @media (min-width: 768px) {
-  #wildlife > div #wildlife-content > div #article-w2 #para-w3 {
+  #wildlife > div #wildlife-content > div #para-w3 {
     display: block;
     grid-area: para-w3;
+    margin-left: 10px;
+  }
+}
+@media (min-width: 1024px) {
+  #wildlife > div #wildlife-content > div #para-w3 {
+    margin: 24px 10px 0px 0px;
   }
 }
 @media (min-width: 1440px) {
-  #wildlife > div #wildlife-content > div #article-w2 #para-w3 {
-    display: none;
+  #wildlife > div #wildlife-content > div #para-w3 {
+    margin-right: 100px;
+    margin-top: -160px;
   }
 }
-#wildlife > div #wildlife-content > div #article-w2 #para-w4 {
+#wildlife > div #wildlife-content > div #para-w4 {
   display: none;
 }
 @media (min-width: 1024px) {
-  #wildlife > div #wildlife-content > div #article-w2 #para-w4 {
+  #wildlife > div #wildlife-content > div #para-w4 {
     display: block;
     grid-area: para-w4;
+  }
+}
+@media (min-width: 1440px) {
+  #wildlife > div #wildlife-content > div #para-w4 {
+    margin-right: 10px;
   }
 }
 #wildlife > div #life-zones {

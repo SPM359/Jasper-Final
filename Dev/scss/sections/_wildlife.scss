@@ -23,6 +23,20 @@
             display: grid;
             grid-template-columns: 10px auto 10px;
             grid-template-areas: ". wildlife-hero .";
+            margin-top: 16px;
+            margin-bottom: 48px;
+
+            @include tab{
+                margin-bottom: 56px;
+            }
+            @include desk{
+                margin-top: 24x;
+                margin-bottom: 64px;
+            }
+            @include hd{
+                margin-top: 32px;
+                margin-bottom: 80px;
+            }
 
             >div{
                 background-image: url("../img/Wildlife/wildlife-hero.jpg");
@@ -56,118 +70,105 @@
 
             >div{
                 display: grid;
-                grid-template-columns: auto;
-                grid-template-areas: "article-w1"
-                                     "article-w2";
+                grid-template-columns: 50% auto;
+                grid-template-areas: "para-w1 img-w1"
+                                     "para-w1 img-w2";
                 grid-area: wildlife-content;
     
                 @include tab{
-                    grid-template-areas: "article-w1 article-w2";
+                    grid-template-areas: "img-w1 img-w2"
+                                         "para-w1 para-w3";
                 }
-    
                 @include desk{
-                    grid-template-areas: "article-w1 article-w1"
-                                         "article-w2 article-w2";
+                    grid-template-areas: "para-w1 img-w1"
+                                         "para-w3 img-w1"
+                                         "para-w3 img-w2"
+                                         'para-w4 para-w4';
                 }
-    
-                #article-w1{
-                    display: grid; 
-                    grid-template-columns: 50% auto;
-                    grid-template-areas: "para-w1 img-w1";
-                    grid-area: article-w1;
+                @include hd{
+                    grid-template-columns: 45% auto 45%;
+                    grid-template-areas: "para-w1 img-w1 img-w1"
+                                         "para-w3 img-w1 img-w1"
+                                         "para-w4 para-w4 img-w2";
+                }
+
+                #img-w1{
+                    background-image: url("../img/Wildlife/wildlife-1.jpg");
+                    background-size: cover;
+                    background-position: center;
+                    height: 288px;
+                    grid-area: img-w1;
+                    margin-bottom: 16px;
 
                     @include tab{
-                        grid-template-columns: none;
-                        grid-template-areas: "img-w1"
-                                             "para-w1";
+                        margin-right: 10px;
                     }
                     @include desk{
-                        display: grid;
-                        grid-template-columns: 50% auto;
-                        grid-template-areas: "para-w1 img-w1";
+                        margin: 0px 0px 24px 10px;
                     }
                     @include hd{
-                        grid-template-areas: "para-w1 img-w1"
-                                             "para-w2 img-w1";
-                    }
-    
-                    >div{
-                        background-image: url("../img/Wildlife/wildlife-1.jpg");
-                        background-size: cover;
-                        background-position: center;
-                        height: 288px;
-                        grid-area: img-w1;
-    
-                        @include hd{
-                            height: 512px;
-                        }
-                    }
-                    #para-w1{
-                        grid-area: para-w1;
-                    }
-                    #para-w2{
-                        display: none;
-    
-                        @include hd{
-                            display: block;
-                            grid-area: para-w2;
-                        }
+                        height: 512px;
+                        margin-bottom: 32px;
                     }
                 }
-                #article-w2{
-                    display: grid;
-                    grid-template-columns: 50% auto;
-                    grid-template-areas: ". img-w2";
-                    grid-area: article-w2;
+                #para-w1{
+                    grid-area: para-w1;
 
                     @include tab{
-                        grid-template-columns: none;
-                        grid-template-areas: "img-w2"
-                                             "para-w3";
+                        margin-right: 10px;
                     }
                     @include desk{
-                        display: grid;
-                        grid-template-columns: 50% auto;
-                        grid-template-areas: "para-w3 img-w2"
-                                             "para-w4 para-w4";
+                        margin-right: 100px;
                     }
                     @include hd{
-                        grid-template-columns: 60% auto;
-                        grid-template-areas: "para-w4 img-w2";
+                        margin-bottom: 32px;
                     }
-    
-                    >div{
-                        background-image: url("../img/Wildlife/wildlife-2.jpg");
-                        background-size: cover;
-                        background-position: center;
-                        height: 288px;
-                        grid-area: img-w2;
-    
-                        @include desk{
-                            height: 216px;
-                        }
-                        @include hd{
-                            height: 210px;
-                        }
-                    }  
-                    #para-w3{
-                        display: none;
-    
-                        @include tab{
-                            display: block;
-                            grid-area: para-w3;
-                        }
-                        @include hd{
-                            display: none;
-                        }
+                }
+                #img-w2{
+                    background-image: url("../img/Wildlife/wildlife-2.jpg");
+                    background-size: cover;
+                    background-position: center;
+                    height: 288px;
+                    grid-area: img-w2;
+
+                    @include tab{
+                        margin-bottom: 16px;
+                        margin-left: 10px;
                     }
-                    #para-w4{
-                        display: none;
-    
-                        @include desk{
-                            display: block;
-                            grid-area: para-w4;
-                        }
+                    @include desk{
+                        height: 216px;
+                        margin-bottom: 24px;
+                    }
+                    @include hd{
+                        height: 210px;
+                        margin-bottom: 0px;
+                    }
+                }  
+                #para-w3{
+                    display: none;
+
+                    @include tab{
+                        display: block;
+                        grid-area: para-w3;
+                        margin-left: 10px;
+                    }
+                    @include desk{
+                        margin: 24px 10px 0px 0px;
+                    }
+                    @include hd{
+                        margin-right: 100px;
+                        margin-top: -160px;
+                    }
+                }
+                #para-w4{
+                    display: none;
+
+                    @include desk{
+                        display: block;
+                        grid-area: para-w4;
+                    }
+                    @include hd{
+                        margin-right: 10px;
                     }
                 }
             }      
