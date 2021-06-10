@@ -1,22 +1,109 @@
 #wildlife{
     >div{
         #wildlife-title{
-            display: grid;
-            grid-template-columns: 114px 92px auto;
-            grid-template-areas: ". wildlife-title .";
+            margin-top: 48px;
 
             @include tab{
-                grid-template-columns: 242px 110px auto;
+                margin-top: 56px;
+                margin-bottom: 16px;
             }
             @include desk{
-                grid-template-columns: 393px 129px auto;
+                margin-top: 64px;
+                margin-bottom: 34px;
             }
-            @include desk{
-                grid-template-columns: 429px 129px auto;
+            @include hd{
+                margin-top: 80px;
+                margin-bottom: 54px;
             }
+            >article{
+                display: flex;
 
+                #hdiv-1{
+                    border-right: 31px solid transparent;
+                    border-bottom: 31px solid $purpleDark;
+                    width: 42px;
+
+                    @include tab{
+                        border-right: 52px solid transparent;
+                        border-bottom: 52px solid $purpleDark;
+                        width: 88px;
+                    }
+                    @include desk{
+                        border-right: 69px solid transparent;
+                        border-bottom: 69px solid $purpleDark;
+                        width: 170px;
+                    }
+                }
+                #hdiv-2{
+                    border-right: 31px solid transparent;
+                    border-bottom: 31px solid $purple;
+                    width: 60px;
+                    margin-left: -33px;
+                    z-index: -1;
+                    position: relative;
+
+                    @include tab{
+                        border-right: 52px solid transparent;
+                        border-bottom: 52px solid $purple;
+                        margin-left: -52px;
+                        width: 150px;
+                    }
+                    @include desk{
+                        border-right: 69px solid transparent;
+                        border-bottom: 69px solid $purple;
+                        margin-left: -69px;
+                        width: 232px;
+                    }
+                }
+                #hdiv-3{
+                    border-right: 31px solid transparent;
+                    border-bottom: 31px solid $purpleLight;
+                    width: 242px;
+                    margin-left: -33px;
+                    z-index: -2;
+                    position: relative;
+
+                    @include tab{
+                        border-right: 52px solid transparent;
+                        border-bottom: 52px solid $purpleLight;
+                        margin-left: -52px;
+                        width: 340px;
+                    }
+                    @include desk{
+                        border-right: 69px solid transparent;
+                        border-bottom: 69px solid $purpleLight;
+                        margin-left: -69px;
+                        width: 412px;
+                    }
+                }
+                #hdiv-4{
+                    border-left: 31px solid transparent;
+                    border-top: 31px solid $purpleDark;
+                    width: 25%;
+                    margin-left: auto;
+
+                    @include tab{
+                        border-left: 52px solid transparent;
+                        border-top: 52px solid $purple;
+                    }
+                    @include desk{
+                        border-left: 69px solid transparent;
+                        border-top: 69px solid $purple;
+                    }
+                }
+            }
             >h1{
-                grid-area: wildlife-title;
+                margin-left: 155px;
+                margin-top: -27px;
+
+                @include tab{
+                    margin-left: 315px;
+                    margin-top: -37px;
+                }
+                @include desk{
+                    margin-left: 470px;
+                    margin-top: -51px;
+                }
             }
         }
         #wildlife-hero{

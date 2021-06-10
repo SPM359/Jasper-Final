@@ -2,12 +2,38 @@
     >div{
 
         #history-title{
+            margin-top: 48px;
+
+            @include tab{
+                margin-top: 56px;
+                margin-bottom: 16px;
+            }
+            @include desk{
+                margin-top: 64px;
+                margin-bottom: 34px;
+            }
+            @include hd{
+                margin-top: 80px;
+                margin-bottom: 54px;
+            }
             >article{
                 display: flex;
+
                 #hdiv-1{
                     border-right: 31px solid transparent;
                     border-bottom: 31px solid $purpleDark;
                     width: 42px;
+
+                    @include tab{
+                        border-right: 52px solid transparent;
+                        border-bottom: 52px solid $purpleDark;
+                        width: 88px;
+                    }
+                    @include desk{
+                        border-right: 69px solid transparent;
+                        border-bottom: 69px solid $purpleDark;
+                        width: 170px;
+                    }
                 }
                 #hdiv-2{
                     border-right: 31px solid transparent;
@@ -16,6 +42,19 @@
                     margin-left: -33px;
                     z-index: -1;
                     position: relative;
+
+                    @include tab{
+                        border-right: 52px solid transparent;
+                        border-bottom: 52px solid $purple;
+                        margin-left: -52px;
+                        width: 150px;
+                    }
+                    @include desk{
+                        border-right: 69px solid transparent;
+                        border-bottom: 69px solid $purple;
+                        margin-left: -69px;
+                        width: 232px;
+                    }
                 }
                 #hdiv-3{
                     border-right: 31px solid transparent;
@@ -24,15 +63,48 @@
                     margin-left: -33px;
                     z-index: -2;
                     position: relative;
+
+                    @include tab{
+                        border-right: 52px solid transparent;
+                        border-bottom: 52px solid $purpleLight;
+                        margin-left: -52px;
+                        width: 340px;
+                    }
+                    @include desk{
+                        border-right: 69px solid transparent;
+                        border-bottom: 69px solid $purpleLight;
+                        margin-left: -69px;
+                        width: 412px;
+                    }
                 }
                 #hdiv-4{
-                    border-right: 31px solid transparent;
-                    border-bottom: 31px solid $purpleDark;
-                    width: 50px;
+                    border-left: 31px solid transparent;
+                    border-top: 31px solid $purpleDark;
+                    width: 25%;
+                    margin-left: auto;
+
+                    @include tab{
+                        border-left: 52px solid transparent;
+                        border-top: 52px solid $purple;
+                    }
+                    @include desk{
+                        border-left: 69px solid transparent;
+                        border-top: 69px solid $purple;
+                    }
                 }
             }
             >h1{
-                grid-area: history-title;
+                margin-left: 155px;
+                margin-top: -27px;
+
+                @include tab{
+                    margin-left: 315px;
+                    margin-top: -37px;
+                }
+                @include desk{
+                    margin-left: 470px;
+                    margin-top: -51px;
+                }
             }
         }
 
