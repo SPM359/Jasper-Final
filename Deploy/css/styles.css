@@ -2011,6 +2011,11 @@ footer > div #footer-right #contact .hidden-footer {
 #wildlife > div #life-zones #zone-content > ul {
   grid-area: zone-content;
 }
+@media (min-width: 1440px) {
+  #wildlife > div #life-zones #zone-content > ul > li {
+    margin-right: 180px;
+  }
+}
 #wildlife > div #life-zones #zone-content > ul > li > div {
   background-position: center;
   background-size: cover;
@@ -2094,7 +2099,7 @@ footer > div #footer-right #contact .hidden-footer {
 }
 @media (min-width: 1440px) {
   #wildlife > div #life-zones #zone-content > ul #z2 {
-    margin-bottom: 80px;
+    margin: 0px 0px 80px 180px;
   }
 }
 #wildlife > div #life-zones #zone-content > ul #z2 > div {
